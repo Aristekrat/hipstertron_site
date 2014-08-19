@@ -1,0 +1,29 @@
+footer {
+	padding-top: 0.5%;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-inspiration {
+	width: 40%;
+	padding: 1% 4%;
+	margin: 0;
+	font-size: 0.9em;
+	opacity: 0.5;
+	float: left;
+	display: inline-block;
+}
+
+.footer-inspiration h4, .footer-inspiration p {
+	margin: 0;
+	display: inline-block;
+}
+
+.footer-privacy-policy {
+	float: right;
+	position: relative;
+	right: 10%;
+	margin-top: 2%;
+	display: inline-block;
+}

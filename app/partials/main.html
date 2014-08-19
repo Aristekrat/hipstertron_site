@@ -1,0 +1,47 @@
+<div class="home-page">
+  <header class="main-block main-header">
+    <h1>Hipster Tron</h1>
+    <p id="main-tagline">He's heard of that show before you.</p>
+    <!--<p>Hipster Tron searches local concerts and compares them with artists in your iTunes library and sends you an email if there is a match.</p>-->
+    <!--<p>Hipster Tron compares the artists in your iTunes library against all local concerts and sends you a notification if there is a match.</p>-->
+    <!--<p>Hipster Tron searches all local concerts, compares them with your iTunes library, and sends you an email if an artist you have is coming to town.</p>-->
+    <p id="main-explanation">Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out.</p>
+  </header>
+
+  <section class="benefits-list main-block">
+    <ul>
+      <li>
+        <h4>Never Miss A Show</h4>
+        <!--<img src="img/dance.gif" />-->
+        <p>You can learn about concerts important to you as soon as they're announced.</p>
+      </li>
+      <li>
+        <h4>100% Free</h4>
+        <!--<img src="img/dance.gif" />-->
+        <p>Our site doesn't even have ads.</p>
+      </li>
+      <li>
+        <h4>Get the Best Tickets</h4>
+        <!--<img src="img/dance.gif" />-->
+        <p>Beat the scalpers by coming early.</p>
+      </li>
+      <li>
+        <h4>Save Time Looking</h4>
+        <!--<img src="img/dance.gif" />-->
+        <p>You no longer have to look through five different websites and then Westword to find concerts.</p>
+      </li>
+    </ul>
+  </section>
+  <section class="main-block">
+    <form class="main-signup-form">
+        <input type="email" class="main-email" ng-model="userEmail" placeholder="Enter Your Email to Sign Up" />
+        <button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
+        <p ng-hide="!signedUp">Check your email</p>
+    </form>
+    <ul class="main-testimonial">
+      <li>"OMG I love Hipstertron!" -Some Guy</li>
+      <li>"OMG I love Hipstertron!" -Some Guy</li>
+      <li>"OMG I love Hipstertron!" -Some Guy</li>
+    </ul>
+  </section>
+</div>

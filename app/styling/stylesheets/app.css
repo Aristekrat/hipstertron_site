@@ -1,0 +1,176 @@
+/* line 1, ../sass/_footer.scss */
+footer {
+  padding-top: 0.5%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 8, ../sass/_footer.scss */
+.footer-inspiration {
+  width: 40%;
+  padding: 1% 4%;
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.5;
+  float: left;
+  display: inline-block;
+}
+
+/* line 18, ../sass/_footer.scss */
+.footer-inspiration h4, .footer-inspiration p {
+  margin: 0;
+  display: inline-block;
+}
+
+/* line 23, ../sass/_footer.scss */
+.footer-privacy-policy {
+  float: right;
+  position: relative;
+  right: 10%;
+  margin-top: 2%;
+  display: inline-block;
+}
+
+/* line 1, ../sass/_header.scss */
+.top-nav {
+  padding: 1%;
+}
+
+/* line 5, ../sass/_header.scss */
+.top-nav a {
+  text-decoration: none;
+  padding: 0 1%;
+}
+
+/* line 10, ../sass/_header.scss */
+.top-nav small {
+  float: right;
+  opacity: 0.7;
+}
+
+/* line 1, ../sass/_main-page.scss */
+* {
+  display: none;
+}
+
+/* line 5, ../sass/_main-page.scss */
+.home-page header {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 1% 0;
+}
+
+/* line 11, ../sass/_main-page.scss */
+.main-header h1 {
+  margin: 1% 0 0 0;
+  font-size: 2.5em;
+}
+
+/* line 16, ../sass/_main-page.scss */
+.main-header p {
+  margin: 0 0 2% 0;
+  font-size: 0.95em;
+}
+
+/* line 21, ../sass/_main-page.scss */
+#main-tagline {
+  opacity: .75;
+}
+
+/* line 25, ../sass/_main-page.scss */
+#main-explanation {
+  font-size: 1.2em;
+}
+
+/* line 29, ../sass/_main-page.scss */
+.benefits-list {
+  width: 90%;
+  padding: 3% 3% 3% 7%;
+  display: block;
+  float: left;
+}
+
+/* line 36, ../sass/_main-page.scss */
+.benefits-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 42, ../sass/_main-page.scss */
+.benefits-list li {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  margin: 0 2.5%;
+}
+
+/* line 49, ../sass/_main-page.scss */
+.benefits-list h4, .benefits-list p {
+  display: inline-block;
+  width: 100%;
+  margin: 1% 0;
+}
+
+/* line 55, ../sass/_main-page.scss */
+.main-signup-form {
+  display: inline-block;
+  display: none;
+}
+
+/* line 68, ../sass/_main-page.scss */
+.main-testimonial {
+  list-style-type: none;
+}
+
+/* line 72, ../sass/_main-page.scss */
+.main-testimonial li {
+  width: 33%;
+  display: inline-block;
+}
+
+/* line 8, ../sass/_shared.scss */
+body {
+  font-family: 'Overlock', sans-serif;
+  background: #919191;
+  color: white;
+}
+
+/* line 14, ../sass/_shared.scss */
+.top-nav, footer {
+  background: #383838;
+}
+
+/* line 18, ../sass/_shared.scss */
+button {
+  background: #ec9536;
+  color: #fff;
+  border: 0;
+}
+
+/* line 24, ../sass/_shared.scss */
+a {
+  color: #ffa8a8;
+}
+
+/* line 28, ../sass/_shared.scss */
+a:hover {
+  color: #ff7575;
+}
+
+/* line 32, ../sass/_shared.scss */
+.main-block:not(:last-child) {
+  border-bottom: 1px solid #848484;
+}
+
+/* line 36, ../sass/_shared.scss */
+h1, h2 {
+  color: #a81616;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+/* line 42, ../sass/_shared.scss */
+h3, h4 {
+  color: #ffc2c2;
+}

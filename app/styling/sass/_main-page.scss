@@ -1,0 +1,81 @@
+.home-page header {
+	width: 100%;
+	text-align: center;
+	padding: 0 0 1% 0;
+}
+
+.main-header h1 {
+	margin: 1% 0 0 0;
+	font-size: 2.5em;
+}
+
+.main-header p {
+	margin: 0 0 2% 0;
+	font-size: 0.95em;
+}
+
+#main-tagline {
+	color: pink;
+}
+
+#main-explanation {
+	font-size: 1.2em;
+}
+
+.benefits-list {
+	width: 90%;
+	padding: 3% 3% 3% 7%;
+	display: block;
+	float: left;
+}
+
+.benefits-list ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.benefits-list li {
+	float: left;
+	display: inline-block;
+	width: 20%;
+	margin: 0 2.5%;
+}
+
+.benefits-list h4, .benefits-list p {
+	display: inline-block;
+	width: 100%;
+	margin: 1% 0;
+}
+
+.benefits-list h4 {
+	font-size: 1.25em;
+}
+
+.main-signup-form {
+	display: inline-block;
+	width: 50%;
+	margin: 1% 25%;
+	padding: 2% 0;
+}
+
+.main-email {
+	width: 70%;
+	padding: 1%;
+}
+
+.main-submit {
+	width: 18%;
+	padding: 1.2%;
+	margin-left: 2%;
+}
+
+.main-testimonial {
+	list-style-type: none;
+}
+
+.main-testimonial li {
+	width: 20%;
+	margin-left: 9%;
+	display: inline-block;
+}

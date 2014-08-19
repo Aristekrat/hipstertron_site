@@ -1,0 +1,19 @@
+<div class="calendar-page">
+
+<header class="calendar-header">
+	<h1>Calendar - Denver</h1>
+	<input type="text" class="calendar-search" ng-model="filterListings" placeholder=" Search Concert Listings" />
+	<p>This is a complete listing of all upcoming shows in Denver / Boulder</p>
+</header>
+
+<section class="calendar-main-block">
+	<ul>
+	  <li ng-repeat="concert in concertListings | filter:filterListings track by $index">
+	    <span>{{concert.band}}</span>
+	    <span>{{concert.date}}</span>
+	    <span>{{concert.venue}}</span>
+	  </li>
+	</ul>
+</section>
+
+</div>

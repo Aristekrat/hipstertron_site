@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hipster Tron | Find Concerts in Denver, Concert Finder, Concerts in Denver</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="styling/css/app.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Overlock|Hammersmith+One' rel='stylesheet' type='text/css'>
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!--[if lt IE 9]>
+  <h1 class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h1>
+  <![endif]-->
+</head>
+<body>
+  <nav class="top-nav">
+      <a href="#/">Home</a>
+      <a href="#/about">About HipsterTron</a>
+      <a href="#/calendar">Calendar</a>
+      <small>Hipstertron is exclusively available for the Denver / Boulder area.</small>
+  </nav>
+
+  <div ng-view></div>
+
+  <footer>
+    <div class="footer-inspiration">
+        <h4>Hipster Tron is Dedicated to...</h4>
+        <p>The reclusive band Neutral Milk Hotel, who unexpectedly reunited, toured Denver, and the author of this application totally missed it! Never again.</p>
+    </div>
+    <a href="#" class="footer-privacy-policy">Privacy Policy</a>
+  </footer>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

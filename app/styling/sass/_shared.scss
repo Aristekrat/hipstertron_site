@@ -1,0 +1,42 @@
+$text: #fff; //#fff;
+$main-header: #FA6464;
+$minor-header: pink; //#FFC2C2;
+$background: #555; //#919191; //#3F3630; //#443B35; //#D1B9B9;
+
+body {
+	font-family: 'Overlock', sans-serif;
+	background: $background;
+	color: $text;
+}
+
+.top-nav, footer {
+	background: darken($background, 5%)
+}
+
+button {
+	background: $main-header;
+	color: #fff;
+	border: 0;
+}
+
+a {
+	color: darken($minor-header, 5%)
+}
+
+a:hover {
+	color: darken($minor-header, 15%)
+}
+
+.main-block:not(:last-child) {
+	border-bottom: 1px solid darken($background, 5%);
+}
+
+h1, h2 {
+	color: $main-header;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+h3, h4 {
+	font-family: 'Hammersmith One', sans-serif;
+	color: $minor-header;
+}
