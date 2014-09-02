@@ -5,7 +5,7 @@ $background: #555; //#919191; //#3F3630; //#443B35; //#D1B9B9;
 
 body {
 	font-family: 'Overlock', sans-serif;
-	background: $background;
+	background: darken($background, 5%);
 	color: $text;
 }
 

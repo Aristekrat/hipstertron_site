@@ -1,0 +1,59 @@
+@media (min-width: 600px) and (max-width: 1040px) {
+
+/***Main Page***/
+.benefits-list {
+	padding: 3% 1%;
+	width: 98%;
+}
+
+.main-signup-form {
+	width: 64%;
+	margin: 1% 16%;
+}
+
+.main-submit {
+	padding: 1.8%;
+	width: 20%;
+}
+
+.main-testimonial li {
+	width: 31%;
+	margin-left: 1%;
+}
+
+/*****About Page*****/
+.about-page h1, .about-page h3 {
+	margin-left: 5%;
+}
+
+.about-founder-figure {
+	float: left;
+	width: 48%;
+	margin-left: 2%;
+}
+
+.about-founder-figure img {
+	width: 100%;
+}
+
+.about-right-block {
+	width: 55%;
+	margin-left: -10%;
+	float: left;
+}
+
+.about-right-block p {
+	line-height: 1.6em;
+	font-size: 1.05em;
+}
+
+/*****Privacy Policy*****/
+.privacy-policy-page {
+	width: 96%;
+	padding: 1% 2%;
+	margin: 0;
+}
+
+
+
+}

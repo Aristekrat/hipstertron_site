@@ -32,16 +32,19 @@
       </li>
     </ul>
   </section>
-  <section class="main-block">
+  <section class="main-block signup-block">
     <form class="main-signup-form">
-        <input type="email" class="main-email" ng-model="userEmail" placeholder="Enter Your Email to Sign Up" />
-        <button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
-        <p ng-hide="!signedUp">Check your email</p>
+        <span ng-hide="signedUp">
+          <input type="email" class="main-email" ng-model="userEmail" placeholder="Enter Your Email to Sign Up" />
+          <button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
+          <p>Hipster Tron is exclusively available for the Denver / Boulder area.</p>
+        </span>
+        <p ng-hide="!signedUp">Thanks! Check your email</p>
     </form>
     <ul class="main-testimonial">
-      <li>"OMG I love Hipstertron!" -Some Guy</li>
-      <li>"OMG I love Hipstertron!" -Some Guy</li>
-      <li>"OMG I love Hipstertron!" -Some Guy</li>
+      <li>"OMG I love Hipstertron!" <br/>-Some Guy</li>
+      <li>"OMG I love Hipstertron!" <br/>-Some Guy</li>
+      <li>"OMG I love Hipstertron!" <br/>-Some Guy</li>
     </ul>
   </section>
 </div>

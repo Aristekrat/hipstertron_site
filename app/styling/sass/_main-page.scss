@@ -1,7 +1,11 @@
+.main-block {
+	background: #555;
+}
+
 .home-page header {
 	width: 100%;
 	text-align: center;
-	padding: 0 0 1% 0;
+	padding: 1% 0 1% 0;
 }
 
 .main-header h1 {
@@ -78,4 +82,8 @@
 	width: 20%;
 	margin-left: 9%;
 	display: inline-block;
+}
+
+.signup-block {
+	padding: 0 0 2% 0;
 }

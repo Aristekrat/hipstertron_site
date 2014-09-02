@@ -1,7 +1,7 @@
 /* line 6, ../sass/_shared.scss */
 body {
   font-family: 'Overlock', sans-serif;
-  background: #555555;
+  background: #484848;
   color: white;
 }
 
@@ -47,9 +47,9 @@ h3, h4 {
 /* line 1, ../sass/_footer.scss */
 footer {
   padding-top: 0.5%;
-  position: fixed;
   bottom: 0;
   width: 100%;
+  float: left;
 }
 
 /* line 8, ../sass/_footer.scss */
@@ -96,35 +96,40 @@ footer {
 }
 
 /* line 1, ../sass/_main-page.scss */
+.main-block {
+  background: #555;
+}
+
+/* line 5, ../sass/_main-page.scss */
 .home-page header {
   width: 100%;
   text-align: center;
-  padding: 0 0 1% 0;
+  padding: 1% 0 1% 0;
 }
 
-/* line 7, ../sass/_main-page.scss */
+/* line 11, ../sass/_main-page.scss */
 .main-header h1 {
   margin: 1% 0 0 0;
   font-size: 2.5em;
 }
 
-/* line 12, ../sass/_main-page.scss */
+/* line 16, ../sass/_main-page.scss */
 .main-header p {
   margin: 0 0 2% 0;
   font-size: 0.95em;
 }
 
-/* line 17, ../sass/_main-page.scss */
+/* line 21, ../sass/_main-page.scss */
 #main-tagline {
   color: pink;
 }
 
-/* line 21, ../sass/_main-page.scss */
+/* line 25, ../sass/_main-page.scss */
 #main-explanation {
   font-size: 1.2em;
 }
 
-/* line 25, ../sass/_main-page.scss */
+/* line 29, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
@@ -132,14 +137,14 @@ footer {
   float: left;
 }
 
-/* line 32, ../sass/_main-page.scss */
+/* line 36, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 38, ../sass/_main-page.scss */
+/* line 42, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
@@ -147,19 +152,19 @@ footer {
   margin: 0 2.5%;
 }
 
-/* line 45, ../sass/_main-page.scss */
+/* line 49, ../sass/_main-page.scss */
 .benefits-list h4, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
 
-/* line 51, ../sass/_main-page.scss */
+/* line 55, ../sass/_main-page.scss */
 .benefits-list h4 {
   font-size: 1.25em;
 }
 
-/* line 55, ../sass/_main-page.scss */
+/* line 59, ../sass/_main-page.scss */
 .main-signup-form {
   display: inline-block;
   width: 50%;
@@ -167,29 +172,34 @@ footer {
   padding: 2% 0;
 }
 
-/* line 62, ../sass/_main-page.scss */
+/* line 66, ../sass/_main-page.scss */
 .main-email {
   width: 70%;
   padding: 1%;
 }
 
-/* line 67, ../sass/_main-page.scss */
+/* line 71, ../sass/_main-page.scss */
 .main-submit {
   width: 18%;
   padding: 1.2%;
   margin-left: 2%;
 }
 
-/* line 73, ../sass/_main-page.scss */
+/* line 77, ../sass/_main-page.scss */
 .main-testimonial {
   list-style-type: none;
 }
 
-/* line 77, ../sass/_main-page.scss */
+/* line 81, ../sass/_main-page.scss */
 .main-testimonial li {
   width: 20%;
   margin-left: 9%;
   display: inline-block;
+}
+
+/* line 87, ../sass/_main-page.scss */
+.signup-block {
+  padding: 0 0 2% 0;
 }
 
 /* line 1, ../sass/_about.scss */
@@ -212,7 +222,7 @@ footer {
 /* line 15, ../sass/_about.scss */
 .about-right-block {
   width: 34%;
-  margin-left: 2%;
+  margin-left: -8%;
   float: left;
 }
 
@@ -250,4 +260,159 @@ footer {
   width: 100%;
   display: block;
   float: left;
+}
+
+/* line 1, ../sass/_privacy-policy.scss */
+.privacy-policy-page {
+  display: block;
+  padding: 1% 0 0 3%;
+}
+
+@media (min-width: 600px) and (max-width: 1040px) {
+  /***Main Page***/
+  /* line 4, ../sass/_tablet.scss */
+  .benefits-list {
+    padding: 3% 1%;
+    width: 98%;
+  }
+
+  /* line 9, ../sass/_tablet.scss */
+  .main-signup-form {
+    width: 64%;
+    margin: 1% 16%;
+  }
+
+  /* line 14, ../sass/_tablet.scss */
+  .main-submit {
+    padding: 1.8%;
+    width: 20%;
+  }
+
+  /* line 19, ../sass/_tablet.scss */
+  .main-testimonial li {
+    width: 31%;
+    margin-left: 1%;
+  }
+
+  /*****About Page*****/
+  /* line 25, ../sass/_tablet.scss */
+  .about-page h1, .about-page h3 {
+    margin-left: 5%;
+  }
+
+  /* line 29, ../sass/_tablet.scss */
+  .about-founder-figure {
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+  }
+
+  /* line 35, ../sass/_tablet.scss */
+  .about-founder-figure img {
+    width: 100%;
+  }
+
+  /* line 39, ../sass/_tablet.scss */
+  .about-right-block {
+    width: 55%;
+    margin-left: -10%;
+    float: left;
+  }
+
+  /* line 45, ../sass/_tablet.scss */
+  .about-right-block p {
+    line-height: 1.6em;
+    font-size: 1.05em;
+  }
+
+  /*****Privacy Policy*****/
+  /* line 51, ../sass/_tablet.scss */
+  .privacy-policy-page {
+    width: 96%;
+    padding: 1% 2%;
+    margin: 0;
+  }
+}
+@media (max-width: 599px) {
+  /* line 3, ../sass/_phones.scss */
+  .top-nav {
+    padding: 3% 1%;
+  }
+
+  /* line 7, ../sass/_phones.scss */
+  .top-nav a {
+    margin-left: 2%;
+  }
+
+  /* line 11, ../sass/_phones.scss */
+  .top-nav small {
+    display: none;
+  }
+
+  /* line 15, ../sass/_phones.scss */
+  .home-page header {
+    padding: 2% 0;
+  }
+
+  /* line 19, ../sass/_phones.scss */
+  .benefits-list {
+    padding: 3% 1%;
+    width: 98%;
+  }
+
+  /* line 24, ../sass/_phones.scss */
+  .benefits-list li {
+    width: 98%;
+    margin: 1% 1%;
+  }
+
+  /* line 29, ../sass/_phones.scss */
+  .main-signup-form {
+    width: 90%;
+    margin: 1% 5%;
+  }
+
+  /* line 34, ../sass/_phones.scss */
+  .main-submit {
+    padding: 1.8%;
+    width: 20%;
+  }
+
+  /* line 39, ../sass/_phones.scss */
+  .main-testimonial {
+    padding: 1% 0;
+  }
+
+  /* line 43, ../sass/_phones.scss */
+  .main-testimonial li {
+    width: 31.5%;
+    margin-left: 1%;
+  }
+
+  /* line 48, ../sass/_phones.scss */
+  .footer-inspiration {
+    width: 70%;
+    padding: 1%;
+  }
+
+  /*****About Page*****/
+  /* line 55, ../sass/_phones.scss */
+  .about-right-block {
+    width: 90%;
+    padding: 1% 5%;
+    margin: 0;
+  }
+
+  /* line 61, ../sass/_phones.scss */
+  .about-founder-figure {
+    width: 98%;
+  }
+
+  /*****Privacy Policy*****/
+  /* line 66, ../sass/_phones.scss */
+  .privacy-policy-page {
+    width: 96%;
+    padding: 1% 2%;
+    margin: 0;
+  }
 }

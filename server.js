@@ -2,8 +2,7 @@
 
 var express = require('express'),
     path = require('path'),
-    fs = require('fs'),
-    mysql = require('mysql');
+    fs = require('fs');
 /**
  * Main application file
  */
@@ -12,31 +11,6 @@ var express = require('express'),
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var config = require('./lib/config/config');
-
-
-/*
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '412909AB'
-});
-
-connection.connect(function(err) {
-    if (err) {
-        console.log(err)
-    }
-});
-
-Probably worked? 
-var post = {
-    id: 1,
-    title: 'Hello MySQL'
-};
-var query = connection.query('INSERT INTO posts SET ?', post, function(err, result) {
-    // Neat!
-});
-console.log(query.sql);
-*/
 
 // Setup Express
 var app = express();
@@ -47,20 +21,6 @@ require('./lib/routes')(app);
 app.listen(config.port, config.ip, function() {
     console.log('Express server listening on %s:%d, in %s mode', config.ip, config.port, app.get('env'));
 })
-/*
-db
-	.sequelize
-	.sync({force: true})
-	.complete(function(err) {
-		if (err) {
-			throw err[0]
-		} else {
-			app.listen(config.port, config.ip, function () {
-  				console.log('Express server listening on %s:%d, in %s mode', config.ip, config.port, app.get('env'));
-			})
-		}
-	});
-*/
 
 // Expose app
 exports = module.exports = app;
