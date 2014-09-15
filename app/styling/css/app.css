@@ -7,7 +7,7 @@ body {
 
 /* line 12, ../sass/_shared.scss */
 .top-nav, footer {
-  background: #484848;
+  background: #3b3b3b;
 }
 
 /* line 16, ../sass/_shared.scss */
@@ -29,7 +29,7 @@ a:hover {
 
 /* line 30, ../sass/_shared.scss */
 .main-block:not(:last-child) {
-  border-bottom: 1px solid #484848;
+  border-bottom: 1px solid #3b3b3b;
 }
 
 /* line 34, ../sass/_shared.scss */
@@ -101,35 +101,37 @@ footer {
 }
 
 /* line 5, ../sass/_main-page.scss */
-.home-page header {
+.main-header {
   width: 100%;
   text-align: center;
   padding: 1% 0 1% 0;
+  background-repeat: no-repeat;
+  background-position: 73% 24%;
 }
 
-/* line 11, ../sass/_main-page.scss */
+/* line 14, ../sass/_main-page.scss */
 .main-header h1 {
   margin: 1% 0 0 0;
   font-size: 2.5em;
 }
 
-/* line 16, ../sass/_main-page.scss */
+/* line 19, ../sass/_main-page.scss */
 .main-header p {
   margin: 0 0 2% 0;
   font-size: 0.95em;
 }
 
-/* line 21, ../sass/_main-page.scss */
+/* line 24, ../sass/_main-page.scss */
 #main-tagline {
   color: pink;
 }
 
-/* line 25, ../sass/_main-page.scss */
+/* line 28, ../sass/_main-page.scss */
 #main-explanation {
   font-size: 1.2em;
 }
 
-/* line 29, ../sass/_main-page.scss */
+/* line 32, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
@@ -137,14 +139,14 @@ footer {
   float: left;
 }
 
-/* line 36, ../sass/_main-page.scss */
+/* line 39, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 42, ../sass/_main-page.scss */
+/* line 45, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
@@ -152,19 +154,45 @@ footer {
   margin: 0 2.5%;
 }
 
-/* line 49, ../sass/_main-page.scss */
+/* line 52, ../sass/_main-page.scss */
 .benefits-list h4, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
 
-/* line 55, ../sass/_main-page.scss */
+/* line 58, ../sass/_main-page.scss */
+.benefits-list h4 {
+  margin-left: 5%;
+}
+
+/* line 62, ../sass/_main-page.scss */
+.main-image-container {
+  width: 100%;
+  display: block;
+  float: left;
+  height: 12em;
+  padding: 3% 0;
+}
+
+/* line 70, ../sass/_main-page.scss */
+.main-image-container img {
+  display: inline-block;
+  float: left;
+  width: 42%;
+}
+
+/* line 76, ../sass/_main-page.scss */
+#ht-free {
+  width: 47%;
+}
+
+/* line 80, ../sass/_main-page.scss */
 .benefits-list h4 {
   font-size: 1.25em;
 }
 
-/* line 59, ../sass/_main-page.scss */
+/* line 84, ../sass/_main-page.scss */
 .main-signup-form {
   display: inline-block;
   width: 50%;
@@ -172,32 +200,32 @@ footer {
   padding: 2% 0;
 }
 
-/* line 66, ../sass/_main-page.scss */
+/* line 91, ../sass/_main-page.scss */
 .main-email {
   width: 70%;
   padding: 1%;
 }
 
-/* line 71, ../sass/_main-page.scss */
+/* line 96, ../sass/_main-page.scss */
 .main-submit {
   width: 18%;
   padding: 1.2%;
   margin-left: 2%;
 }
 
-/* line 77, ../sass/_main-page.scss */
+/* line 102, ../sass/_main-page.scss */
 .main-testimonial {
   list-style-type: none;
 }
 
-/* line 81, ../sass/_main-page.scss */
+/* line 106, ../sass/_main-page.scss */
 .main-testimonial li {
   width: 20%;
   margin-left: 9%;
   display: inline-block;
 }
 
-/* line 87, ../sass/_main-page.scss */
+/* line 112, ../sass/_main-page.scss */
 .signup-block {
   padding: 0 0 2% 0;
 }
@@ -240,26 +268,72 @@ footer {
   margin-left: 2%;
 }
 
-/* line 12, ../sass/_calendar.scss */
-.calendar-search {
-  float: left;
-  width: 16%;
-  margin: 1% 1% 0 0;
+/*
+.calendar-helper-block {
+	width: 80%;
+	margin: 1% 10%;
+	display: block;
 }
 
-/* line 18, ../sass/_calendar.scss */
-.calendar-header p {
-  width: 98%;
-  margin-left: 2%;
-  display: block;
-  float: left;
+.calendar-helper-block p {
+	width: 48%;
+	margin-left: 2%;
+	display: inline-block;
+	float: left;
 }
-
-/* line 25, ../sass/_calendar.scss */
+*/
+/* line 27, ../sass/_calendar.scss */
 .calendar-main-block {
   width: 100%;
   display: block;
   float: left;
+}
+
+/* line 33, ../sass/_calendar.scss */
+.calendar-main-block p {
+  display: inline-block;
+  margin-left: 15%;
+}
+
+/* line 38, ../sass/_calendar.scss */
+.calendar-search {
+  float: right;
+  width: 16%;
+  margin: 1% 15% 0 0;
+}
+
+/* line 44, ../sass/_calendar.scss */
+.calendar {
+  width: 70%;
+  margin: 1% 15% 5% 15%;
+  border: 1px solid #2f2f2f;
+}
+
+/* line 50, ../sass/_calendar.scss */
+.calendar-header {
+  background: #fa6464;
+}
+
+/* line 54, ../sass/_calendar.scss */
+.calendar-header tr th {
+  padding: 1%;
+  font-size: 1.2em;
+}
+
+/* line 59, ../sass/_calendar.scss */
+.calendar-row {
+  color: pink;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+/* line 64, ../sass/_calendar.scss */
+.calendar-row:nth-child(odd) {
+  background: #2f2f2f;
+}
+
+/* line 68, ../sass/_calendar.scss */
+.calendar-row td {
+  padding: 1.5%;
 }
 
 /* line 1, ../sass/_privacy-policy.scss */

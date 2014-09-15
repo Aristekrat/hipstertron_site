@@ -2,10 +2,13 @@
 	background: #555;
 }
 
-.home-page header {
+.main-header {
 	width: 100%;
 	text-align: center;
 	padding: 1% 0 1% 0;
+	//background-image: url("../../img/hipstertron_robot_mark1.png");
+	background-repeat: no-repeat;
+	background-position: 73% 24%;
 }
 
 .main-header h1 {
@@ -50,6 +53,28 @@
 	display: inline-block;
 	width: 100%;
 	margin: 1% 0;
+}
+
+.benefits-list h4 {
+	margin-left: 5%;
+}
+
+.main-image-container {
+	width: 100%;
+	display: block;
+	float: left;
+	height: 12em;
+	padding: 3% 0;
+}
+
+.main-image-container img {
+	display: inline-block;
+	float: left;
+	width: 42%;
+}
+
+#ht-free {
+	width: 47%;
 }
 
 .benefits-list h4 {

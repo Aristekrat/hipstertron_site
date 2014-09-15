@@ -2,18 +2,27 @@
 
 <header class="calendar-header">
 	<h1>Calendar - Denver</h1>
-	<input type="text" class="calendar-search" ng-model="filterListings" placeholder=" Search Concert Listings" />
-	<p>This is a complete listing of all upcoming shows in Denver / Boulder</p>
 </header>
 
 <section class="calendar-main-block">
-	<ul>
-	  <li ng-repeat="concert in concertListings | filter:filterListings track by $index">
-	    <span>{{concert.band}}</span>
-	    <span>{{concert.date}}</span>
-	    <span>{{concert.venue}}</span>
-	  </li>
-	</ul>
+	<p>This is a complete listing of all upcoming shows in Denver / Boulder</p>
+	<!--<button ng-click="touchPy()">Touch the Py</button>-->
+	<input type="text" class="calendar-search" ng-model="filterListings" placeholder=" Search Concert Listings" />
+	<table class="calendar">	
+		<thead class="calendar-header">
+			<th>Band</th>
+			<th>Venue</th>
+			<th>Date</th>
+		</thead>
+		<tbody>
+		  	<tr ng-repeat="concert in concertListings | filter:filterListings track by $index" class="calendar-row">
+		    	<td>{{concert.band}}</td>
+		    	<td>{{concert.venue}}</td>
+		    	<td>{{concert.date}}</td>
+			</tr>
+		</tbody>
+	</table>
+
 </section>
 
 </div>

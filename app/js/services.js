@@ -2,9 +2,6 @@
 
 /* Services */
 
-
-// Demonstrate how to register services
-// In this case it is a simple value service.
 angular.module('hipstertron.services', [])
 
 .factory('submitEmailService', function($http) {
@@ -14,7 +11,7 @@ angular.module('hipstertron.services', [])
                 "email": email
             })
                 .then(function(data) {
-                    return callback(data)
+                    console.log(data)
                 });
         }
         /*
@@ -33,4 +30,16 @@ angular.module('hipstertron.services', [])
 			},
 		*/
     }
-});
+})
+
+.factory('getConcertsService', function($http) {
+    return {
+        touchPy: function(callback) {
+            $http.get("http://localhost:5000/touchme")
+                .then(function(data) {
+                    console.log("Reached this block!")
+                    return callback(data)
+                });
+        }
+    }
+})
