@@ -4,41 +4,49 @@
 
 angular.module('hipstertron.services', [])
 
-.factory('submitEmailService', function($http) {
+.factory('getEnvironmentService', function($http) {
     return {
-        submitEmail: function(email) {
-            $http.post("/sendemail", {
-                "email": email
+        getEnv: function() {
+            $http.get("/getEnv", {
+                cache: true
             })
-                .then(function(data) {
-                    console.log(data)
+                .then(function(response) {
+                    console.log("Reached here")
+                    if (response.data === "development") {
+                        console.log("Then here")
+                        return "http://localhost:8000"
+                    } else if (response.data === "production") {
+                        return "http://hipstertron-data.herokuapp.com"
+                    }
                 });
         }
-        /*
-		    $http.get(configService.getApi() + '/rewards', {
-		        cache: true,
-		        headers: {
-		            'x-auth-token': sessionService.getToken()
-		        }
-		    })
-		        .success(function (data) {
-		            return callback(data);
-		        })
-		        .error(function (data) {
-		            return callback(data);
-		        });
-			},
-		*/
     }
 })
 
-.factory('getConcertsService', function($http) {
+
+
+.factory('submitEmailService', function($http, getEnvironmentService) {
     return {
-        touchPy: function(callback) {
-            $http.get("http://localhost:5000/touchme")
-                .then(function(data) {
-                    console.log("Reached this block!")
-                    return callback(data)
+        submitEmail: function(email, callback) {
+            console.log(email)
+            $http.post("http://localhost:8000" + "/sendEmail", {
+                "email": email
+            })
+                .then(function(response) {
+                    return callback(response)
+                });
+        }
+    }
+})
+
+.factory('getConcertsService', function($http, $timeout, getEnvironmentService) {
+    return {
+        getConcerts: function(callback) {
+            $http.get("http://localhost:8000" + "/getConcerts", {
+                cache: true
+            })
+                .then(function(response) {
+                    return callback(response)
                 });
         }
     }

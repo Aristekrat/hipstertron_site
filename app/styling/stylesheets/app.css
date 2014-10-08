@@ -1,9 +1,56 @@
+/* line 6, ../sass/_shared.scss */
+body {
+  font-family: 'Overlock', sans-serif;
+  background: #484848;
+  color: white;
+}
+
+/* line 12, ../sass/_shared.scss */
+.top-nav, footer {
+  background: #3b3b3b;
+}
+
+/* line 16, ../sass/_shared.scss */
+button {
+  background: #fa6464;
+  color: #fff;
+  border: 0;
+}
+
+/* line 22, ../sass/_shared.scss */
+a {
+  color: #ffa6b6;
+  text-decoration: none;
+}
+
+/* line 27, ../sass/_shared.scss */
+a:hover {
+  color: #ff738c;
+}
+
+/* line 31, ../sass/_shared.scss */
+.main-block:not(:last-child) {
+  border-bottom: 1px solid #3b3b3b;
+}
+
+/* line 35, ../sass/_shared.scss */
+h1, h2 {
+  color: #fa6464;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+/* line 40, ../sass/_shared.scss */
+h3, h4 {
+  font-family: 'Hammersmith One', sans-serif;
+  color: pink;
+}
+
 /* line 1, ../sass/_footer.scss */
 footer {
   padding-top: 0.5%;
-  position: fixed;
   bottom: 0;
   width: 100%;
+  float: left;
 }
 
 /* line 8, ../sass/_footer.scss */
@@ -50,40 +97,53 @@ footer {
 }
 
 /* line 1, ../sass/_main-page.scss */
-* {
-  display: none;
+.main-block {
+  background: #555;
 }
 
 /* line 5, ../sass/_main-page.scss */
-.home-page header {
+.main-header {
   width: 100%;
   text-align: center;
-  padding: 0 0 1% 0;
+  padding: 1% 0 1% 0;
+  /*background-image: url("../../img/RoboHipster.png");
+  background-repeat: no-repeat;
+  background-position: 23% 24%;
+  background-size: 15%;*/
+  z-index: 100;
+  position: relative;
 }
 
-/* line 11, ../sass/_main-page.scss */
+/* line 17, ../sass/_main-page.scss */
 .main-header h1 {
   margin: 1% 0 0 0;
   font-size: 2.5em;
 }
 
-/* line 16, ../sass/_main-page.scss */
+/* line 22, ../sass/_main-page.scss */
 .main-header p {
   margin: 0 0 2% 0;
   font-size: 0.95em;
 }
 
-/* line 21, ../sass/_main-page.scss */
+/* line 27, ../sass/_main-page.scss */
 #main-tagline {
-  opacity: .75;
+  color: pink;
 }
 
-/* line 25, ../sass/_main-page.scss */
+/* line 31, ../sass/_main-page.scss */
 #main-explanation {
   font-size: 1.2em;
+  /*
+  span {
+  	text-shadow: 1px 1px 1px darken($background, 10%);
+  	font-weight: bold;
+  	font-size: 1.1em;
+  }
+  */
 }
 
-/* line 29, ../sass/_main-page.scss */
+/* line 42, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
@@ -91,14 +151,14 @@ footer {
   float: left;
 }
 
-/* line 36, ../sass/_main-page.scss */
+/* line 49, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 42, ../sass/_main-page.scss */
+/* line 55, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
@@ -106,71 +166,355 @@ footer {
   margin: 0 2.5%;
 }
 
-/* line 49, ../sass/_main-page.scss */
+/* line 62, ../sass/_main-page.scss */
 .benefits-list h4, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
 
-/* line 55, ../sass/_main-page.scss */
-.main-signup-form {
-  display: inline-block;
-  display: none;
+/* line 68, ../sass/_main-page.scss */
+.benefits-list h4 {
+  margin-left: 5%;
 }
 
-/* line 68, ../sass/_main-page.scss */
+/* line 72, ../sass/_main-page.scss */
+.main-image-container {
+  width: 100%;
+  display: block;
+  float: left;
+  height: 12em;
+  padding: 3% 0;
+}
+
+/* line 80, ../sass/_main-page.scss */
+.main-image-container img {
+  display: inline-block;
+  float: left;
+  width: 42%;
+}
+
+/* line 86, ../sass/_main-page.scss */
+#ht-free {
+  width: 47%;
+}
+
+/* line 90, ../sass/_main-page.scss */
+#ht-never-miss {
+  width: 100%;
+  margin-top: -9em;
+}
+
+/* line 95, ../sass/_main-page.scss */
+#never-miss-header {
+  color: #fa6464;
+  text-shadow: 1px 1px 1px #a60505;
+}
+
+/* line 100, ../sass/_main-page.scss */
+.benefits-list h4 {
+  font-size: 1.25em;
+}
+
+/* line 104, ../sass/_main-page.scss */
+.main-signup-form {
+  display: inline-block;
+  width: 50%;
+  margin: 0 25%;
+  padding: 1% 0 0 0;
+}
+
+/* line 111, ../sass/_main-page.scss */
+.main-email {
+  width: 70%;
+  padding: 1%;
+}
+
+/* line 116, ../sass/_main-page.scss */
+.main-submit {
+  width: 18%;
+  padding: 1.2%;
+  margin-left: 2%;
+}
+
+/* line 122, ../sass/_main-page.scss */
 .main-testimonial {
   list-style-type: none;
 }
 
-/* line 72, ../sass/_main-page.scss */
+/* line 126, ../sass/_main-page.scss */
 .main-testimonial li {
-  width: 33%;
+  width: 10%;
+  margin-left: 12%;
   display: inline-block;
 }
 
-/* line 8, ../sass/_shared.scss */
-body {
-  font-family: 'Overlock', sans-serif;
-  background: #919191;
-  color: white;
+/* line 132, ../sass/_main-page.scss */
+.signup-block {
+  padding: 0 0 2% 0;
+  background-image: url("../../img/RoboHipster.png");
+  background-repeat: no-repeat;
+  background-position: 85% 110%;
+  background-size: 15%;
 }
 
-/* line 14, ../sass/_shared.scss */
-.top-nav, footer {
-  background: #383838;
+/* line 140, ../sass/_main-page.scss */
+.main-launch-block {
+  width: 40%;
+  margin: 0 0 0 25%;
 }
 
-/* line 18, ../sass/_shared.scss */
-button {
-  background: #ec9536;
-  color: #fff;
-  border: 0;
+/* line 1, ../sass/_about.scss */
+.about-page h1, .about-page h3 {
+  margin-left: 2%;
 }
 
-/* line 24, ../sass/_shared.scss */
-a {
-  color: #ffa8a8;
+/* line 5, ../sass/_about.scss */
+.about-founder-figure {
+  float: left;
+  width: 38%;
+  margin-left: 2%;
 }
 
-/* line 28, ../sass/_shared.scss */
-a:hover {
-  color: #ff7575;
+/* line 11, ../sass/_about.scss */
+.about-founder-figure img {
+  width: 100%;
 }
 
-/* line 32, ../sass/_shared.scss */
-.main-block:not(:last-child) {
-  border-bottom: 1px solid #848484;
+/* line 15, ../sass/_about.scss */
+.about-right-block {
+  width: 20%;
+  margin-left: -8%;
+  float: left;
 }
 
-/* line 36, ../sass/_shared.scss */
-h1, h2 {
-  color: #a81616;
-  font-family: 'Hammersmith One', sans-serif;
+/* line 21, ../sass/_about.scss */
+.about-right-block p {
+  line-height: 1.8em;
+  font-size: 1.05em;
 }
 
-/* line 42, ../sass/_shared.scss */
-h3, h4 {
-  color: #ffc2c2;
+/* line 5, ../sass/_calendar.scss */
+.calendar-header h1 {
+  width: 78%;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
+
+/* line 12, ../sass/_calendar.scss */
+.calendar-main-block {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+/* line 18, ../sass/_calendar.scss */
+.calendar-main-block p {
+  display: inline-block;
+  margin-left: 15%;
+}
+
+/* line 23, ../sass/_calendar.scss */
+.calendar-search {
+  float: right;
+  width: 16%;
+  margin: 1% 15% 0 0;
+}
+
+/* line 29, ../sass/_calendar.scss */
+.calendar {
+  width: 70%;
+  margin: 1% 15% 5% 15%;
+  border: 1px solid #888;
+}
+
+/* line 35, ../sass/_calendar.scss */
+.calendar-header {
+  background: #fa6464;
+}
+
+/* line 39, ../sass/_calendar.scss */
+.calendar-header tr th {
+  padding: 1%;
+  font-size: 1.2em;
+  width: 33%;
+}
+
+/* line 45, ../sass/_calendar.scss */
+.calendar-row {
+  color: pink;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+/* line 50, ../sass/_calendar.scss */
+.calendar-row:nth-child(odd) {
+  background: #2f2f2f;
+}
+
+/* line 54, ../sass/_calendar.scss */
+.calendar-row td {
+  padding: 1.5%;
+  border-right: 1px solid #888;
+}
+
+/* line 1, ../sass/_privacy-policy.scss */
+.privacy-policy-page {
+  display: block;
+  padding: 1% 0 0 3%;
+}
+
+@media (min-width: 600px) and (max-width: 1040px) {
+  /***Main Page***/
+  /* line 4, ../sass/_tablet.scss */
+  .benefits-list {
+    padding: 3% 1%;
+    width: 98%;
+    display: none;
+  }
+
+  /* line 10, ../sass/_tablet.scss */
+  .main-signup-form {
+    width: 64%;
+    margin: 1% 16%;
+  }
+
+  /* line 15, ../sass/_tablet.scss */
+  .main-submit {
+    padding: 1.8%;
+    width: 20%;
+    display: none;
+  }
+
+  /* .main-testimonial li {
+  	width: 31%;
+  	margin-left: 1%;
+  } */
+  /* line 26, ../sass/_tablet.scss */
+  .main-launch-block {
+    width: 55%;
+    margin: 0 0 0 16%;
+  }
+
+  /*****About Page*****/
+  /* line 32, ../sass/_tablet.scss */
+  .about-page h1, .about-page h3 {
+    margin-left: 5%;
+  }
+
+  /* line 36, ../sass/_tablet.scss */
+  .about-founder-figure {
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+  }
+
+  /* line 42, ../sass/_tablet.scss */
+  .about-founder-figure img {
+    width: 100%;
+  }
+
+  /* line 46, ../sass/_tablet.scss */
+  .about-right-block {
+    width: 55%;
+    margin-left: -10%;
+    float: left;
+  }
+
+  /* line 52, ../sass/_tablet.scss */
+  .about-right-block p {
+    line-height: 1.6em;
+    font-size: 1.05em;
+  }
+
+  /*****Privacy Policy*****/
+  /* line 58, ../sass/_tablet.scss */
+  .privacy-policy-page {
+    width: 96%;
+    padding: 1% 2%;
+    margin: 0;
+  }
+}
+@media (max-width: 599px) {
+  /* line 3, ../sass/_phones.scss */
+  .top-nav {
+    padding: 3% 1%;
+  }
+
+  /* line 7, ../sass/_phones.scss */
+  .top-nav a {
+    margin-left: 2%;
+  }
+
+  /* line 11, ../sass/_phones.scss */
+  .top-nav small {
+    display: none;
+  }
+
+  /* line 15, ../sass/_phones.scss */
+  .home-page header {
+    padding: 2% 0;
+  }
+
+  /* line 19, ../sass/_phones.scss */
+  .benefits-list {
+    padding: 3% 1%;
+    width: 98%;
+  }
+
+  /* line 24, ../sass/_phones.scss */
+  .benefits-list li {
+    width: 98%;
+    margin: 1% 1%;
+  }
+
+  /* line 29, ../sass/_phones.scss */
+  .main-signup-form {
+    width: 90%;
+    margin: 1% 5%;
+  }
+
+  /* line 34, ../sass/_phones.scss */
+  .main-submit {
+    padding: 1.8%;
+    width: 20%;
+  }
+
+  /* line 39, ../sass/_phones.scss */
+  .main-testimonial {
+    padding: 1% 0;
+  }
+
+  /* line 43, ../sass/_phones.scss */
+  .main-testimonial li {
+    width: 31.5%;
+    margin-left: 1%;
+  }
+
+  /* line 48, ../sass/_phones.scss */
+  .footer-inspiration {
+    width: 70%;
+    padding: 1%;
+  }
+
+  /*****About Page*****/
+  /* line 55, ../sass/_phones.scss */
+  .about-right-block {
+    width: 90%;
+    padding: 1% 5%;
+    margin: 0;
+  }
+
+  /* line 61, ../sass/_phones.scss */
+  .about-founder-figure {
+    width: 98%;
+  }
+
+  /*****Privacy Policy*****/
+  /* line 66, ../sass/_phones.scss */
+  .privacy-policy-page {
+    width: 96%;
+    padding: 1% 2%;
+    margin: 0;
+  }
 }

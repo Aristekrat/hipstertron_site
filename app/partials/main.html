@@ -6,25 +6,25 @@
     <!--<p>Hipster Tron searches local concerts and compares them with artists in your iTunes library and sends you an email if there is a match.</p>-->
     <!--<p>Hipster Tron compares the artists in your iTunes library against all local concerts and sends you a notification if there is a match.</p>-->
     <!--<p>Hipster Tron searches all local concerts, compares them with your iTunes library, and sends you an email if an artist you have is coming to town.</p>-->
-    <p id="main-explanation">Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out.</p>
+    <p id="main-explanation"><span>Hipster Tron</span> tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out.</p>
     
   </header>
 
   <section class="benefits-list main-block">
     <ul>
       <li>
-        <h4>Never Miss A Show</h4>
+        <h4 id="never-miss-header">Never Miss A Show</h4>
         <figure class="main-image-container">
-          <img src="img/ht_tickets.png" />
+          <img id="ht-never-miss" src="img/ht-never-miss.png" />
         </figure>
-        <p>You can learn about concerts important to you as soon as they're announced.</p>
+        <p id="first-benefits-paragraph">You can learn about concerts important to you as soon as they're announced.</p>
       </li>
       <li>
         <h4>100% Free</h4>
         <figure class="main-image-container">
           <img src="img/ht_free.png" id="ht-free" />
         </figure>
-        <p>Our site doesn't even have ads.</p>
+        <p id="second-benefits-paragraph">Our site doesn't even have ads.</p>
       </li>
       <li>
         <h4>Get the Best Tickets</h4>
@@ -45,16 +45,21 @@
   <section class="main-block signup-block">
     <form class="main-signup-form">
         <span ng-hide="signedUp">
-          <input type="email" class="main-email" ng-model="userEmail" placeholder="Enter Your Email to Sign Up" />
-          <button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
-          <p>Hipster Tron is exclusively available for the Denver / Boulder area.</p>
+        	<p>Hipster Tron is exclusively available for the Denver / Boulder area.</p>
+          	<input type="email" class="main-email" ng-model="userEmail" placeholder="Sign Up for Launch" />
+          	<button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
         </span>
         <p ng-hide="!signedUp">Thanks! Check your email</p>
     </form>
+    <div class="main-launch-block">
+    	<h4>Sign Up For Launch</h4>
+    	<p>Hipster Tron will launch on October 26th, 2014, the week before Halloween. In the meantime, you can search Hipstertron's <a href="#/calendar">Calendar</a> for all upcoming shows in Denver.</p>
+    </div>
+    <!-- Bring the testimonials back when you can
     <ul class="main-testimonial">
       <li>"OMG I love Hipstertron!" <br/>-Some Guy</li>
       <li>"OMG I love Hipstertron!" <br/>-Some Guy</li>
       <li>"OMG I love Hipstertron!" <br/>-Some Guy</li>
-    </ul>
+    </ul>-->
   </section>
 </div>

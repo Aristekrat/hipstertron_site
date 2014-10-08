@@ -24,11 +24,43 @@
 .benefits-list li {
 	width: 98%;
 	margin: 1% 1%;
+	
+}
+
+.benefits-list li:not(:last-child) {
+	border-bottom: 1px solid darken($background, 5%);
+}
+
+.benefits-list h4 {
+	width: 95%;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.main-image-container {
+	padding: 0;
+}
+
+#ht-never-miss {
+	width: 90%;
+	margin-left: 2em;
+	margin-top: -7em;
+}
+
+#ht-free {
+	width: 55%;
+	margin-left: 22%;
+}
+
+.main-image-container img {
+	margin-left: 25%;
 }
 
 .main-signup-form {
-	width: 90%;
-	margin: 1% 5%;
+	width: 96%;
+	margin: 1% 2%;
+	color: $minor-header;
+	font-weight: bold;
 }
 
 .main-submit {
@@ -36,14 +68,19 @@
 	width: 20%;
 }
 
-.main-testimonial {
+.main-launch-block {
+	width: 90%;
+	margin: 1% 5%;	
+}
+
+/* .main-testimonial {
 	padding: 1% 0;
 }
 
 .main-testimonial li {
 	width: 31.5%;
 	margin-left: 1%;
-}
+} */
 
 .footer-inspiration {
 	width: 70%;
@@ -61,6 +98,27 @@
 .about-founder-figure {
 	width: 98%;
 }
+
+/*****Calendar*****/
+.calendar {
+	width: 100%;
+	margin: 4% 0;
+}
+
+.calendar-header h1 {
+	margin: 2% 0 0% 2%;
+}
+
+.calendar-main-block p {
+	display: none;
+}
+
+.calendar-search {
+	margin: 3% 10%;
+	width: 80%;
+	padding: 1%;
+}
+
 
 /*****Privacy Policy*****/
 .privacy-policy-page {

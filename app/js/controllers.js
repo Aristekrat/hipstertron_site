@@ -4,17 +4,20 @@
 
 angular.module('hipstertron.controllers', [])
 
-.controller('MainCtrl', ['$scope', 'submitEmailService',
+.controller('MainCtrl', ['$scope', 'submitEmailService', 'getEnvironmentService',
 
     // Submits user email to node.js backend
-    function($scope, submitEmailService) {
+    function($scope, submitEmailService, getEnvironmentService) {
+
         $scope.signUserUp = function(userEmail) {
             if (userEmail) {
-                submitEmailService.submitEmail(userEmail)
+                submitEmailService.submitEmail(userEmail, function(response) {
+                    console.log(response)
+                })
             }
         }
-    }
 
+    }
 ])
 
 .controller('AboutCtrl', ['$scope',
@@ -26,17 +29,9 @@ angular.module('hipstertron.controllers', [])
 .controller('CalendarCtrl', ['$scope', 'getConcertsService',
     function($scope, getConcertsService) {
 
-        getConcertsService.touchPy(function(response) {
+        getConcertsService.getConcerts(function(response) {
             $scope.concertListings = response.data.concertListings;
         })
-
-        /** Successfully touches py, although takes a really long time to return for some odd reason
-        $scope.touchPy = function() {
-            getConcertsService.touchPy(function(response) {
-                $scope.concertListings = response.data.concertListings;
-            })
-        }
-        */
 
     }
 ])
