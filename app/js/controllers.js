@@ -4,15 +4,13 @@
 
 angular.module('hipstertron.controllers', [])
 
-.controller('MainCtrl', ['$scope', 'submitEmailService', 'getEnvironmentService',
-
-    // Submits user email to node.js backend
-    function($scope, submitEmailService, getEnvironmentService) {
+.controller('MainCtrl', ['$scope', 'submitEmailService',
+    function($scope, submitEmailService) {
 
         $scope.signUserUp = function(userEmail) {
             if (userEmail) {
                 submitEmailService.submitEmail(userEmail, function(response) {
-                    console.log(response)
+                    $scope.signedUp = true;
                 })
             }
         }

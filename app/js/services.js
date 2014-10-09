@@ -4,33 +4,28 @@
 
 angular.module('hipstertron.services', [])
 
-.factory('getEnvironmentService', function($http) {
+.factory('environmentService', function($http) {
     return {
-        getEnv: function() {
-            $http.get("/getEnv", {
-                cache: true
-            })
-                .then(function(response) {
-                    console.log("Reached here")
-                    if (response.data === "development") {
-                        console.log("Then here")
-                        return "http://localhost:8000"
-                    } else if (response.data === "production") {
-                        return "http://hipstertron-data.herokuapp.com"
-                    }
-                });
-        }
+        getPrefix: function() {
+            var envPrefix = {
+                prod: "http://hipstertron-data.herokuapp.com",
+                local: "http://localhost:8000"
+            }
+            return envPrefix['local'];
+        },
     }
 })
 
-
-
-.factory('submitEmailService', function($http, getEnvironmentService) {
+.factory('submitEmailService', function($http, environmentService) {
     return {
         submitEmail: function(email, callback) {
-            console.log(email)
-            $http.post("http://localhost:8000" + "/sendEmail", {
-                "email": email
+            $http({
+                method: 'POST',
+                url: environmentService.getPrefix() + "/sendEmail",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: JSON.stringify(email)
             })
                 .then(function(response) {
                     return callback(response)
@@ -39,10 +34,10 @@ angular.module('hipstertron.services', [])
     }
 })
 
-.factory('getConcertsService', function($http, $timeout, getEnvironmentService) {
+.factory('getConcertsService', function($http, $timeout, environmentService) {
     return {
         getConcerts: function(callback) {
-            $http.get("http://localhost:8000" + "/getConcerts", {
+            $http.get(environmentService.getPrefix() + "/getConcerts", {
                 cache: true
             })
                 .then(function(response) {
