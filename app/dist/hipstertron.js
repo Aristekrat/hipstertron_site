@@ -104,21 +104,21 @@ filter('interpolate', ['version',
 
 angular.module('hipstertron.services', [])
 
-.factory('environmentService', function($http) {
+.factory('environmentService', function ($http) {
     return {
-        getPrefix: function() {
+        getPrefix: function () {
             var envPrefix = {
                 prod: "http://hipstertron-data.herokuapp.com",
                 local: "http://localhost:8000"
             }
-            return envPrefix['local'];
+            return envPrefix['prod'];
         },
     }
 })
 
-.factory('submitEmailService', function($http, environmentService) {
+.factory('submitEmailService', function ($http, environmentService) {
     return {
-        submitEmail: function(email, callback) {
+        submitEmail: function (email, callback) {
             $http({
                 method: 'POST',
                 url: environmentService.getPrefix() + "/sendEmail",
@@ -127,20 +127,20 @@ angular.module('hipstertron.services', [])
                 },
                 data: JSON.stringify(email)
             })
-                .then(function(response) {
+                .then(function (response) {
                     return callback(response)
                 });
         }
     }
 })
 
-.factory('getConcertsService', function($http, $timeout, environmentService) {
+.factory('getConcertsService', function ($http, $timeout, environmentService) {
     return {
-        getConcerts: function(callback) {
+        getConcerts: function (callback) {
             $http.get(environmentService.getPrefix() + "/getConcerts", {
                 cache: true
             })
-                .then(function(response) {
+                .then(function (response) {
                     return callback(response)
                 });
         }
