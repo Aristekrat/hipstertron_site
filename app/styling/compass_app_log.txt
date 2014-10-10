@@ -591,3 +591,32 @@
 2014-10-06 23:16:19 overwrite css/app.css 
 2014-10-06 23:16:33 overwrite css/app.css 
 2014-10-06 23:16:44 overwrite css/app.css 
+2014-10-09 19:55:41     error sass/app.scss (Line 10: File to import not found or unreadable: small-desktop.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2014-10-09 19:55:41 overwrite css/app.css 
+2014-10-09 19:55:52 overwrite css/app.css 
+2014-10-09 19:56:42     error sass/app.scss (Line 1 of sass/_small-desktop.scss: Invalid CSS after "...idth: 1340px) {": expected "}", was "")
+2014-10-09 19:56:42 overwrite css/app.css 
+2014-10-09 19:56:48 overwrite css/app.css 
+2014-10-09 19:57:15 overwrite css/app.css 
+2014-10-09 20:00:09 overwrite css/app.css 
+2014-10-09 20:00:28 overwrite css/app.css 
+2014-10-09 20:01:03 overwrite css/app.css 
+2014-10-09 20:01:14 overwrite css/app.css 
+2014-10-09 20:01:29 overwrite css/app.css 
+2014-10-09 20:02:09 overwrite css/app.css 
+2014-10-09 20:02:32 overwrite css/app.css 
+2014-10-09 20:02:47 overwrite css/app.css 
+2014-10-09 20:03:32 overwrite css/app.css 
+2014-10-09 20:04:47 overwrite css/app.css 

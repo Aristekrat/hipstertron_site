@@ -365,6 +365,29 @@ footer {
   padding: 1% 0 0 3%;
 }
 
+@media (min-width: 1041px) and (max-width: 1440px) {
+  /* line 3, ../sass/_small-desktop.scss */
+  #ht-never-miss {
+    width: 120%;
+    margin: -5em 0 0 -2em;
+  }
+
+  /* line 8, ../sass/_small-desktop.scss */
+  .main-image-container img {
+    width: 60%;
+    margin: 3% 0 0 2%;
+  }
+
+  /* line 13, ../sass/_small-desktop.scss */
+  #ht-free {
+    width: 65%;
+  }
+
+  /* line 17, ../sass/_small-desktop.scss */
+  .benefits-list p {
+    margin: 3% 0 0 0;
+  }
+}
 @media (min-width: 600px) and (max-width: 1040px) {
   /***Header***/
   /* line 4, ../sass/_tablet.scss */
