@@ -620,3 +620,171 @@ Load paths:
 2014-10-09 20:02:47 overwrite css/app.css 
 2014-10-09 20:03:32 overwrite css/app.css 
 2014-10-09 20:04:47 overwrite css/app.css 
+2014-10-12 23:17:16 overwrite css/app.css 
+2014-10-12 23:17:58 overwrite css/app.css 
+2014-10-12 23:18:38 overwrite css/app.css 
+2014-10-12 23:18:50 overwrite css/app.css 
+2014-10-12 23:19:42 overwrite css/app.css 
+2014-10-12 23:19:53 overwrite css/app.css 
+2014-10-12 23:20:03 overwrite css/app.css 
+2014-10-12 23:20:11 overwrite css/app.css 
+2014-10-12 23:21:50 overwrite css/app.css 
+2014-10-12 23:22:04 overwrite css/app.css 
+2014-10-12 23:22:15 overwrite css/app.css 
+2014-10-12 23:22:40 overwrite css/app.css 
+2014-10-12 23:28:23 overwrite css/app.css 
+2014-10-12 23:28:51 overwrite css/app.css 
+2014-10-13 11:07:18 overwrite css/app.css 
+2014-10-13 11:07:43 overwrite css/app.css 
+2014-10-13 11:15:08 overwrite css/app.css 
+2014-10-13 11:16:30 overwrite css/app.css 
+2014-10-13 11:16:47 overwrite css/app.css 
+2014-10-13 11:17:26 overwrite css/app.css 
+2014-10-13 11:19:02 overwrite css/app.css 
+2014-10-13 11:19:14 overwrite css/app.css 
+2014-10-13 11:21:55 overwrite css/app.css 
+2014-10-13 11:23:55 overwrite css/app.css 
+2014-10-13 11:24:13 overwrite css/app.css 
+2014-10-13 11:24:50 identical css/app.css 
+2014-10-13 11:24:55 overwrite css/app.css 
+2014-10-13 11:25:24 overwrite css/app.css 
+2014-10-13 11:26:22 overwrite css/app.css 
+2014-10-13 11:26:44 overwrite css/app.css 
+2014-10-13 11:27:05 overwrite css/app.css 
+2014-10-13 11:27:53 overwrite css/app.css 
+2014-10-13 11:28:10 overwrite css/app.css 
+2014-10-13 11:29:19 overwrite css/app.css 
+2014-10-13 11:29:25 overwrite css/app.css 
+2014-10-13 11:32:52 overwrite css/app.css 
+2014-10-13 11:33:24 overwrite css/app.css 
+2014-10-13 11:33:28 overwrite css/app.css 
+2014-10-13 11:33:32 overwrite css/app.css 
+2014-10-13 11:34:06 overwrite css/app.css 
+2014-10-13 11:34:11 overwrite css/app.css 
+2014-10-13 11:36:24 overwrite css/app.css 
+2014-10-13 11:43:47     error sass/app.scss (Line 2 of sass/_main-page.scss: Invalid CSS after "...background, 5%0": expected ")", was ";")
+2014-10-13 11:43:47 overwrite css/app.css 
+2014-10-13 11:43:48 overwrite css/app.css 
+2014-10-13 11:44:09 overwrite css/app.css 
+2014-10-13 11:45:01 overwrite css/app.css 
+2014-10-13 19:49:29 overwrite css/app.css 
+2014-10-13 19:49:44 overwrite css/app.css 
+2014-10-13 19:49:55 overwrite css/app.css 
+2014-10-13 19:50:02 overwrite css/app.css 
+2014-10-13 19:51:00 overwrite css/app.css 
+2014-10-13 19:52:30 overwrite css/app.css 
+2014-10-13 19:53:20 overwrite css/app.css 
+2014-10-13 19:53:30 overwrite css/app.css 
+2014-10-13 19:53:37 overwrite css/app.css 
+2014-10-13 19:53:40 overwrite css/app.css 
+2014-10-13 19:55:19 overwrite css/app.css 
+2014-10-13 20:10:09 overwrite css/app.css 
+2014-10-13 20:10:56 overwrite css/app.css 
+2014-10-13 20:11:14 overwrite css/app.css 
+2014-10-13 20:11:33 overwrite css/app.css 
+2014-10-13 20:11:59 overwrite css/app.css 
+2014-10-13 20:12:08 overwrite css/app.css 
+2014-10-13 20:12:15 overwrite css/app.css 
+2014-10-13 20:12:43 overwrite css/app.css 
+2014-10-13 20:12:52 overwrite css/app.css 
+2014-10-13 20:14:31 overwrite css/app.css 
+2014-10-13 20:14:45 overwrite css/app.css 
+2014-10-13 20:15:02 overwrite css/app.css 
+2014-10-13 20:15:18 overwrite css/app.css 
+2014-10-13 20:15:22 overwrite css/app.css 
+2014-10-13 20:15:39 overwrite css/app.css 
+2014-10-13 20:15:44 overwrite css/app.css 
+2014-10-13 20:15:47 overwrite css/app.css 
+2014-10-13 20:15:53 overwrite css/app.css 
+2014-10-13 20:16:06 overwrite css/app.css 
+2014-10-13 20:16:20 overwrite css/app.css 
+2014-10-13 20:16:27 overwrite css/app.css 
+2014-10-13 20:16:32 overwrite css/app.css 
+2014-10-13 20:16:45 overwrite css/app.css 
+2014-10-13 20:18:28 overwrite css/app.css 
+2014-10-13 20:22:15 overwrite css/app.css 
+2014-10-13 20:23:57 overwrite css/app.css 
+2014-10-13 20:24:50 overwrite css/app.css 
+2014-10-13 20:25:09 overwrite css/app.css 
+2014-10-13 20:29:28 overwrite css/app.css 
+2014-10-13 20:36:52 overwrite css/app.css 
+2014-10-13 20:37:16 overwrite css/app.css 
+2014-10-13 21:13:09 overwrite css/app.css 
+2014-10-13 21:13:10 identical css/app.css 
+2014-10-13 21:13:56 overwrite css/app.css 
+2014-10-13 21:26:29 overwrite css/app.css 
+2014-10-13 21:26:42 overwrite css/app.css 
+2014-10-13 21:27:53 overwrite css/app.css 
+2014-10-13 21:29:00 overwrite css/app.css 
+2014-10-13 21:29:05 overwrite css/app.css 
+2014-10-13 21:29:16 overwrite css/app.css 
+2014-10-13 21:29:43 overwrite css/app.css 
+2014-10-13 21:30:30 overwrite css/app.css 
+2014-10-13 21:30:50 overwrite css/app.css 
+2014-10-13 21:32:09 overwrite css/app.css 
+2014-10-13 21:33:22 overwrite css/app.css 
+2014-10-13 21:33:41 overwrite css/app.css 
+2014-10-13 21:34:49 overwrite css/app.css 
+2014-10-13 21:35:47 overwrite css/app.css 
+2014-10-13 21:36:06 overwrite css/app.css 
+2014-10-13 21:36:57 overwrite css/app.css 
+2014-10-13 21:37:16 overwrite css/app.css 
+2014-10-13 21:37:53 overwrite css/app.css 
+2014-10-13 21:38:51 overwrite css/app.css 
+2014-10-13 21:40:44 overwrite css/app.css 
+2014-10-13 21:41:06 overwrite css/app.css 
+2014-10-13 21:41:29 overwrite css/app.css 
+2014-10-13 21:42:06 overwrite css/app.css 
+2014-10-13 21:42:36 overwrite css/app.css 
+2014-10-13 21:43:48 overwrite css/app.css 
+2014-10-13 21:44:35 overwrite css/app.css 
+2014-10-13 21:44:41 overwrite css/app.css 
+2014-10-13 21:44:45 overwrite css/app.css 
+2014-10-13 21:45:14 overwrite css/app.css 
+2014-10-13 21:45:19 overwrite css/app.css 
+2014-10-13 21:45:27 overwrite css/app.css 
+2014-10-13 21:45:38 overwrite css/app.css 
+2014-10-13 21:45:45 overwrite css/app.css 
+2014-10-13 21:45:56 overwrite css/app.css 
+2014-10-13 21:46:28 overwrite css/app.css 
+2014-10-13 21:46:35 overwrite css/app.css 
+2014-10-13 23:35:21 overwrite css/app.css 
+2014-10-13 23:35:26 overwrite css/app.css 
+2014-10-13 23:35:32 overwrite css/app.css 
+2014-10-13 23:35:48 overwrite css/app.css 
+2014-10-13 23:35:58 overwrite css/app.css 
+2014-10-13 23:37:47     error sass/app.scss (Line 8: File to import not found or unreadable: signup.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2014-10-13 23:37:47 overwrite css/app.css 
+2014-10-13 23:37:58     error sass/app.scss (Line 9: File to import not found or unreadable: contact.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2014-10-13 23:37:58 overwrite css/app.css 
+2014-10-13 23:38:05 overwrite css/app.css 
+2014-10-13 23:38:09 identical css/app.css 
+2014-10-13 23:38:11 identical css/app.css 
+2014-10-13 23:39:21 overwrite css/app.css 
+2014-10-13 23:39:35 overwrite css/app.css 
+2014-10-13 23:40:42 overwrite css/app.css 
+2014-10-13 23:44:11 overwrite css/app.css 

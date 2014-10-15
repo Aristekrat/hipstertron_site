@@ -2,12 +2,20 @@
 
 /* Directives */
 
+angular.module('hipstertron.directives', [])
 
-angular.module('hipstertron.directives', []).
-directive('appVersion', ['version',
-    function(version) {
-        return function(scope, elm, attrs) {
-            elm.text(version);
-        };
-    }
-]);
+//Not actually in use.
+/*.directive('scroller', function() {
+    return {
+        restrict: 'A',
+        scope: true,
+        link: function(scope, elem, attrs) {
+            var rawElement = elem[0];
+            elem.bind('scroll', function() {
+                if ((rawElement.scrollTop + rawElement.offsetHeight + 5) >= rawElement.scrollHeight) { //new
+                    scope.loadMore();
+                }
+            });
+        }
+    };
+});*/

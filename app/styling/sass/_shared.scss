@@ -1,7 +1,7 @@
 $text: #fff; //#fff;
 $main-header: #FA6464;
 $minor-header: pink; //#FFC2C2;
-$background: #484848; //#919191; //#3F3630; //#443B35; //#D1B9B9;
+$background: #494949; //#919191; //#3F3630; //#443B35; //#D1B9B9;
 
 body {
 	font-family: 'Overlock', sans-serif;
@@ -40,4 +40,8 @@ h1, h2 {
 h3, h4 {
 	font-family: 'Hammersmith One', sans-serif;
 	color: $minor-header;
+}
+
+.warning {
+	color: $main-header;
 }

@@ -15,13 +15,21 @@ config(['$routeProvider',
             templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
         });
+        $routeProvider.when('/calendar', {
+            templateUrl: 'partials/calendar.html',
+            controller: 'CalendarCtrl'
+        });
         $routeProvider.when('/about', {
             templateUrl: 'partials/about.html',
             controller: 'AboutCtrl'
         });
-        $routeProvider.when('/calendar', {
-            templateUrl: 'partials/calendar.html',
-            controller: 'CalendarCtrl'
+        $routeProvider.when('/signup', {
+            templateUrl: 'partials/signup.html',
+            controller: 'SignUpCtrl'
+        });
+        $routeProvider.when('/contact', {
+            templateUrl: 'partials/contact.html',
+            controller: 'ContactCtrl'
         });
         $routeProvider.when('/privacy-policy', {
             templateUrl: 'partials/privacy-policy.html',

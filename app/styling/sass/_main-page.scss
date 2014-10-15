@@ -1,42 +1,76 @@
+#home-page:after {
+	content: "";
+	display: block;
+}
+
 .main-block {
-	background: #555;
+	background: $background;
+	float: left;
+	width: 100%;
 }
 
 .main-header {
 	width: 100%;
 	text-align: center;
-	padding: 1% 0 1% 0;
+	padding: 5% 0 1% 0;
 	/*background-image: url("../../img/RoboHipster.png");
 	background-repeat: no-repeat;
 	background-position: 23% 24%;
 	background-size: 15%;*/
-	z-index: 100;
-	position: relative;
+	// z-index: 100;
+	// position: relative;
 }
 
 .main-header h1 {
-	margin: 1% 0 0 0;
+	margin: 0;
 	font-size: 2.5em;
 }
 
 .main-header p {
-	margin: 0 0 2% 0;
-	font-size: 0.95em;
+	margin: 0 0 1.5% 0;
 }
 
 #main-tagline {
 	color: pink;
+	font-weight: bold;
 }
 
 #main-explanation {
 	font-size: 1.2em;
-	/*
-	span {
-		text-shadow: 1px 1px 1px darken($background, 10%);
-		font-weight: bold;
-		font-size: 1.1em;
-	}
-	*/
+}
+
+.how-it-works {
+	position: relative;
+	padding-bottom: 2%;
+}
+
+.how-it-works ul {
+	list-style-type: none; 
+}
+
+.how-it-works h2 {
+	text-align: center;
+	width: 16%;
+	margin: -0.6em 42% 0 42%;
+	background-color: $background;
+}
+
+.how-it-works h3 {
+	font-size: 1.25em;
+}
+
+.how-it-works p {
+	font-size: 1.1em;
+}
+
+.how-it-works span {
+	margin-left: 5%;
+}
+
+.main-step {
+	float: left;
+	width: 30%;
+	margin-left: 3.2%;
 }
 
 .benefits-list {
@@ -59,13 +93,13 @@
 	margin: 0 2.5%;
 }
 
-.benefits-list h4, .benefits-list p {
+.benefits-list h3, .benefits-list p {
 	display: inline-block;
 	width: 100%;
 	margin: 1% 0;
 }
 
-.benefits-list h4 {
+.benefits-list h3 {
 	margin-left: 5%;
 	font-size: 1.25em;
 }
@@ -132,13 +166,25 @@
 
 .signup-block {
 	padding: 0 0 2% 0;
-	background-image: url("../../img/RoboHipster.png");
+/* 	background-image: url("../../img/RoboHipster.png");
 	background-repeat: no-repeat;
 	background-position: 85% 110%;
-	background-size: 15%;
+	background-size: 15%; */
+}
+
+.main-frequency-selector label:first-child {
+	margin-right: 3%;
+}
+
+.main-frequency-selector input {
+	margin: 2% 4% 0 0.5%;
+	top: 2px;
+	position: relative;
 }
 
 .main-launch-block {
-	width: 40%;
-	margin: 0 0 0 25%;
+	width: 50%;
+	margin: 0 25%;
+/* 	width: 40%;
+	margin: 0 0 0 25%; */
 }

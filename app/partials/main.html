@@ -6,35 +6,67 @@
     <!--<p>Hipster Tron searches local concerts and compares them with artists in your iTunes library and sends you an email if there is a match.</p>-->
     <!--<p>Hipster Tron compares the artists in your iTunes library against all local concerts and sends you a notification if there is a match.</p>-->
     <!--<p>Hipster Tron searches all local concerts, compares them with your iTunes library, and sends you an email if an artist you have is coming to town.</p>-->
-    <p id="main-explanation"><span>Hipster Tron</span> tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out.</p>
+    <p id="main-explanation"><span>Hipster Tron</span> tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.</p>
     
   </header>
+
+  <section class="how-it-works main-block">
+        <h2>How It Works</h2>
+        <ul>
+          <li class="main-step">
+            <h3>Search</h3>
+            <p>Hipstertron searches all local concerts and your iTunes library.</p> 
+            <figure class="main-image-container">
+              <img src="img/ht_free.png" />
+            </figure>
+          </li>
+          <li class="main-step">
+            <h3>Match</h3>
+            <p>Hipstertron compares them to see if there are any matches.</p>
+            <figure class="main-image-container">
+              <img src="img/ht_free.png" />
+            </figure>
+          </li>
+          <li class="main-step">
+            <h3>Personalized Email</h3>
+            <p>You get an email telling you when your favorite artists are coming to town.</p>
+            <figure class="main-image-container">
+              <img src="img/ht_free.png" />
+            </figure>
+          </li>
+        </ul>
+  </section>
 
   <section class="benefits-list main-block">
     <ul>
       <li>
-        <h4 id="never-miss-header">Never Miss A Show</h4>
+        <h3>100% Free</h3>
+        <figure class="main-image-container">
+          <img src="img/ht_free.png" id="ht-free" />
+        </figure>
+        <p id="second-benefits-paragraph">Hipstertron doesn't even have ads.</p>
+      </li>
+      <li>
+        <h3 id="never-miss-header">Never Miss A Show</h3>
         <figure class="main-image-container">
           <img id="ht-never-miss" src="img/ht-never-miss.png" />
         </figure>
         <p id="first-benefits-paragraph">You can learn about concerts important to you as soon as they're announced.</p>
       </li>
       <li>
-        <h4>100% Free</h4>
-        <figure class="main-image-container">
-          <img src="img/ht_free.png" id="ht-free" />
-        </figure>
-        <p id="second-benefits-paragraph">Our site doesn't even have ads.</p>
-      </li>
-      <li>
-        <h4>Get the Best Tickets</h4>
+        <h3>Sign Up in Seconds</h3>
         <figure class="main-image-container">
           <img src="img/ht_tickets.png" />
         </figure>
-        <p>Beat the scalpers by coming early.</p>
+        <p>You just have to enter your email address to sign up. No username or password required.</p>
+<!--         <h3>Get the Best Tickets</h3>
+        <figure class="main-image-container">
+          <img src="img/ht_tickets.png" />
+        </figure>
+        <p>Beat the scalpers by coming early.</p> -->
       </li>
       <li>
-        <h4>Save Time Looking</h4>
+        <h3>Save Time Looking</h3>
         <figure class="main-image-container">
           <img src="img/ht_time.png" />
         </figure>
@@ -46,8 +78,18 @@
     <form class="main-signup-form">
         <span ng-hide="signedUp">
         	<p>Hipster Tron is exclusively available for the Denver / Boulder area.</p>
-          	<input type="email" class="main-email" ng-model="userEmail" placeholder="Sign Up for Launch" />
+          	<input type="email" class="main-email" ng-model="userEmail.email" placeholder="Sign Up for Launch" />
           	<button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
+            <p class="warning" ng-show="emailPlease">Please enter your email</p>
+            <div class="main-frequency-selector">
+                <label>How often do you want to receive emails?</label>
+                <label>Daily</label>
+                <input type="radio" name="frequency" ng-model="userEmail.frequency" value="daily" />
+                <label>Bi-weekly</label>
+                <input type="radio" name="frequency" ng-model="userEmail.frequency" value="biweekly" />
+                <label>Weekly</label>
+                <input type="radio" name="frequency" ng-model="userEmail.frequency" ng-checked="true" value="weekly" />
+            </div>
         </span>
         <span ng-hide="!signedUp"><h3>Thanks! You'll get an email from Hipster Tron when it's ready to launch!</h3><br/><br/><br/></span>
     </form>
