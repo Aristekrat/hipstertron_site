@@ -52,11 +52,11 @@ angular.module('hipstertron.controllers', [])
     }
 ])
 
-.controller('ContactCtrl', ['$scope',
+/*.controller('ContactCtrl', ['$scope',
     function($scope) {
 
     }
-])
+])*/
 
 
 .controller('PrivacyCtrl', ['$scope',

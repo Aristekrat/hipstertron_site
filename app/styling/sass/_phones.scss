@@ -8,12 +8,47 @@
 	margin-left: 2%;
 }
 
-.top-nav small {
+.top-nav small, #twitter-widget-0, #nav-contact {
 	display: none; 
 }
 
 .home-page header {
-	padding: 2% 0;
+	padding: 12% 0 5% 0;
+}
+
+.main-header h1 {
+	font-size: 1.5em;
+}
+
+.how-it-works h2 {
+	width: 50%;
+	margin: -0.6em 25% 0 25%;
+}
+
+.main-step {
+	width: 92%;
+	margin: 2% 5% 2% 0;
+}
+
+.main-signup-form {
+	width: 96%;
+	margin: 1% 2%;
+	font-weight: bold;
+}
+
+.main-submit {
+	padding: 1.8%;
+	width: 20%;
+}
+
+#frequency-explain {
+	display: block;
+	margin-top: 3%;
+}
+
+.main-launch-block {
+	width: 90%;
+	margin: 1% 5%;	
 }
 
 .benefits-list {
@@ -41,11 +76,11 @@
 	padding: 0;
 }
 
-#ht-never-miss {
+/* #ht-never-miss {
 	width: 90%;
 	margin-left: 2em;
 	margin-top: -7em;
-}
+} */
 
 #ht-free {
 	width: 55%;
@@ -56,23 +91,6 @@
 	margin-left: 25%;
 }
 
-.main-signup-form {
-	width: 96%;
-	margin: 1% 2%;
-	color: $minor-header;
-	font-weight: bold;
-}
-
-.main-submit {
-	padding: 1.8%;
-	width: 20%;
-}
-
-.main-launch-block {
-	width: 90%;
-	margin: 1% 5%;	
-}
-
 /* .main-testimonial {
 	padding: 1% 0;
 }
@@ -81,6 +99,10 @@
 	width: 31.5%;
 	margin-left: 1%;
 } */
+
+.right-side-image {
+	padding-left: 0%;
+}
 
 .footer-inspiration {
 	width: 70%;

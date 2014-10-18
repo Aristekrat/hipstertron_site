@@ -20,12 +20,12 @@ button {
 }
 
 a {
-	color: darken($minor-header, 5%);
+	color: darken($minor-header, 10%);
 	text-decoration: none;
 }
 
 a:hover {
-	color: darken($minor-header, 15%)
+	color: darken($main-header, 5%);
 }
 
 .main-block:not(:last-child) {

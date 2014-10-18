@@ -4,7 +4,7 @@
 .top-nav small {
 	opacity: 0.9;
 	font-size: 75%;
-	margin-top: 0.5%;
+	margin-top: 0.3%;
 }
 
 
@@ -20,7 +20,7 @@
 }
 
 #ht-never-miss {
-	margin-top: -0.5em;
+	width: 70%;
 }
 
 #ht-free {
@@ -33,9 +33,9 @@
 	margin-top: 10%;
 }
 
-.main-signup-form {
-	width: 64%;
-	margin: 1% 16%;
+.main-signup-form, .main-launch-block {
+	width: 80%;
+	margin: 1% 10%;
 }
 
 .main-submit {
@@ -43,14 +43,8 @@
 	width: 20%;
 }
 
-/* .main-testimonial li {
-	width: 31%;
-	margin-left: 1%;
-} */
-
-.main-launch-block {
-	width: 55%;
-	margin: 0 0 0 16%;
+.footer-inspiration {
+	width: 65%;
 }
 
 /*****About Page*****/
@@ -107,32 +101,42 @@
 @media (min-width: 600px) and (max-width: 820px) {
 
 	/***Main Page***/
-	.benefits-list li {
-		width: 45%;
-		margin: 0 1% 0 4%;
+	.top-nav small {
+		display: none;
 	}
 
-	#ht-never-miss {
-		margin-top: -4em
+	.how-it-works h2 {
+		width: 30%;
+		margin: -0.6em 35% 0 35%;
 	}
 
-	#second-benefits-paragraph {
-		margin-bottom: 14%
+	#main-explanation {
+		width: 94%;
+		margin: 0 2% 4% 2%;
 	}
 
-	.main-signup-form {
-		width: 80%;
-		margin: 1% 10%;
+	.benefits-list {
+		padding: 3% 0;
+		width: 100%;
 	}
 
-	.main-launch-block {
-		width: 65%;
-		margin: 0 0 0 10%;
+	.benefits-list h3 {
+		margin-left: 0%;
+		font-size: 1.15em;
 	}
 
-	.signup-block {
-		background-position: 95% 105%;
-		background-size: 25%;
+	.main-step:first-child {
+		margin-left: 0%;
+	}
+
+	.main-step {
+		width: 31%;
+		margin-left: 3%;
+	}
+
+	.main-signup-form, .main-launch-block {
+		width: 86%;
+		margin: 1% 7%;
 	}
 
 }

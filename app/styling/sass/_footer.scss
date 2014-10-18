@@ -23,7 +23,15 @@ footer {
 .footer-privacy-policy {
 	float: right;
 	position: relative;
-	right: 10%;
-	margin-top: 2%;
+	right: 4.5%;
+	margin-top: 2.5%;
 	display: inline-block;
+}
+
+.footer-contact {
+	float: right;
+	margin: 1% 0 0 5%;
+	span {
+		opacity: 0.8;
+	}
 }

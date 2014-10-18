@@ -27,10 +27,10 @@ config(['$routeProvider',
             templateUrl: 'partials/signup.html',
             controller: 'SignUpCtrl'
         });
-        $routeProvider.when('/contact', {
+    /*        $routeProvider.when('/contact', {
             templateUrl: 'partials/contact.html',
             controller: 'ContactCtrl'
-        });
+        });*/
         $routeProvider.when('/privacy-policy', {
             templateUrl: 'partials/privacy-policy.html',
             controller: 'PrivacyCtrl'
