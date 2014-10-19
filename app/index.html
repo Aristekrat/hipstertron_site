@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Hipster Tron | Find Concerts in Denver, Concert Finder, Concerts in Denver</title>
-  <meta name="description" content="">
+  <meta name="description" content="Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
@@ -19,24 +19,32 @@
   <![endif]-->
 </head>
 <body>
-<!-- <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '780665898637998',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <nav class="top-nav">
       <a href="#/">Hipster Tron</a>
       <a href="#/calendar">Calendar</a>
       <a href="#/about">About HipsterTron</a>
       <a href="#/signup">Sign Up</a>
-      <!-- <a href="#/contact" id="nav-contact">Contact</a> -->
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.hipstertron.com" data-text="He's heard of that show before you." data-size="large" data-count="none">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="HipsterTron" data-url="http://www.hipstertron.com" data-text="He's heard of that show before you." data-size="large" data-count="none" >Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       <small>Hipstertron is exclusively available for the Denver / Boulder area.</small>
-      <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div> -->
   </nav>
 
   <div ng-view id="content-block"></div>

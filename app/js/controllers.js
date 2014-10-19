@@ -26,16 +26,23 @@ angular.module('hipstertron.controllers', [])
 .controller('CalendarCtrl', ['$scope', 'getConcertsService',
     function($scope, getConcertsService) {
 
-        getConcertsService.getConcerts(function(response) {
+        $scope.concertListings = {}
+
+        getConcertsService.getFirstConcerts(function(response) {
             $scope.concertListings = response.data.concertListings;
         })
 
-        // Possibly working without bugs, needs to be tested with proper loading page to confirm. 
-        /*        $(window).scroll(function(event) {
-            if ($(this).scrollTop() == $(document).height() - $(window).height()) {
-                alert('Reached the bottom');
+        var executed = false;
+        $(window).scroll(function(event) {
+            if ($(this).scrollTop() == $(document).height() - $(window).height() && !executed) {
+                executed = true
+                getConcertsService.getSecondConcerts(function(response) {
+                    for (var i = 0; i < response.data.concertListings.length; i++) {
+                        $scope.concertListings.push(response.data.concertListings[i])
+                    }
+                })
             }
-        });*/
+        });
 
     }
 ])

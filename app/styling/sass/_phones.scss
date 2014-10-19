@@ -111,6 +111,10 @@
 
 /*****About Page*****/
 
+.about-page h1 {
+	padding-top: 12%;
+}
+
 .about-right-block {
 	width: 90%;
 	padding: 1% 5%;
@@ -128,7 +132,7 @@
 }
 
 .calendar-header h1 {
-	margin: 2% 0 0% 2%;
+	margin: 12% 0 0% 2%;
 }
 
 .calendar-main-block p {
@@ -141,6 +145,11 @@
 	padding: 1%;
 }
 
+/*****Sign Up*****/
+.signup-page h1 {
+	padding-top: 12%;
+	margin-bottom: 0;
+}
 
 /*****Privacy Policy*****/
 .privacy-policy-page {

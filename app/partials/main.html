@@ -45,7 +45,13 @@
                 <input type="radio" name="frequency" ng-model="userEmail.frequency" ng-checked="true" value="weekly" />
             </div>
         </span>
-        <span ng-hide="!signedUp"><h3>Thanks! You'll get an email from Hipster Tron when it's ready to launch!</h3><br/><br/><br/></span>
+        <span ng-hide="!signedUp">
+          <h3>Thanks! You'll get an email from Hipster Tron when it's ready to launch!</h3>
+          <p>If you'd also be willing to give us some sharing love HipsterTron would consider you his BFF: 
+          <div class="fb-share-button" data-href="http://www.hipstertron.com" data-layout="button"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.hipstertron.com" data-text="He's heard of that show before you." data-size="large" data-count="none" data-hashtags="HipsterTron">Tweet</a>
+          </p>
+        </span>
     </form>
     <div class="main-launch-block">
       <h4 ng-hide="signedUp">Sign Up For Launch</h4>

@@ -16,7 +16,7 @@
 		</thead>
 		<tbody>
 		<!--Angular can't seem to sort by date. It can kind of do it, but not all the way. For some reason adding the filter changes the order-->
-		  	<tr ng-repeat="concert in concertListings | filter:filterListings" class="calendar-row">
+		  	<tr ng-repeat="concert in concertListings | filter:filterListings track by $index" class="calendar-row">
 		    	<td>{{concert.band}}</td>
 		    	<td>{{concert.venue}}</td>
 		    	<td>{{concert.date | date : longDate}}</td>

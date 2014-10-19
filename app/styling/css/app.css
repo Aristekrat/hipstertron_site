@@ -278,6 +278,12 @@ footer {
 }
 
 /* line 129, ../sass/_main-page.scss */
+.fb_iframe_widget {
+  margin-right: 4%;
+  top: -10px;
+}
+
+/* line 134, ../sass/_main-page.scss */
 .main-launch-block {
   width: 50%;
   margin: 0 25%;
@@ -285,7 +291,7 @@ footer {
   	margin: 0 0 0 25%; */
 }
 
-/* line 136, ../sass/_main-page.scss */
+/* line 141, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
@@ -293,14 +299,14 @@ footer {
   float: left;
 }
 
-/* line 143, ../sass/_main-page.scss */
+/* line 148, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 149, ../sass/_main-page.scss */
+/* line 154, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
@@ -308,14 +314,14 @@ footer {
   margin: 0 2.5%;
 }
 
-/* line 156, ../sass/_main-page.scss */
+/* line 161, ../sass/_main-page.scss */
 .benefits-list h3, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
 
-/* line 162, ../sass/_main-page.scss */
+/* line 167, ../sass/_main-page.scss */
 .benefits-list h3 {
   margin-left: 5%;
   font-size: 1.25em;
@@ -325,7 +331,7 @@ footer {
 	color: $main-header;
 	text-shadow: 1px 1px 1px darken($main-header, 35%);
 } */
-/* line 172, ../sass/_main-page.scss */
+/* line 177, ../sass/_main-page.scss */
 .main-image-container {
   width: 100%;
   display: block;
@@ -334,29 +340,29 @@ footer {
   padding: 3% 0;
 }
 
-/* line 180, ../sass/_main-page.scss */
+/* line 185, ../sass/_main-page.scss */
 .main-image-container img {
   display: inline-block;
   float: left;
   width: 42%;
 }
 
-/* line 186, ../sass/_main-page.scss */
+/* line 191, ../sass/_main-page.scss */
 #ht-free {
   width: 47%;
 }
 
-/* line 190, ../sass/_main-page.scss */
+/* line 195, ../sass/_main-page.scss */
 #ht-never-miss {
   width: 55%;
 }
 
-/* line 194, ../sass/_main-page.scss */
+/* line 199, ../sass/_main-page.scss */
 .right-side-image {
   padding-left: 6%;
 }
 
-/* line 198, ../sass/_main-page.scss */
+/* line 203, ../sass/_main-page.scss */
 #first-benefits-paragraph {
   text-shadow: 1px 1px 1px #494949;
 }
@@ -464,7 +470,7 @@ footer {
 /* line 5, ../sass/_signup.scss */
 .signup-page h1 {
   padding-top: 4%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 /* line 1, ../sass/_contact.scss */
@@ -798,43 +804,55 @@ footer {
 
   /*****About Page*****/
   /* line 114, ../sass/_phones.scss */
+  .about-page h1 {
+    padding-top: 12%;
+  }
+
+  /* line 118, ../sass/_phones.scss */
   .about-right-block {
     width: 90%;
     padding: 1% 5%;
     margin: 0;
   }
 
-  /* line 120, ../sass/_phones.scss */
+  /* line 124, ../sass/_phones.scss */
   .about-founder-figure {
     width: 98%;
   }
 
   /*****Calendar*****/
-  /* line 125, ../sass/_phones.scss */
+  /* line 129, ../sass/_phones.scss */
   .calendar {
     width: 100%;
     margin: 4% 0;
   }
 
-  /* line 130, ../sass/_phones.scss */
+  /* line 134, ../sass/_phones.scss */
   .calendar-header h1 {
-    margin: 2% 0 0% 2%;
+    margin: 12% 0 0% 2%;
   }
 
-  /* line 134, ../sass/_phones.scss */
+  /* line 138, ../sass/_phones.scss */
   .calendar-main-block p {
     display: none;
   }
 
-  /* line 138, ../sass/_phones.scss */
+  /* line 142, ../sass/_phones.scss */
   .calendar-search {
     margin: 3% 10%;
     width: 80%;
     padding: 1%;
   }
 
+  /*****Sign Up*****/
+  /* line 149, ../sass/_phones.scss */
+  .signup-page h1 {
+    padding-top: 12%;
+    margin-bottom: 0;
+  }
+
   /*****Privacy Policy*****/
-  /* line 146, ../sass/_phones.scss */
+  /* line 155, ../sass/_phones.scss */
   .privacy-policy-page {
     width: 96%;
     padding: 1% 2%;

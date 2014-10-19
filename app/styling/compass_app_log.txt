@@ -922,3 +922,16 @@ Load paths:
 2014-10-17 21:37:43 overwrite css/app.css 
 2014-10-17 21:37:54 overwrite css/app.css 
 2014-10-17 21:38:12 overwrite css/app.css 
+2014-10-18 11:17:42 overwrite css/app.css 
+2014-10-18 18:56:12 overwrite css/app.css 
+2014-10-18 18:56:16 overwrite css/app.css 
+2014-10-18 18:56:30 overwrite css/app.css 
+2014-10-18 18:56:37 overwrite css/app.css 
+2014-10-18 18:57:35 overwrite css/app.css 
+2014-10-18 18:57:40 overwrite css/app.css 
+2014-10-18 18:57:48 overwrite css/app.css 
+2014-10-18 18:58:40 overwrite css/app.css 
+2014-10-18 18:59:30     error sass/app.scss (Line 151 of sass/_phones.scss: Invalid CSS after "	margin-bottom": expected ";", was ": 0;")
+2014-10-18 18:59:30 overwrite css/app.css 
+2014-10-18 18:59:34 overwrite css/app.css 
+2014-10-18 19:00:51 overwrite css/app.css 
