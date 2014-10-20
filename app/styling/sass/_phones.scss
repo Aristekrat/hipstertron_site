@@ -13,11 +13,13 @@
 }
 
 .home-page header {
-	padding: 12% 0 5% 0;
+	padding: 15% 0 5% 0;
 }
 
 .main-header h1 {
 	font-size: 1.5em;
+	width: 98%;
+	margin: 0 1%;
 }
 
 .how-it-works h2 {
@@ -136,7 +138,9 @@
 }
 
 .calendar-main-block p {
-	display: none;
+	width: 98%;
+	margin: 1%;
+	padding: 0;
 }
 
 .calendar-search {

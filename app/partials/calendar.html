@@ -5,10 +5,9 @@
 </header>
 
 <section class="calendar-main-block">
-	<p>This is a complete listing of all upcoming shows in Denver / Boulder</p>
-	<!--<button ng-click="touchPy()">Touch the Py</button>-->
+	<p>This is a complete listing of all upcoming shows in Denver / Boulder. <br/><span>You can click a listing to go straight to the show's page.</span></p>
 	<input type="text" class="calendar-search" ng-model="filterListings" placeholder=" Search Concert Listings" />
-	<table class="calendar" >	
+	<table class="calendar" >
 		<thead class="calendar-header">
 			<th>Band</th>
 			<th>Venue</th>
@@ -17,9 +16,9 @@
 		<tbody>
 		<!--Angular can't seem to sort by date. It can kind of do it, but not all the way. For some reason adding the filter changes the order-->
 		  	<tr ng-repeat="concert in concertListings | filter:filterListings track by $index" class="calendar-row">
-		    	<td>{{concert.band}}</td>
-		    	<td>{{concert.venue}}</td>
-		    	<td>{{concert.date | date : longDate}}</td>
+		    	<td><a href="{{concert.showLink}}">{{concert.band}}</a></td>
+		    	<td><a href="{{concert.showLink}}">{{concert.venue}}</a></td>
+		    	<td><a href="{{concert.showLink}}">{{concert.date | date : longDate}}</a></td>
 			</tr>
 		</tbody>
 	</table>

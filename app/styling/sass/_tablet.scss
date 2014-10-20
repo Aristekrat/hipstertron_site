@@ -9,6 +9,35 @@
 
 
 /***Main Page***/
+#main-explanation {
+	width: 98%;
+	margin: 1%;
+}
+
+.how-it-works h2 {
+		width: 32%;
+		margin: -0.6em 36% 0 36%;
+}
+
+.main-step:first-child {
+	margin-left: 0;
+}
+
+.main-image-container img {
+	width: 65%;
+	margin-top: 10%;
+}
+
+.main-signup-form, .main-launch-block {
+	width: 80%;
+	margin: 1% 10%;
+}
+
+.main-submit {
+	padding: 1.8%;
+	width: 20%;
+}
+
 .benefits-list {
 	padding: 3% 1%;
 	width: 98%;
@@ -26,21 +55,6 @@
 #ht-free {
 	width: 75%;
 	margin-top: 5%;
-}
-
-.main-image-container img {
-	width: 65%;
-	margin-top: 10%;
-}
-
-.main-signup-form, .main-launch-block {
-	width: 80%;
-	margin: 1% 10%;
-}
-
-.main-submit {
-	padding: 1.8%;
-	width: 20%;
 }
 
 .footer-inspiration {
@@ -105,6 +119,10 @@
 		display: none;
 	}
 
+	.main-header h1 {
+		padding-top: 5%;
+	}
+
 	.how-it-works h2 {
 		width: 30%;
 		margin: -0.6em 35% 0 35%;
@@ -125,18 +143,28 @@
 		font-size: 1.15em;
 	}
 
-	.main-step:first-child {
-		margin-left: 0%;
-	}
-
 	.main-step {
 		width: 31%;
 		margin-left: 3%;
 	}
 
+	.main-step:first-child {
+		margin-left: -2%;
+	}
+
 	.main-signup-form, .main-launch-block {
 		width: 86%;
 		margin: 1% 7%;
+	}
+
+	#frequency-explain {
+		display: block;
+	}
+
+	/***Calendar Page***/
+	.calendar-search {
+		width: 40%;
+		margin: 1% 5% 2% 0;
 	}
 
 }

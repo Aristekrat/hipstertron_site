@@ -34,7 +34,7 @@ angular.module('hipstertron.controllers', [])
 
         var executed = false;
         $(window).scroll(function(event) {
-            if ($(this).scrollTop() == $(document).height() - $(window).height() && !executed) {
+            if ($(this).scrollTop() + 700 > $(document).height() - $(window).height() && !executed) {
                 executed = true
                 getConcertsService.getSecondConcerts(function(response) {
                     for (var i = 0; i < response.data.concertListings.length; i++) {
