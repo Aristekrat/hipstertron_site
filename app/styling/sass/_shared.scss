@@ -5,7 +5,7 @@ $background: #494949; //#919191; //#3F3630; //#443B35; //#D1B9B9;
 
 body {
 	font-family: 'Overlock', sans-serif;
-	background: $background;
+	background: darken($background, 5%);
 	color: $text;
 }
 
@@ -40,6 +40,13 @@ h1, h2 {
 h3, h4 {
 	font-family: 'Hammersmith One', sans-serif;
 	color: $minor-header;
+}
+
+.about-page, .signup-page {
+	min-height: 50em;
+	width: 100%;
+	float: left;
+	background: $background;
 }
 
 .warning {
