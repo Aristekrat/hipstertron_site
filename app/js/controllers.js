@@ -57,8 +57,21 @@ angular.module('hipstertron.controllers', [])
     }
 ])
 
-.controller('SignUpCtrl', ['$scope',
-    function($scope) {
+.controller('SignUpCtrl', ['$scope', 'submitEmailService',
+    function($scope, submitEmailService) {
+        $scope.userEmail = {}
+        $scope.userEmail.frequency = "weekly"
+
+        $scope.signUserUp = function(userEmail) {
+            if (userEmail.email) {
+                $scope.emailPlease = false;
+                submitEmailService.submitEmail(userEmail, function(response) {
+                    $scope.signedUp = true;
+                })
+            } else {
+                $scope.emailPlease = true;
+            }
+        }
 
     }
 ])

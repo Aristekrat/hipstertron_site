@@ -157,48 +157,44 @@ footer {
   width: 100%;
   text-align: center;
   padding: 5% 0 1% 0;
-  /*	background-image: url("../../img/RoboHipster4.png");
-  	background-repeat: no-repeat;
-  	background-position: 50% 90%;
-  	background-size: 5%; */
 }
 
-/* line 24, ../sass/_main-page.scss */
+/* line 18, ../sass/_main-page.scss */
 .main-header h1 {
   color: pink;
   margin: 1% 0 0 0;
   font-size: 2.25em;
 }
 
-/* line 30, ../sass/_main-page.scss */
+/* line 24, ../sass/_main-page.scss */
 .main-header p {
   margin: 0 0 2% 0;
 }
 
-/* line 34, ../sass/_main-page.scss */
+/* line 28, ../sass/_main-page.scss */
 #main-tagline {
   color: pink;
   font-weight: bold;
 }
 
-/* line 39, ../sass/_main-page.scss */
+/* line 33, ../sass/_main-page.scss */
 #main-explanation {
   font-size: 1.2em;
   margin-bottom: 3%;
 }
 
-/* line 44, ../sass/_main-page.scss */
+/* line 38, ../sass/_main-page.scss */
 .how-it-works {
   position: relative;
   padding-bottom: 2%;
 }
 
-/* line 49, ../sass/_main-page.scss */
+/* line 43, ../sass/_main-page.scss */
 .how-it-works ul {
   list-style-type: none;
 }
 
-/* line 53, ../sass/_main-page.scss */
+/* line 47, ../sass/_main-page.scss */
 .how-it-works h2 {
   text-align: center;
   width: 16%;
@@ -206,34 +202,34 @@ footer {
   background-color: #494949;
 }
 
-/* line 60, ../sass/_main-page.scss */
+/* line 54, ../sass/_main-page.scss */
 .how-it-works h3 {
   font-size: 1.25em;
 }
 
-/* line 64, ../sass/_main-page.scss */
+/* line 58, ../sass/_main-page.scss */
 .how-it-works p {
   font-size: 1.1em;
 }
 
-/* line 68, ../sass/_main-page.scss */
+/* line 62, ../sass/_main-page.scss */
 .how-it-works span {
   margin-left: 5%;
 }
 
-/* line 72, ../sass/_main-page.scss */
+/* line 66, ../sass/_main-page.scss */
 .main-step {
   float: left;
   width: 29%;
   margin-left: 3.2%;
 }
 
-/* line 78, ../sass/_main-page.scss */
+/* line 72, ../sass/_main-page.scss */
 .main-step p {
   font-size: 1.15em;
 }
 
-/* line 82, ../sass/_main-page.scss */
+/* line 76, ../sass/_main-page.scss */
 .main-signup-form {
   display: inline-block;
   width: 50%;
@@ -241,65 +237,67 @@ footer {
   padding: 1% 0 0 0;
 }
 
-/* line 89, ../sass/_main-page.scss */
+/* line 83, ../sass/_main-page.scss */
 .main-email {
   width: 70%;
   padding: 1%;
 }
 
-/* line 94, ../sass/_main-page.scss */
+/* line 88, ../sass/_main-page.scss */
 .main-submit {
   width: 18%;
   padding: 1.2%;
   margin-left: 2%;
 }
 
-/* .main-testimonial {
-	list-style-type: none;
-}
-
-.main-testimonial li {
-	width: 10%;
-	margin-left: 12%;
-	display: inline-block;
-} */
-/* line 110, ../sass/_main-page.scss */
+/* line 94, ../sass/_main-page.scss */
 .signup-block {
   padding: 0 0 1.2% 0;
   position: relative;
-  /* 	background-image: url("../../img/RoboHipster.png");
-  	background-repeat: no-repeat;
-  	background-position: 85% 110%;
-  	background-size: 15%; */
 }
 
-/* line 119, ../sass/_main-page.scss */
+/* line 99, ../sass/_main-page.scss */
 .main-frequency-selector label:first-child {
   margin-right: 3%;
 }
 
-/* line 123, ../sass/_main-page.scss */
+/* line 103, ../sass/_main-page.scss */
 .main-frequency-selector input {
   margin: 2% 4% 0 0.5%;
   top: 2px;
   position: relative;
 }
 
-/* line 129, ../sass/_main-page.scss */
-.fb_iframe_widget {
-  margin-right: 4%;
-  top: -10px;
+/* line 109, ../sass/_main-page.scss */
+.social-button {
+  padding: 1.4em 0.8em;
+  margin: 1% 0 0% 5%;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ff8da1;
+}
+/* line 115, ../sass/_main-page.scss */
+.social-button:hover {
+  background-color: #fa6464;
 }
 
-/* line 134, ../sass/_main-page.scss */
+/* line 120, ../sass/_main-page.scss */
+.ht-twitter {
+  background-image: url("../../img/twitter.png");
+}
+
+/* line 124, ../sass/_main-page.scss */
+.ht-facebook {
+  background-image: url("../../img/facebook.png");
+}
+
+/* line 128, ../sass/_main-page.scss */
 .main-launch-block {
   width: 50%;
   margin: 0 25%;
-  /* 	width: 40%;
-  	margin: 0 0 0 25%; */
 }
 
-/* line 141, ../sass/_main-page.scss */
+/* line 133, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
@@ -307,14 +305,14 @@ footer {
   float: left;
 }
 
-/* line 148, ../sass/_main-page.scss */
+/* line 140, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 154, ../sass/_main-page.scss */
+/* line 146, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
@@ -322,24 +320,20 @@ footer {
   margin: 0 2.5%;
 }
 
-/* line 161, ../sass/_main-page.scss */
+/* line 153, ../sass/_main-page.scss */
 .benefits-list h3, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
 
-/* line 167, ../sass/_main-page.scss */
+/* line 159, ../sass/_main-page.scss */
 .benefits-list h3 {
   margin-left: 5%;
   font-size: 1.25em;
 }
 
-/* #never-miss-header {
-	color: $main-header;
-	text-shadow: 1px 1px 1px darken($main-header, 35%);
-} */
-/* line 177, ../sass/_main-page.scss */
+/* line 164, ../sass/_main-page.scss */
 .main-image-container {
   width: 100%;
   display: block;
@@ -348,29 +342,29 @@ footer {
   padding: 3% 0;
 }
 
-/* line 185, ../sass/_main-page.scss */
+/* line 172, ../sass/_main-page.scss */
 .main-image-container img {
   display: inline-block;
   float: left;
   width: 42%;
 }
 
-/* line 191, ../sass/_main-page.scss */
+/* line 178, ../sass/_main-page.scss */
 #ht-free {
   width: 47%;
 }
 
-/* line 195, ../sass/_main-page.scss */
+/* line 182, ../sass/_main-page.scss */
 #ht-never-miss {
   width: 55%;
 }
 
-/* line 199, ../sass/_main-page.scss */
+/* line 186, ../sass/_main-page.scss */
 .right-side-image {
   padding-left: 6%;
 }
 
-/* line 203, ../sass/_main-page.scss */
+/* line 190, ../sass/_main-page.scss */
 #first-benefits-paragraph {
   text-shadow: 1px 1px 1px #494949;
 }
