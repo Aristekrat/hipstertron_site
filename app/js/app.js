@@ -3,14 +3,11 @@
 // Declare app level module which depends on filters, and services
 angular.module('hipstertron', [
     'ngRoute',
-    'hipstertron.filters',
     'hipstertron.services',
-    'hipstertron.directives',
     'hipstertron.controllers'
 ]).
 config(['$routeProvider',
     function($routeProvider) {
-
         $routeProvider.when('/', {
             templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
@@ -27,10 +24,6 @@ config(['$routeProvider',
             templateUrl: 'partials/signup.html',
             controller: 'SignUpCtrl'
         });
-    /*        $routeProvider.when('/contact', {
-            templateUrl: 'partials/contact.html',
-            controller: 'ContactCtrl'
-        });*/
         $routeProvider.when('/privacy-policy', {
             templateUrl: 'partials/privacy-policy.html',
             controller: 'PrivacyCtrl'

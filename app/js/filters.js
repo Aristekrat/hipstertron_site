@@ -1,12 +1,15 @@
-'use strict';
+//'use strict';
 
-/* Filters */
+// Filters
 
-angular.module('hipstertron.filters', []).
+// Filters not used in this application. 
+// If you would like to restore filters, add the module to app.js and load the file via index.html / grunt. 
+
+/*angular.module('hipstertron.filters', []).
 filter('interpolate', ['version',
     function(version) {
         return function(text) {
             return String(text).replace(/\%VERSION\%/mg, version);
         };
     }
-]);
+]);*/

@@ -1,21 +1,8 @@
-'use strict';
+/*'use strict';
 
-/* Directives */
+// Directives
 
-angular.module('hipstertron.directives', [])
+angular.module('hipstertron.directives', [])*/
 
-//Not actually in use.
-/*.directive('scroller', function() {
-    return {
-        restrict: 'A',
-        scope: true,
-        link: function(scope, elem, attrs) {
-            var rawElement = elem[0];
-            elem.bind('scroll', function() {
-                if ((rawElement.scrollTop + rawElement.offsetHeight + 5) >= rawElement.scrollHeight) { //new
-                    scope.loadMore();
-                }
-            });
-        }
-    };
-});*/
+//No directives used in this app
+//If you want to wire in a directive, add the module to app.js and add a reference in index.html/grunt

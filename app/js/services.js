@@ -11,7 +11,7 @@ angular.module('hipstertron.services', [])
                 prod: "http://hipstertron-data.herokuapp.com",
                 local: "http://localhost:8000"
             }
-            return envPrefix['prod'];
+            return envPrefix['local'];
         },
     }
 })
@@ -37,16 +37,8 @@ angular.module('hipstertron.services', [])
 
 .factory('getConcertsService', function($http, $timeout, environmentService) {
     return {
-        getFirstConcerts: function(callback) {
-            $http.get(environmentService.getPrefix() + "/getConcerts", {
-                cache: true
-            })
-                .then(function(response) {
-                    return callback(response)
-                });
-        },
-        getSecondConcerts: function(callback) {
-            $http.get(environmentService.getPrefix() + "/getConcertsTwo", {
+        getConcerts: function(resultCount, offset, callback) {
+            $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, {
                 cache: true
             })
                 .then(function(response) {
