@@ -5,9 +5,9 @@ angular.module('hipstertron', [
     'ngRoute',
     'hipstertron.services',
     'hipstertron.controllers'
-]).
-config(['$routeProvider',
-    function($routeProvider) {
+]). //
+config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
             templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
@@ -31,5 +31,6 @@ config(['$routeProvider',
         $routeProvider.otherwise({
             redirectTo: '/'
         });
+        $locationProvider.html5Mode(true).hashPrefix('!');
     }
 ]);

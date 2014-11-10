@@ -3,25 +3,26 @@
 // Declare app level module which depends on filters, and services
 angular.module('hipstertron', [
     'ngRoute',
-    'hipstertron.filters',
     'hipstertron.services',
-    'hipstertron.directives',
     'hipstertron.controllers'
-]).
-config(['$routeProvider',
-    function($routeProvider) {
-
+]). //
+config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
             templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
+        });
+        $routeProvider.when('/calendar', {
+            templateUrl: 'partials/calendar.html',
+            controller: 'CalendarCtrl'
         });
         $routeProvider.when('/about', {
             templateUrl: 'partials/about.html',
             controller: 'AboutCtrl'
         });
-        $routeProvider.when('/calendar', {
-            templateUrl: 'partials/calendar.html',
-            controller: 'CalendarCtrl'
+        $routeProvider.when('/signup', {
+            templateUrl: 'partials/signup.html',
+            controller: 'SignUpCtrl'
         });
         $routeProvider.when('/privacy-policy', {
             templateUrl: 'partials/privacy-policy.html',
@@ -30,24 +31,57 @@ config(['$routeProvider',
         $routeProvider.otherwise({
             redirectTo: '/'
         });
+        $locationProvider.html5Mode(true).hashPrefix('!');
     }
 ]);
-'use strict';
-
 /* Controllers */
 
 angular.module('hipstertron.controllers', [])
 
 .controller('MainCtrl', ['$scope', 'submitEmailService',
     function($scope, submitEmailService) {
+        $scope.userEmail = {}
+        $scope.userEmail.frequency = "weekly"
 
         $scope.signUserUp = function(userEmail) {
-            if (userEmail) {
+            if (userEmail.email) {
+                $scope.emailPlease = false;
                 submitEmailService.submitEmail(userEmail, function(response) {
                     $scope.signedUp = true;
                 })
+            } else {
+                $scope.emailPlease = true;
             }
         }
+
+    }
+])
+//
+.controller('CalendarCtrl', ['$scope', 'getConcertsService',
+    function($scope, getConcertsService) {
+        $scope.concertListings = {}
+        var resultCount = 120;
+        var offset = 0;
+        var runCount = [];
+        runCount.push(resultCount)
+
+        // Testing : check whether this is returning a proper object and whether each object has the required properties.
+        getConcertsService.getConcerts(resultCount, offset, function(response) {
+            $scope.concertListings = response.data.concertListings;
+        })
+
+        // Badly needs some comments
+        $(window).scroll(function(event) {
+            if ($(this).scrollTop() + 1000 > $(document).height() - $(window).height()) {
+                if (runCount.length === 1) {
+                    resultCount = 500;
+                    runCount.push(resultCount)
+                    getConcertsService.getConcerts(resultCount, runCount[0], function(response) {
+                        $scope.concertListings = $scope.concertListings.concat(response.data.concertListings)
+                    })
+                }
+            }
+        });
 
     }
 ])
@@ -58,12 +92,22 @@ angular.module('hipstertron.controllers', [])
     }
 ])
 
-.controller('CalendarCtrl', ['$scope', 'getConcertsService',
-    function($scope, getConcertsService) {
+.controller('SignUpCtrl', ['$scope', 'submitEmailService',
+    // DRY it up
+    function($scope, submitEmailService) {
+        $scope.userEmail = {}
+        $scope.userEmail.frequency = "weekly"
 
-        getConcertsService.getConcerts(function(response) {
-            $scope.concertListings = response.data.concertListings;
-        })
+        $scope.signUserUp = function(userEmail) {
+            if (userEmail.email) {
+                $scope.emailPlease = false;
+                submitEmailService.submitEmail(userEmail, function(response) {
+                    $scope.signedUp = true;
+                })
+            } else {
+                $scope.emailPlease = true;
+            }
+        }
 
     }
 ])
@@ -73,76 +117,81 @@ angular.module('hipstertron.controllers', [])
 
     }
 ]);
-'use strict';
+/*'use strict';
 
-/* Directives */
+// Directives
 
+angular.module('hipstertron.directives', [])*/
 
-angular.module('hipstertron.directives', []).
-directive('appVersion', ['version',
-    function(version) {
-        return function(scope, elm, attrs) {
-            elm.text(version);
-        };
-    }
-]);
-'use strict';
+//No directives used in this app
+//If you want to wire in a directive, add the module to app.js and add a reference in index.html/grunt
+//'use strict';
 
-/* Filters */
+// Filters
 
-angular.module('hipstertron.filters', []).
+// Filters not used in this application. 
+// If you would like to restore filters, add the module to app.js and load the file via index.html / grunt. 
+
+/*angular.module('hipstertron.filters', []).
 filter('interpolate', ['version',
     function(version) {
         return function(text) {
             return String(text).replace(/\%VERSION\%/mg, version);
         };
     }
-]);
-'use strict';
-
+]);*/
 /* Services */
 
 angular.module('hipstertron.services', [])
 
-.factory('environmentService', function ($http) {
-    return {
-        getPrefix: function () {
-            var envPrefix = {
-                prod: "http://hipstertron-data.herokuapp.com",
-                local: "http://localhost:8000"
+.factory('environmentService', ['$http',
+    function($http) {
+        return {
+            getPrefix: function() {
+                var envPrefix = {
+                    prod: "http://hipstertron-data.herokuapp.com",
+                    local: "http://localhost:8000"
+                }
+                return envPrefix['local'];
+            },
+        }
+    }
+])
+
+.factory('submitEmailService', ['$http', 'environmentService',
+    function($http, environmentService) {
+        return {
+            submitEmail: function(email, callback) {
+                // Figure out a way to submit emails with protractor / jasmine. May require some python work. 
+                $http({
+                    method: 'POST',
+                    url: environmentService.getPrefix() + "/sendEmail",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    // Test that the data is properly JSONIFIED
+                    data: JSON.stringify(email)
+                })
+                    .then(function(response) {
+                        return callback(response)
+                    });
             }
-            return envPrefix['prod'];
-        },
-    }
-})
-
-.factory('submitEmailService', function ($http, environmentService) {
-    return {
-        submitEmail: function (email, callback) {
-            $http({
-                method: 'POST',
-                url: environmentService.getPrefix() + "/sendEmail",
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                data: JSON.stringify(email)
-            })
-                .then(function (response) {
-                    return callback(response)
-                });
         }
     }
-})
+])
 
-.factory('getConcertsService', function ($http, $timeout, environmentService) {
-    return {
-        getConcerts: function (callback) {
-            $http.get(environmentService.getPrefix() + "/getConcerts", {
-                cache: true
-            })
-                .then(function (response) {
-                    return callback(response)
-                });
+.factory('getConcertsService', ['$http', 'environmentService',
+    function($http, environmentService) {
+        return {
+            // Testing: test proper offset combined with resultCount
+            getConcerts: function(resultCount, offset, callback) {
+                $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, {
+                    cache: true
+                })
+                    .then(function(response) {
+                        return callback(response)
+                    });
+            }
         }
     }
-})
+])

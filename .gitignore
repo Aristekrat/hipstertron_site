@@ -31,3 +31,5 @@ node_modules
 
 #SASS caching
 app/styling/.sass-cache
+
+bower_components

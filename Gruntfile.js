@@ -1,11 +1,11 @@
 'use strict';
 
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
-
+/*
+Installed, need to be implemented: 
+https://www.npmjs.org/package/grunt-html-validation
+https://www.npmjs.org/package/grunt-contrib-csslint
+https://github.com/gruntjs/grunt-contrib-yuidoc
+ */
 
 module.exports = function(grunt) {
 
@@ -46,20 +46,42 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        // The browser isn't understanding gzip files and at the moment it's providing negligible space spavings, so not in use.
         compress: {
             main: {
                 options: {
                     mode: 'gzip'
                 },
-                expand: true,
-                src: ['app/dist/hipstertron-min.js'],
-                dest: ''
+                files: [{
+                    expand: true,
+                    src: 'app/dist/*.js',
+                    dest: '',
+                    ext: '.gz.js'
+                }]
+            }
+        },
+        // Requires Ruby
+        plato: {
+            analyze: {
+                files: {
+                    'app/dist/plato': ['app/js/*.js', 'test/**/*.js']
+                }
+            }
+        },
+        csscss: {
+            dist: {
+                src: ['app/styling/css/app.css']
+            }
+        },
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
             }
         },
         watch: {
             scripts: {
                 files: ['app/js/*.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['concat', 'uglify', 'karma'],
                 options: {
                     spawn: false,
                 },
@@ -68,15 +90,25 @@ module.exports = function(grunt) {
     });
     //  Build Plugins
     grunt.loadNpmTasks('grunt-contrib-watch');
+    // File size reduction
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    // Testing
+    grunt.loadNpmTasks('grunt-karma');
+    // Complexity analysis and documentation
     grunt.loadNpmTasks('grunt-contrib-yuidoc');
+    grunt.loadNpmTasks('grunt-plato');
+    // Quality checking
+    grunt.loadNpmTasks('grunt-csscss');
     //  Tasks
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('minify', ['uglify', 'cssmin', 'imagemin']);
-    grunt.registerTask('compress', ['compress']);
+    grunt.registerTask('minify', ['concat', 'uglify', 'cssmin', 'imagemin']);
+    // Note - you cannot use the same name as the task, ie 'compress' & 'compress'. Causes a silly but fatal error
+    grunt.registerTask('shrink', ['compress']);
+    grunt.registerTask('analyze', ['plato']);
+    grunt.registerTask('check-static', ['csscss']);
 };

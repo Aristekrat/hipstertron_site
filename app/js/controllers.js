@@ -1,5 +1,3 @@
-'use strict';
-
 /* Controllers */
 
 angular.module('hipstertron.controllers', [])
@@ -22,16 +20,21 @@ angular.module('hipstertron.controllers', [])
 
     }
 ])
-
+//
 .controller('CalendarCtrl', ['$scope', 'getConcertsService',
     function($scope, getConcertsService) {
-
         $scope.concertListings = {}
-
         var resultCount = 120;
         var offset = 0;
         var runCount = [];
         runCount.push(resultCount)
+
+        // Testing : check whether this is returning a proper object and whether each object has the required properties.
+        getConcertsService.getConcerts(resultCount, offset, function(response) {
+            $scope.concertListings = response.data.concertListings;
+        })
+
+        // Badly needs some comments
         $(window).scroll(function(event) {
             if ($(this).scrollTop() + 1000 > $(document).height() - $(window).height()) {
                 if (runCount.length === 1) {
@@ -44,10 +47,6 @@ angular.module('hipstertron.controllers', [])
             }
         });
 
-        getConcertsService.getConcerts(resultCount, offset, function(response) {
-            $scope.concertListings = response.data.concertListings;
-        })
-
     }
 ])
 
@@ -58,6 +57,7 @@ angular.module('hipstertron.controllers', [])
 ])
 
 .controller('SignUpCtrl', ['$scope', 'submitEmailService',
+    // DRY it up
     function($scope, submitEmailService) {
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
