@@ -4,8 +4,10 @@
 angular.module('hipstertron', [
     'ngRoute',
     'hipstertron.services',
-    'hipstertron.controllers'
-]). //
+    'hipstertron.controllers',
+    'angulartics',
+    'angulartics.google.analytics'
+]).
 config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
@@ -117,29 +119,6 @@ angular.module('hipstertron.controllers', [])
 
     }
 ]);
-/*'use strict';
-
-// Directives
-
-angular.module('hipstertron.directives', [])*/
-
-//No directives used in this app
-//If you want to wire in a directive, add the module to app.js and add a reference in index.html/grunt
-//'use strict';
-
-// Filters
-
-// Filters not used in this application. 
-// If you would like to restore filters, add the module to app.js and load the file via index.html / grunt. 
-
-/*angular.module('hipstertron.filters', []).
-filter('interpolate', ['version',
-    function(version) {
-        return function(text) {
-            return String(text).replace(/\%VERSION\%/mg, version);
-        };
-    }
-]);*/
 /* Services */
 
 angular.module('hipstertron.services', [])
@@ -152,7 +131,7 @@ angular.module('hipstertron.services', [])
                     prod: "http://hipstertron-data.herokuapp.com",
                     local: "http://localhost:8000"
                 }
-                return envPrefix['local'];
+                return envPrefix['prod'];
             },
         }
     }

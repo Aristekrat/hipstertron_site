@@ -10,7 +10,7 @@ angular.module('hipstertron.services', [])
                     prod: "http://hipstertron-data.herokuapp.com",
                     local: "http://localhost:8000"
                 }
-                return envPrefix['local'];
+                return envPrefix['prod'];
             },
         }
     }

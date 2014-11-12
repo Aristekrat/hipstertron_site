@@ -4,8 +4,10 @@
 angular.module('hipstertron', [
     'ngRoute',
     'hipstertron.services',
-    'hipstertron.controllers'
-]). //
+    'hipstertron.controllers',
+    'angulartics',
+    'angulartics.google.analytics'
+]).
 config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
