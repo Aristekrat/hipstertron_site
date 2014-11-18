@@ -1,59 +1,64 @@
 /* line 6, ../sass/_shared.scss */
 body {
-  font-family: 'Overlock', sans-serif;
+  font-family: "Helvetica", sans-serif;
   background: #3c3c3c;
   color: white;
 }
 
 /* line 12, ../sass/_shared.scss */
+.main-header {
+  color: #fa6464;
+}
+
+/* line 16, ../sass/_shared.scss */
 .top-nav, footer {
   background: #3c3c3c;
 }
 
-/* line 16, ../sass/_shared.scss */
+/* line 20, ../sass/_shared.scss */
 button {
   background: #fa6464;
   color: #fff;
   border: 0;
 }
 
-/* line 22, ../sass/_shared.scss */
+/* line 26, ../sass/_shared.scss */
 a {
   color: #ff8da1;
   text-decoration: none;
 }
 
-/* line 27, ../sass/_shared.scss */
+/* line 31, ../sass/_shared.scss */
 a:hover {
   color: #f94b4b;
 }
 
-/* line 31, ../sass/_shared.scss */
+/* line 35, ../sass/_shared.scss */
 .main-block:not(:last-child) {
   border-bottom: 1px solid #3c3c3c;
 }
 
-/* line 35, ../sass/_shared.scss */
+/* line 39, ../sass/_shared.scss */
 h1, h2 {
   color: #fa6464;
   font-family: 'Hammersmith One', sans-serif;
 }
 
-/* line 40, ../sass/_shared.scss */
+/* line 44, ../sass/_shared.scss */
 h3, h4 {
   font-family: 'Hammersmith One', sans-serif;
   color: pink;
 }
 
-/* line 45, ../sass/_shared.scss */
-.about-page, .signup-page {
+/* line 49, ../sass/_shared.scss */
+.about-page, .signup-page, .info-page {
   min-height: 50em;
   width: 100%;
   float: left;
   background: #494949;
 }
 
-/* line 52, ../sass/_shared.scss */
+/* line 56, ../sass/_shared.scss */
 .warning {
   color: #fa6464;
 }
@@ -153,83 +158,71 @@ footer {
 }
 
 /* line 12, ../sass/_main-page.scss */
-.main-header {
+.home-header {
   width: 100%;
   text-align: center;
   padding: 5% 0 1% 0;
 }
-
-/* line 18, ../sass/_main-page.scss */
-.main-header h1 {
+/* line 17, ../sass/_main-page.scss */
+.home-header h1 {
   color: pink;
   margin: 1% 0 0 0;
-  font-size: 2.25em;
+  font-size: 2.0em;
 }
-
-/* line 24, ../sass/_main-page.scss */
-.main-header p {
+/* line 22, ../sass/_main-page.scss */
+.home-header p {
   margin: 0 0 2% 0;
 }
 
-/* line 28, ../sass/_main-page.scss */
+/* line 27, ../sass/_main-page.scss */
 #main-tagline {
   color: pink;
   font-weight: bold;
 }
 
-/* line 33, ../sass/_main-page.scss */
+/* line 32, ../sass/_main-page.scss */
 #main-explanation {
-  font-size: 1.2em;
+  font-size: 1.25em;
   margin-bottom: 3%;
 }
 
-/* line 38, ../sass/_main-page.scss */
+/* line 37, ../sass/_main-page.scss */
 .how-it-works {
   position: relative;
   padding-bottom: 2%;
 }
-
-/* line 43, ../sass/_main-page.scss */
+/* line 41, ../sass/_main-page.scss */
 .how-it-works ul {
   list-style-type: none;
 }
-
-/* line 47, ../sass/_main-page.scss */
+/* line 44, ../sass/_main-page.scss */
 .how-it-works h2 {
   text-align: center;
   width: 16%;
   margin: -0.6em 42% 0 42%;
   background-color: #494949;
 }
-
-/* line 54, ../sass/_main-page.scss */
+/* line 50, ../sass/_main-page.scss */
 .how-it-works h3 {
   font-size: 1.25em;
 }
-
-/* line 58, ../sass/_main-page.scss */
+/* line 53, ../sass/_main-page.scss */
 .how-it-works p {
   font-size: 1.1em;
 }
-
-/* line 62, ../sass/_main-page.scss */
+/* line 56, ../sass/_main-page.scss */
 .how-it-works span {
   margin-left: 5%;
 }
 
-/* line 66, ../sass/_main-page.scss */
+/* line 61, ../sass/_main-page.scss */
 .main-step {
   float: left;
   width: 29%;
   margin-left: 3.2%;
 }
 
-/* line 72, ../sass/_main-page.scss */
-.main-step p {
-  font-size: 1.15em;
-}
-
-/* line 76, ../sass/_main-page.scss */
+/* line 67, ../sass/_main-page.scss */
 .main-signup-form {
   display: inline-block;
   width: 50%;
@@ -237,38 +230,38 @@ footer {
   padding: 1% 0 0 0;
 }
 
-/* line 83, ../sass/_main-page.scss */
+/* line 74, ../sass/_main-page.scss */
 .main-email {
   width: 70%;
   padding: 1%;
 }
 
-/* line 88, ../sass/_main-page.scss */
+/* line 79, ../sass/_main-page.scss */
 .main-submit {
   width: 18%;
   padding: 1.2%;
   margin-left: 2%;
 }
 
-/* line 94, ../sass/_main-page.scss */
+/* line 85, ../sass/_main-page.scss */
 .signup-block {
   padding: 0 0 1.2% 0;
   position: relative;
 }
 
-/* line 99, ../sass/_main-page.scss */
+/* line 90, ../sass/_main-page.scss */
 .main-frequency-selector label:first-child {
   margin-right: 3%;
 }
 
-/* line 103, ../sass/_main-page.scss */
+/* line 94, ../sass/_main-page.scss */
 .main-frequency-selector input {
   margin: 2% 4% 0 0.5%;
   top: 2px;
   position: relative;
 }
 
-/* line 109, ../sass/_main-page.scss */
+/* line 100, ../sass/_main-page.scss */
 .social-button {
   padding: 1.4em 0.8em;
   margin: 1% 0 0% 5%;
@@ -276,64 +269,64 @@ footer {
   display: inline-block;
   background-color: #ff8da1;
 }
-/* line 115, ../sass/_main-page.scss */
+/* line 106, ../sass/_main-page.scss */
 .social-button:hover {
   background-color: #fa6464;
 }
 
-/* line 120, ../sass/_main-page.scss */
+/* line 111, ../sass/_main-page.scss */
 .ht-twitter {
   background-image: url("../../img/twitter.png");
 }
 
-/* line 124, ../sass/_main-page.scss */
+/* line 115, ../sass/_main-page.scss */
 .ht-facebook {
   background-image: url("../../img/facebook.png");
 }
 
-/* line 128, ../sass/_main-page.scss */
+/* line 119, ../sass/_main-page.scss */
 .main-launch-block {
   width: 50%;
   margin: 0 25%;
 }
+/* line 123, ../sass/_main-page.scss */
+.main-launch-block h3 {
+  color: #fa6464;
+}
 
-/* line 133, ../sass/_main-page.scss */
+/* line 128, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
   display: block;
   float: left;
 }
-
-/* line 140, ../sass/_main-page.scss */
+/* line 134, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-/* line 146, ../sass/_main-page.scss */
+/* line 139, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
   width: 20%;
   margin: 0 2.5%;
 }
-
-/* line 153, ../sass/_main-page.scss */
+/* line 145, ../sass/_main-page.scss */
 .benefits-list h3, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
-
-/* line 159, ../sass/_main-page.scss */
+/* line 150, ../sass/_main-page.scss */
 .benefits-list h3 {
   margin-left: 5%;
   font-size: 1.25em;
 }
 
-/* line 164, ../sass/_main-page.scss */
+/* line 156, ../sass/_main-page.scss */
 .main-image-container {
   width: 100%;
   display: block;
@@ -342,29 +335,29 @@ footer {
   padding: 3% 0;
 }
 
-/* line 172, ../sass/_main-page.scss */
+/* line 164, ../sass/_main-page.scss */
 .main-image-container img {
   display: inline-block;
   float: left;
   width: 42%;
 }
 
-/* line 178, ../sass/_main-page.scss */
+/* line 170, ../sass/_main-page.scss */
 #ht-free {
   width: 47%;
 }
 
-/* line 182, ../sass/_main-page.scss */
+/* line 174, ../sass/_main-page.scss */
 #ht-never-miss {
   width: 55%;
 }
 
-/* line 186, ../sass/_main-page.scss */
+/* line 178, ../sass/_main-page.scss */
 .right-side-image {
   padding-left: 6%;
 }
 
-/* line 190, ../sass/_main-page.scss */
+/* line 182, ../sass/_main-page.scss */
 #first-benefits-paragraph {
   text-shadow: 1px 1px 1px #494949;
 }
@@ -488,6 +481,54 @@ footer {
 .about-right-block p {
   line-height: 1.8em;
   font-size: 1.05em;
+}
+
+/* line 1, ../sass/_info.scss */
+.info-page {
+  padding: 0 3%;
+}
+/* line 3, ../sass/_info.scss */
+.info-page h1 {
+  padding: 4% 0 0 0;
+}
+
+/* line 8, ../sass/_info.scss */
+.info-nav-block {
+  margin-bottom: 2%;
+}
+/* line 12, ../sass/_info.scss */
+.info-nav-block .info-internal-links a {
+  padding-right: 4%;
+}
+/* line 15, ../sass/_info.scss */
+.info-nav-block .info-internal-links .info-link-active {
+  color: #f94b4b;
+}
+
+/* line 21, ../sass/_info.scss */
+.info-block {
+  width: 50%;
+  line-height: 2em;
+}
+
+/* line 26, ../sass/_info.scss */
+.reserve-list {
+  list-style-type: none;
+}
+/* line 28, ../sass/_info.scss */
+.reserve-list li span, .reserve-list li strong {
+  color: pink;
+}
+
+/* line 33, ../sass/_info.scss */
+.info-button {
+  width: 15%;
+  padding: 1.5%;
+  margin: 0.5% 0 2% 0;
+}
+/* line 37, ../sass/_info.scss */
+.info-button a {
+  color: white;
 }
 
 /* line 5, ../sass/_signup.scss */

@@ -22,6 +22,10 @@ config(['$routeProvider', '$locationProvider',
             templateUrl: 'partials/about.html',
             controller: 'AboutCtrl'
         });
+        $routeProvider.when('/info/:type', {
+            templateUrl: 'partials/info.html',
+            controller: 'InfoCtrl'
+        });
         $routeProvider.when('/signup', {
             templateUrl: 'partials/signup.html',
             controller: 'SignUpCtrl'
@@ -90,6 +94,39 @@ angular.module('hipstertron.controllers', [])
 
 .controller('AboutCtrl', ['$scope',
     function($scope) {
+
+    }
+])
+
+.controller('InfoCtrl', ['$scope', '$routeParams',
+    function($scope, $routeParams) {
+
+        if ($routeParams.type === 'find-concerts') {
+            $scope.findRequested = true;
+            activateNav('findActive')
+        } else if ($routeParams.type === 'reserve-tickets') {
+            $scope.reserveRequested = true;
+            activateNav('reserveActive')
+        } else if ($routeParams.type === 'cheap-tickets') {
+            $scope.cheapRequested = true;
+            activateNav('cheapActive')
+        } else {
+            $scope.findRequested = true;
+            activateNav('findActive')
+        }
+
+        function activateNav(correctNav) {
+            var navOptions = ["findActive", "reserveActive", "cheapActive"];
+
+            for (var i = 0; navOptions.length > i; i++) {
+                var t = navOptions[i]
+                if (navOptions[i] === correctNav) {
+                    $scope[t] = "info-link-active"
+                } else {
+                    $scope[t] = ""
+                }
+            }
+        }
 
     }
 ])

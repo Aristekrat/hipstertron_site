@@ -1,11 +1,13 @@
 <div class="signup-page">
-	<h1>Sign Up</h1>
+	<h1>Sign Up In Seconds</h1>
 
 <section class="main-block signup-block">
+
     <form class="main-signup-form">
         <span ng-hide="signedUp">
+          <h3>You just have to enter your email address to sign up. No username or password required.</h3>
           <p>Hipster Tron is exclusively available for the Denver / Boulder area.</p>
-            <input type="email" class="main-email" ng-model="userEmail.email" placeholder="Sign Up for Launch" />
+            <input type="email" class="main-email" autofocus ng-model="userEmail.email" placeholder="Sign Up for Launch" />
             <button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
             <p class="warning" ng-show="emailPlease">Please enter your email</p>
             <div class="main-frequency-selector">
@@ -30,6 +32,13 @@
       <p>Hipster Tron will launch soon. In the meantime, you can search Hipstertron's <a href="#/calendar">Calendar</a> for all upcoming shows in Denver.</p>
     </div>
   </section>
+<!-- 
+      <li>
+        <h3>Sign Up in Seconds</h3>
+        <figure class="main-image-container right-side-image">
+          <img src="img/ht_signup.png" />
+        </figure>
+        <p>You just have to enter your email address to sign up. No username or password required.</p>
+      </li> -->
 
 </div>
-

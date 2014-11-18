@@ -1,0 +1,40 @@
+.info-page {
+	padding: 0 3%;
+	h1 {
+		padding: 4% 0 0 0;
+	}
+}
+
+.info-nav-block {
+	margin-bottom: 2%;
+	.info-internal-links {
+
+		a {
+			padding-right: 4%;
+		}
+		.info-link-active {
+			color: darken($main-header, 5%);
+		}
+	}
+}
+
+.info-block {
+	width: 50%;
+	line-height: 2em;
+}
+
+.reserve-list {
+	list-style-type: none; 
+	li span, li strong {
+		color: $minor-header;
+	}
+}
+
+.info-button {
+	width: 15%;
+	padding: 1.5%;
+	margin: 0.5% 0 2% 0;
+	a {
+		color: $text;
+	}
+}

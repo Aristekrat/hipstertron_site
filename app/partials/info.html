@@ -1,0 +1,87 @@
+<div class="info-page">
+
+	<h1>Information</h1>
+
+	<div class="info-nav-block">
+
+		<h3>What would you like to learn about?</h3>
+
+		<nav class="info-internal-links">
+
+			<a href="/info/find-tickets" ng-class="findActive">Find Concerts</a>
+
+			<a href="/info/reserve-tickets" ng-class="reserveActive">Reserve Tickets</a>
+
+			<a href="/info/cheap-tickets" ng-class="cheapActive">Cheap Tickets</a>
+
+		</nav>
+
+	</div>
+
+	<section class="info-block info-find-section" ng-show="findRequested">
+
+		<h2>Find Concerts</h2>
+
+		<p>Hipstertron can help you find out about concerts and get tickets for them. Here's how,</p>
+
+		<p>First, Hipstertron looks at your iTunes collection and Facebook, to figure out what bands you like and how much you like them.</p>
+
+		<p>Second, Hipstertron checks all local shows to see if any bands you like are coming to town.</p>
+
+		<p>Finally, with those matches Hipstertron can tell you about what bands are coming to town and help you get great tickets.</p> 
+
+		<p>Want to know more about how <a href="/info/reserve-tickets">Hipstertron can help you get great tickets</a>?</p>
+
+		<button class="info-button"><a href="/signup">Sign Up</a></button>
+
+	</section>
+
+	<section class="info-block info-reserve-section" ng-show="reserveRequested">
+
+		<h2>Reserve Tickets</h2>
+
+		<p>It can be a giant pain to get decent concert tickets at face value. Sometimes it is impossible. All too often, the tickets will sell out within 5 minutes, then Stubhub will fill up with overpriced tickets from scalpers right after.</p>
+
+		<h3>Hipstertron knows how to score those awesome tickets...</h3>
+
+		<p>And he's only to happy to hook you up, free of charge. <span class="main-header">Here's how it works</span>:</p>
+
+		<ul class="reserve-list">
+			<li><span>You'll get an email invitation to reserve tickets</span> before they go on sale.</p>
+
+			<li><span>You have 30 days to claim your tickets after they go on sale</span>. To get the tickets, you'll pay face value + 'service fees' but not a penny more. If something happens and you can't go, you can decline the tickets <strong>totally free of charge</strong>.</li>
+		</ul>
+
+		<p>This way, you won't have to go through the hassle of trying to get tickets or pay huge prices for scalped tickets. All you need is the power of Hipstertron.</p>
+
+		<h3>Disclaimers</h3>
+
+		<p>We can't guarantee tickets to every show. Sometimes the tickets don't allow transfer to anyone except the person who bought it. Sometimes shows are sold out before they go on sale to the public. However, unless you know someone in the band, Hipstertron is going to be your best bet to get in-demand tickets.</p>
+
+		<p>At the moment, Hipstertron only allows reservations on invitation only. Hipstertron sends out invitations just to people he thinks are big fans of a band. This prevents scalpers from reserving tickets that should go to true fans.</p>
+
+		<p>Sound good?</p>
+
+		<button class="info-button"><a href="/signup">Sign Up</a></button>
+
+	</section>
+
+	<section class="info-block info-cheap-section" ng-show="cheapRequested">
+
+		<h2>Cheap Tickets</h2>
+
+		<p>Sometimes the prices for concert tickets on places like Stubhub drop right before a show.</p>
+
+		<p>If Hipstertron knows you like a band, and if it looks like you can pick up some cheap tickets, he'll let you know in an email.</p>
+
+		<p>He's just a solid guy like that. Even if we don't understand why he insists on using a typewriter and riding a unicycle everywhere.</p>
+
+		<p>With Hipstertron, you'll always be in the know about deals for concerts you care about.</p>
+
+		<p>Sound good?</p>
+
+		<button class="info-button"><a href="/signup">Sign Up</a></button>
+
+	</section>
+
+</div>

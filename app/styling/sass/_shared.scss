@@ -4,9 +4,13 @@ $minor-header: pink; //#FFC2C2;
 $background: #494949; //#919191; //#3F3630; //#443B35; //#D1B9B9;
 
 body {
-	font-family: 'Overlock', sans-serif;
+	font-family: "Helvetica", sans-serif;
 	background: darken($background, 5%);
 	color: $text;
+}
+
+.main-header {
+	color: $main-header;
 }
 
 .top-nav, footer {
@@ -42,7 +46,7 @@ h3, h4 {
 	color: $minor-header;
 }
 
-.about-page, .signup-page {
+.about-page, .signup-page, .info-page {
 	min-height: 50em;
 	width: 100%;
 	float: left;

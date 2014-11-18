@@ -22,6 +22,10 @@ config(['$routeProvider', '$locationProvider',
             templateUrl: 'partials/about.html',
             controller: 'AboutCtrl'
         });
+        $routeProvider.when('/info/:type', {
+            templateUrl: 'partials/info.html',
+            controller: 'InfoCtrl'
+        });
         $routeProvider.when('/signup', {
             templateUrl: 'partials/signup.html',
             controller: 'SignUpCtrl'

@@ -9,20 +9,19 @@
 	width: 100%;
 }
 
-.main-header {
+.home-header {
 	width: 100%;
 	text-align: center;
 	padding: 5% 0 1% 0;
-}
-
-.main-header h1 {
-	color: pink;
-	margin: 1% 0 0 0;
-	font-size: 2.25em;
-}
-
-.main-header p {
-	margin: 0 0 2% 0;
+	
+	h1 {
+		color: $minor-header;
+		margin: 1% 0 0 0;
+		font-size: 2.0em;
+	}
+	p {
+		margin: 0 0 2% 0;
+	}
 }
 
 #main-tagline {
@@ -31,46 +30,38 @@
 }
 
 #main-explanation {
-	font-size: 1.2em;
+	font-size: 1.25em;
 	margin-bottom: 3%;
 }
 
 .how-it-works {
 	position: relative;
 	padding-bottom: 2%;
-}
-
-.how-it-works ul {
-	list-style-type: none; 
-}
-
-.how-it-works h2 {
-	text-align: center;
-	width: 16%;
-	margin: -0.6em 42% 0 42%;
-	background-color: $background;
-}
-
-.how-it-works h3 {
-	font-size: 1.25em;
-}
-
-.how-it-works p {
-	font-size: 1.1em;
-}
-
-.how-it-works span {
-	margin-left: 5%;
+	
+	ul {
+		list-style-type: none; 
+	}
+	h2 {
+		text-align: center;
+		width: 16%;
+		margin: -0.6em 42% 0 42%;
+		background-color: $background;
+	}
+	h3 {
+		font-size: 1.25em;
+	}
+	p {
+		font-size: 1.1em;
+	}
+	span {
+		margin-left: 5%;
+	}
 }
 
 .main-step {
 	float: left;
 	width: 29%;
 	margin-left: 3.2%;
-}
-
-.main-step p {
-	font-size: 1.15em;
 }
 
 .main-signup-form {
@@ -128,6 +119,10 @@
 .main-launch-block {
 	width: 50%;
 	margin: 0 25%;
+	
+	h3 {
+		color: $main-header;
+	}
 }
 
 .benefits-list {
@@ -135,30 +130,27 @@
 	padding: 3% 3% 3% 7%;
 	display: block;
 	float: left;
-}
-
-.benefits-list ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.benefits-list li {
-	float: left;
-	display: inline-block;
-	width: 20%;
-	margin: 0 2.5%;
-}
-
-.benefits-list h3, .benefits-list p {
-	display: inline-block;
-	width: 100%;
-	margin: 1% 0;
-}
-
-.benefits-list h3 {
-	margin-left: 5%;
-	font-size: 1.25em;
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		float: left;
+		display: inline-block;
+		width: 20%;
+		margin: 0 2.5%;
+	}
+	h3, p {
+		display: inline-block;
+		width: 100%;
+		margin: 1% 0;		
+	}
+	h3 {
+		margin-left: 5%;
+		font-size: 1.25em;
+	}
 }
 
 .main-image-container {
