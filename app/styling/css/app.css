@@ -125,6 +125,26 @@ footer {
 }
 
 /* line 16, ../sass/_header.scss */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 0.4em solid transparent;
+  border-right: 0.4em solid transparent;
+  border-top: 0.4em solid pink;
+  position: relative;
+  top: 0.75em;
+}
+
+/* line 26, ../sass/_header.scss */
+.top-nav a:hover {
+  color: #fa6464;
+}
+/* line 28, ../sass/_header.scss */
+.top-nav a:hover .arrow-down {
+  border-top: 0.4em solid #fa6464;
+}
+
+/* line 33, ../sass/_header.scss */
 .top-nav small {
   float: right;
   right: 8%;
@@ -132,14 +152,14 @@ footer {
   margin-top: 3px;
 }
 
-/* line 23, ../sass/_header.scss */
+/* line 40, ../sass/_header.scss */
 #twitter-widget-0 {
   float: right;
   position: relative;
   right: 5%;
   opacity: 0.75;
 }
-/* line 28, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 #twitter-widget-0:hover {
   opacity: 1.0;
 }
@@ -264,69 +284,70 @@ footer {
 /* line 100, ../sass/_main-page.scss */
 .social-button {
   padding: 1.4em 0.8em;
-  margin: 1% 0 0% 5%;
+  margin: 1% 5% 0% 0;
   border-radius: 5px;
   display: inline-block;
   background-color: #ff8da1;
+  background-position: 50%;
 }
-/* line 106, ../sass/_main-page.scss */
+/* line 107, ../sass/_main-page.scss */
 .social-button:hover {
   background-color: #fa6464;
 }
 
-/* line 111, ../sass/_main-page.scss */
+/* line 112, ../sass/_main-page.scss */
 .ht-twitter {
   background-image: url("../../img/twitter.png");
 }
 
-/* line 115, ../sass/_main-page.scss */
+/* line 116, ../sass/_main-page.scss */
 .ht-facebook {
   background-image: url("../../img/facebook.png");
 }
 
-/* line 119, ../sass/_main-page.scss */
+/* line 120, ../sass/_main-page.scss */
 .main-launch-block {
   width: 50%;
   margin: 0 25%;
 }
-/* line 123, ../sass/_main-page.scss */
+/* line 124, ../sass/_main-page.scss */
 .main-launch-block h3 {
   color: #fa6464;
 }
 
-/* line 128, ../sass/_main-page.scss */
+/* line 129, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
   display: block;
   float: left;
 }
-/* line 134, ../sass/_main-page.scss */
+/* line 135, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 139, ../sass/_main-page.scss */
+/* line 140, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
   width: 20%;
   margin: 0 2.5%;
 }
-/* line 145, ../sass/_main-page.scss */
+/* line 146, ../sass/_main-page.scss */
 .benefits-list h3, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
-/* line 150, ../sass/_main-page.scss */
+/* line 151, ../sass/_main-page.scss */
 .benefits-list h3 {
   margin-left: 5%;
   font-size: 1.25em;
 }
 
-/* line 156, ../sass/_main-page.scss */
+/* line 157, ../sass/_main-page.scss */
 .main-image-container {
   width: 100%;
   display: block;
@@ -335,29 +356,29 @@ footer {
   padding: 3% 0;
 }
 
-/* line 164, ../sass/_main-page.scss */
+/* line 165, ../sass/_main-page.scss */
 .main-image-container img {
   display: inline-block;
   float: left;
   width: 42%;
 }
 
-/* line 170, ../sass/_main-page.scss */
+/* line 171, ../sass/_main-page.scss */
 #ht-free {
   width: 47%;
 }
 
-/* line 174, ../sass/_main-page.scss */
+/* line 175, ../sass/_main-page.scss */
 #ht-never-miss {
   width: 55%;
 }
 
-/* line 178, ../sass/_main-page.scss */
+/* line 179, ../sass/_main-page.scss */
 .right-side-image {
   padding-left: 6%;
 }
 
-/* line 182, ../sass/_main-page.scss */
+/* line 183, ../sass/_main-page.scss */
 #first-benefits-paragraph {
   text-shadow: 1px 1px 1px #494949;
 }
@@ -448,89 +469,126 @@ footer {
   color: pink;
 }
 
-/* line 1, ../sass/_about.scss */
-.about-page h1 {
-  padding-top: 4%;
-}
-
-/* line 5, ../sass/_about.scss */
-.about-page h1, .about-page h3 {
-  margin-left: 2%;
-}
-
-/* line 9, ../sass/_about.scss */
-.about-founder-figure {
-  float: left;
-  width: 38%;
-  margin-left: 2%;
-}
-
-/* line 15, ../sass/_about.scss */
-.about-founder-figure img {
-  width: 100%;
-}
-
-/* line 19, ../sass/_about.scss */
-.about-right-block {
-  width: 20%;
-  margin-left: -8%;
-  float: left;
-}
-
-/* line 25, ../sass/_about.scss */
-.about-right-block p {
-  line-height: 1.8em;
-  font-size: 1.05em;
-}
-
 /* line 1, ../sass/_info.scss */
 .info-page {
+  width: 94%;
   padding: 0 3%;
 }
-/* line 3, ../sass/_info.scss */
+/* line 4, ../sass/_info.scss */
 .info-page h1 {
   padding: 4% 0 0 0;
 }
 
-/* line 8, ../sass/_info.scss */
-.info-nav-block {
-  margin-bottom: 2%;
+/* line 9, ../sass/_info.scss */
+.info-about-section h1 {
+  padding: 3% 0 0 0;
 }
-/* line 12, ../sass/_info.scss */
-.info-nav-block .info-internal-links a {
-  padding-right: 4%;
+
+/* line 13, ../sass/_info.scss */
+.info-container {
+  float: right;
+  width: 82%;
+  margin: 2% 0 0 0;
 }
-/* line 15, ../sass/_info.scss */
-.info-nav-block .info-internal-links .info-link-active {
+
+/* line 19, ../sass/_info.scss */
+.info-internal-links {
+  width: 15%;
+  float: left;
+  position: relative;
+  margin-top: 2em;
+  background: #3c3c3c;
+  padding: 0 0 1.5% 2%;
+  left: -4em;
+}
+/* line 27, ../sass/_info.scss */
+.info-internal-links h3 {
+  margin: 2.5em 0 0 0;
+}
+/* line 30, ../sass/_info.scss */
+.info-internal-links a {
+  display: block;
+  margin: 4% 0 0 0;
+}
+/* line 34, ../sass/_info.scss */
+.info-internal-links .info-link-active {
   color: #f94b4b;
 }
 
-/* line 21, ../sass/_info.scss */
+/* line 39, ../sass/_info.scss */
 .info-block {
   width: 50%;
   line-height: 2em;
 }
+/* line 42, ../sass/_info.scss */
+.info-block h1 {
+  margin-top: 1.5em;
+}
 
-/* line 26, ../sass/_info.scss */
+/* line 46, ../sass/_info.scss */
+.info-block.info-about-section {
+  width: 70%;
+}
+
+/* line 50, ../sass/_info.scss */
 .reserve-list {
   list-style-type: none;
 }
-/* line 28, ../sass/_info.scss */
+/* line 52, ../sass/_info.scss */
 .reserve-list li span, .reserve-list li strong {
-  color: pink;
+  color: #fa6464;
 }
 
-/* line 33, ../sass/_info.scss */
+/* line 57, ../sass/_info.scss */
 .info-button {
   width: 15%;
   padding: 1.5%;
   margin: 0.5% 0 2% 0;
 }
-/* line 37, ../sass/_info.scss */
+/* line 61, ../sass/_info.scss */
 .info-button a {
   color: white;
 }
 
+/* line 66, ../sass/_info.scss */
+.about-founder-figure {
+  float: left;
+  width: 40%;
+}
+
+/* line 71, ../sass/_info.scss */
+.about-right-block {
+  margin-top: 5em;
+}
+
+/*
+.about-left-block {
+	float: left;
+	width: 40%;
+}
+
+.about-founder-figure {
+	float: left;
+	width: 100%;
+}
+
+.about-founder-figure img {
+	width: 100%;
+}
+
+.about-right-block {
+	width: 35%;
+	float: right;
+	position: relative;
+	top: 5em;
+	left: -12em;
+}
+
+.about-right-block p {
+	line-height: 1.8em;
+	font-size: 1.05em;
+}
+*/
 /* line 5, ../sass/_signup.scss */
 .signup-page h1 {
   padding-top: 4%;

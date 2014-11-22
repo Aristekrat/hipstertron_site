@@ -50,16 +50,13 @@ angular.module('hipstertron.controllers', [])
     }
 ])
 
-.controller('AboutCtrl', ['$scope',
-    function($scope) {
-
-    }
-])
-
 .controller('InfoCtrl', ['$scope', '$routeParams',
     function($scope, $routeParams) {
 
-        if ($routeParams.type === 'find-concerts') {
+        if ($routeParams.type === 'about-hipstertron') {
+            $scope.aboutRequested = true;
+            activateNav('aboutActive')
+        } else if ($routeParams.type === 'find-tickets') {
             $scope.findRequested = true;
             activateNav('findActive')
         } else if ($routeParams.type === 'reserve-tickets') {
@@ -69,12 +66,12 @@ angular.module('hipstertron.controllers', [])
             $scope.cheapRequested = true;
             activateNav('cheapActive')
         } else {
-            $scope.findRequested = true;
-            activateNav('findActive')
+            $scope.aboutRequested = true;
+            activateNav('aboutActive')
         }
 
         function activateNav(correctNav) {
-            var navOptions = ["findActive", "reserveActive", "cheapActive"];
+            var navOptions = ["aboutActive", "findActive", "reserveActive", "cheapActive"];
 
             for (var i = 0; navOptions.length > i; i++) {
                 var t = navOptions[i]

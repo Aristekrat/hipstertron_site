@@ -1115,3 +1115,158 @@ Load paths:
 2014-11-16 01:46:35 overwrite css/app.css 
 2014-11-16 01:46:43 overwrite css/app.css 
 2014-11-16 10:32:02 overwrite css/app.css 
+2014-11-21 11:36:58 overwrite css/app.css 
+2014-11-21 11:37:05 overwrite css/app.css 
+2014-11-21 11:37:16 overwrite css/app.css 
+2014-11-21 21:02:48 overwrite css/app.css 
+2014-11-21 21:02:52 identical css/app.css 
+2014-11-21 21:04:44 overwrite css/app.css 
+2014-11-21 21:05:14 overwrite css/app.css 
+2014-11-21 21:05:28 overwrite css/app.css 
+2014-11-21 21:07:58 overwrite css/app.css 
+2014-11-21 21:08:06 overwrite css/app.css 
+2014-11-21 21:09:09 overwrite css/app.css 
+2014-11-21 21:09:28 overwrite css/app.css 
+2014-11-21 21:09:43 overwrite css/app.css 
+2014-11-21 21:10:07 overwrite css/app.css 
+2014-11-21 21:10:42 overwrite css/app.css 
+2014-11-21 21:11:12 overwrite css/app.css 
+2014-11-21 21:14:24 overwrite css/app.css 
+2014-11-21 21:15:00 overwrite css/app.css 
+2014-11-21 21:15:06 overwrite css/app.css 
+2014-11-21 21:15:24 overwrite css/app.css 
+2014-11-21 21:15:35 identical css/app.css 
+2014-11-21 21:23:01     error sass/app.scss (Line 17 of sass/_info.scss: Invalid CSS after "	}": expected selector or at-rule, was "}")
+2014-11-21 21:23:01 overwrite css/app.css 
+2014-11-21 21:23:17 overwrite css/app.css 
+2014-11-21 21:23:20 overwrite css/app.css 
+2014-11-21 21:24:15 overwrite css/app.css 
+2014-11-21 21:24:24 overwrite css/app.css 
+2014-11-21 21:24:59 overwrite css/app.css 
+2014-11-21 21:25:06 overwrite css/app.css 
+2014-11-21 21:26:40 overwrite css/app.css 
+2014-11-21 21:26:46 overwrite css/app.css 
+2014-11-21 21:26:50 overwrite css/app.css 
+2014-11-21 21:26:59 overwrite css/app.css 
+2014-11-21 21:27:06 overwrite css/app.css 
+2014-11-21 21:27:14 overwrite css/app.css 
+2014-11-21 21:27:22 overwrite css/app.css 
+2014-11-21 21:27:27 overwrite css/app.css 
+2014-11-21 21:28:28 overwrite css/app.css 
+2014-11-21 21:28:46 overwrite css/app.css 
+2014-11-21 21:29:43 overwrite css/app.css 
+2014-11-21 21:29:50 overwrite css/app.css 
+2014-11-21 21:32:32 overwrite css/app.css 
+2014-11-21 21:32:45 overwrite css/app.css 
+2014-11-21 21:33:09 overwrite css/app.css 
+2014-11-21 21:33:14 overwrite css/app.css 
+2014-11-21 21:34:06 overwrite css/app.css 
+2014-11-21 21:34:16 overwrite css/app.css 
+2014-11-21 21:34:26 overwrite css/app.css 
+2014-11-21 21:34:34 overwrite css/app.css 
+2014-11-21 21:34:54 overwrite css/app.css 
+2014-11-21 21:35:34 overwrite css/app.css 
+2014-11-21 21:35:57 overwrite css/app.css 
+2014-11-21 21:36:04 overwrite css/app.css 
+2014-11-21 21:36:31 overwrite css/app.css 
+2014-11-21 21:36:39 overwrite css/app.css 
+2014-11-21 21:37:02 overwrite css/app.css 
+2014-11-21 21:37:13 overwrite css/app.css 
+2014-11-21 21:37:28 overwrite css/app.css 
+2014-11-21 21:37:35 overwrite css/app.css 
+2014-11-21 21:37:44 overwrite css/app.css 
+2014-11-21 21:37:50 overwrite css/app.css 
+2014-11-21 21:38:53 overwrite css/app.css 
+2014-11-21 21:39:25 overwrite css/app.css 
+2014-11-21 21:41:38 overwrite css/app.css 
+2014-11-21 21:42:17 overwrite css/app.css 
+2014-11-21 21:42:18 identical css/app.css 
+2014-11-21 21:44:27 overwrite css/app.css 
+2014-11-21 21:44:51 overwrite css/app.css 
+2014-11-21 21:45:37 overwrite css/app.css 
+2014-11-21 21:45:46 overwrite css/app.css 
+2014-11-21 21:46:56     error sass/app.scss (Line 7: File to import not found or unreadable: about.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2014-11-21 21:46:56 overwrite css/app.css 
+2014-11-21 21:47:14     error sass/app.scss (Line 7: File to import not found or unreadable: about.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2014-11-21 21:47:14 overwrite css/app.css 
+2014-11-21 21:47:20     error sass/app.scss (Line 7: File to import not found or unreadable: about.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2014-11-21 21:47:20 identical css/app.css 
+2014-11-21 21:47:33     error sass/app.scss (Line 7: File to import not found or unreadable: about.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2014-11-21 21:47:33 overwrite css/app.css 
+2014-11-21 21:47:50 overwrite css/app.css 
+2014-11-21 21:48:40 overwrite css/app.css 
+2014-11-21 21:52:34 overwrite css/app.css 
+2014-11-21 21:52:47 overwrite css/app.css 
+2014-11-21 21:52:57 overwrite css/app.css 
+2014-11-21 21:53:06 overwrite css/app.css 
+2014-11-21 21:53:13 overwrite css/app.css 
+2014-11-21 21:54:23 overwrite css/app.css 
+2014-11-21 21:54:48 overwrite css/app.css 
+2014-11-21 21:57:44 overwrite css/app.css 
+2014-11-21 21:58:43 overwrite css/app.css 
+2014-11-21 22:01:14 overwrite css/app.css 
+2014-11-21 22:02:23 overwrite css/app.css 
+2014-11-21 22:03:27 overwrite css/app.css 
+2014-11-21 22:03:54 overwrite css/app.css 
+2014-11-21 22:04:47 overwrite css/app.css 
+2014-11-21 22:05:03 overwrite css/app.css 
+2014-11-21 22:05:10 overwrite css/app.css 
+2014-11-21 22:16:15 overwrite css/app.css 
+2014-11-21 22:16:58 overwrite css/app.css 
+2014-11-21 22:17:07 overwrite css/app.css 
+2014-11-21 22:17:34 overwrite css/app.css 
+2014-11-21 22:17:45 overwrite css/app.css 
+2014-11-21 22:18:10 overwrite css/app.css 
+2014-11-21 22:18:14 overwrite css/app.css 
+2014-11-21 22:20:00 overwrite css/app.css 
+2014-11-21 22:20:10 overwrite css/app.css 
+2014-11-21 22:23:59 overwrite css/app.css 
+2014-11-21 22:28:03 overwrite css/app.css 

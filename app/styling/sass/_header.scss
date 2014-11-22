@@ -13,6 +13,23 @@
 	margin-top: 3px;
 }
 
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 0.4em solid transparent;
+	border-right: 0.4em solid transparent;	
+	border-top: 0.4em solid $minor-header;
+	position: relative;
+	top: 0.75em;
+}
+
+.top-nav a:hover {
+	color: $main-header;
+	.arrow-down {
+		border-top: 0.4em solid $main-header;
+	}
+}
+
 .top-nav small {
 	float: right;
 	right: 8%;

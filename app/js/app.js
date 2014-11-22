@@ -18,10 +18,10 @@ config(['$routeProvider', '$locationProvider',
             templateUrl: 'partials/calendar.html',
             controller: 'CalendarCtrl'
         });
-        $routeProvider.when('/about', {
+        /*$routeProvider.when('/about', {
             templateUrl: 'partials/about.html',
             controller: 'AboutCtrl'
-        });
+        });*/
         $routeProvider.when('/info/:type', {
             templateUrl: 'partials/info.html',
             controller: 'InfoCtrl'
