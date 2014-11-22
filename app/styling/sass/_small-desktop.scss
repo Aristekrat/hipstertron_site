@@ -1,29 +1,41 @@
 @media (min-width: 1041px) and (max-width: 1440px) {
 
-#ht-never-miss {
-	width: 80%;
-}
+	#ht-never-miss {
+		width: 80%;
+	}
 
-.main-image-container img {
-	width: 60%;
-	margin: 3% 0 0 2%;
-}
+	.main-image-container img {
+		width: 60%;
+		margin: 3% 0 0 2%;
+	}
 
-#ht-free {
-	width: 65%;
-}
+	#ht-free {
+		width: 65%;
+	}
 
-.main-signup-form, .main-launch-block {
-	width: 60%;
-	margin: 0 20%;
-}
+	.main-signup-form, .main-launch-block {
+		width: 60%;
+		margin: 0 20%;
+	}
 
-.benefits-list p {
-	margin: 3% 0 0 0;
-}
+	.benefits-list p {
+		margin: 3% 0 0 0;
+	}
 
-.about-page, .signup-page {
-	min-height: 42em;
-}
+	.about-page, .signup-page {
+		min-height: 42em;
+	}
+
+	.about-founder-figure {
+		width: 60%;
+	}
+
+	.info-internal-links {
+		left: -2em;
+	}
+
+	.about-right-block {
+		width: 130%;
+	}
 
 }

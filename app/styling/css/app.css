@@ -639,6 +639,21 @@ footer {
   .about-page, .signup-page {
     min-height: 42em;
   }
+
+  /* line 29, ../sass/_small-desktop.scss */
+  .about-founder-figure {
+    width: 60%;
+  }
+
+  /* line 33, ../sass/_small-desktop.scss */
+  .info-internal-links {
+    left: -2em;
+  }
+
+  /* line 37, ../sass/_small-desktop.scss */
+  .about-right-block {
+    width: 130%;
+  }
 }
 @media (min-width: 600px) and (max-width: 1040px) {
   /***Header***/
