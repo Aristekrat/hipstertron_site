@@ -6,16 +6,20 @@ angular.module('hipstertron.controllers', [])
     function($scope, submitEmailService) {
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
+        $scope.userEmail.email = "hay@there.com"
 
         $scope.signUserUp = function(userEmail) {
-            if (userEmail.email) {
+            submitEmailService.sendEmail(userEmail, function(response) {
+                console.log(response)
+            })
+            /*            if (userEmail.email) {
                 $scope.emailPlease = false;
                 submitEmailService.submitEmail(userEmail, function(response) {
                     $scope.signedUp = true;
                 })
             } else {
                 $scope.emailPlease = true;
-            }
+            }*/
         }
 
     }
@@ -27,7 +31,7 @@ angular.module('hipstertron.controllers', [])
         var resultCount = 120;
         var offset = 0;
         var runCount = [];
-        runCount.push(resultCount)
+        runCount.push(resultCount);
 
         // Testing : check whether this is returning a proper object and whether each object has the required properties.
         getConcertsService.getConcerts(resultCount, offset, function(response) {

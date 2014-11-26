@@ -48,16 +48,20 @@ angular.module('hipstertron.controllers', [])
     function($scope, submitEmailService) {
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
+        $scope.userEmail.email = "hay@there.com"
 
         $scope.signUserUp = function(userEmail) {
-            if (userEmail.email) {
+            submitEmailService.sendEmail(userEmail, function(response) {
+                console.log(response)
+            })
+            /*            if (userEmail.email) {
                 $scope.emailPlease = false;
                 submitEmailService.submitEmail(userEmail, function(response) {
                     $scope.signedUp = true;
                 })
             } else {
                 $scope.emailPlease = true;
-            }
+            }*/
         }
 
     }
@@ -69,7 +73,7 @@ angular.module('hipstertron.controllers', [])
         var resultCount = 120;
         var offset = 0;
         var runCount = [];
-        runCount.push(resultCount)
+        runCount.push(resultCount);
 
         // Testing : check whether this is returning a proper object and whether each object has the required properties.
         getConcertsService.getConcerts(resultCount, offset, function(response) {
@@ -165,7 +169,7 @@ angular.module('hipstertron.services', [])
                     prod: "http://hipstertron-data.herokuapp.com",
                     local: "http://localhost:8000"
                 }
-                return envPrefix['prod'];
+                return envPrefix['local'];
             },
         }
     }
@@ -174,6 +178,14 @@ angular.module('hipstertron.services', [])
 .factory('submitEmailService', ['$http', 'environmentService',
     function($http, environmentService) {
         return {
+            sendEmail: function(email, callback) {
+                $http.post("/send-email", email)
+                    .then(function(response) {
+                        return callback(response)
+                    });
+            }
+        }
+        /*        return {
             submitEmail: function(email, callback) {
                 // Figure out a way to submit emails with protractor / jasmine. May require some python work. 
                 $http({
@@ -189,7 +201,7 @@ angular.module('hipstertron.services', [])
                         return callback(response)
                     });
             }
-        }
+        }*/
     }
 ])
 
