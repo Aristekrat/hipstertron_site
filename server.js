@@ -27,7 +27,9 @@ var email = new sendgrid.Email({
 	text: 'Hello world'
 });
 sendgrid.send(email, function (err, json) {
+	console.log(process.env.SENDGRID_USERNAME)
 	if (err) {
+		console.log("Send Grid Error Block Reached")
 		return console.error(err);
 	}
 	console.log(json);
