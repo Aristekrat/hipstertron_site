@@ -20,20 +20,5 @@ app.listen(config.port, config.ip, function () {
 	console.log('Express server listening on %s:%d, in %s mode', config.ip, config.port, app.get('env'));
 })
 
-var email = new sendgrid.Email({
-	to: 'aristekrat@gmail.com',
-	from: 'brian@hipstertron.com',
-	subject: 'Subject goes here',
-	text: 'Hello world'
-});
-sendgrid.send(email, function (err, json) {
-	console.log(process.env.SENDGRID_USERNAME)
-	if (err) {
-		console.log("Send Grid Error Block Reached")
-		return console.error(err);
-	}
-	console.log(json);
-});
-
 // Expose app
 exports = module.exports = app;
