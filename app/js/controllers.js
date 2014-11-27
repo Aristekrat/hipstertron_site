@@ -6,7 +6,6 @@ angular.module('hipstertron.controllers', [])
     function($scope, submitEmailService) {
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
-        $scope.userEmail.email = "hay@there.com"
 
         $scope.signUserUp = function(userEmail) {
             submitEmailService.sendEmail(userEmail, function(response) {

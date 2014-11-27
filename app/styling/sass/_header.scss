@@ -4,7 +4,8 @@
 	top: 0;
 	width: 100%;
 	z-index: 100;
-	background: darken($background, 5%)
+	background: darken($background, 5%);
+	border-bottom: 1px solid $background;
 }
 
 .top-nav a {
