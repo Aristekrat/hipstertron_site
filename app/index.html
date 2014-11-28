@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hipster Tron | Find Concerts in Denver, Concert Finder, Concerts in Denver</title>
+  <title>Hipstertron | Find Concerts in Denver, Concert Finder, Concerts in Denver</title>
   <meta name="description" content="Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="fragment" content="!">
@@ -22,8 +22,34 @@
 
 </head>
 <body>
+  <!--Not entirely sure this script should be kept in index. May need to move it to a dedicated page in the future-->
+<!--  Commented this out to supress facebook's annoying console logs
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '780665898637998',
+          xfbml      : false,
+          version    : 'v2.2'
+        });
+        //FB.login(function(){}, {scope: 'publish_actions'}); Got blocked by pop-up blocker and then rejected for not matching the app domain
+      };
+
+      /*
+      Triggering Code when the SDK loads
+      The function assigned to window.fbAsyncInit is run as soon as the SDK has completed loading. Any code that you want to run after the SDK is loaded should be placed within this function and after the call to FB.init. Any kind of JavaScript can be used here, but any SDK functions must be called after FB.init.
+       */
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk/debug.js";
+         //js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+  </script> -->
   <nav class="top-nav">
-      <a href="/">Hipster Tron</a>
+      <a href="/"><img class="home-icon" src="img/home.png" alt="Hipstertron Home" /></a>
       <a href="/calendar">Calendar</a>
       <a href="/info/about-hipstertron">Info </a>
       <!--<span class="arrow-down"></span>-->

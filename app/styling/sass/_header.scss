@@ -14,7 +14,11 @@
 	margin-top: 3px;
 }
 
-.arrow-down {
+.home-icon {
+	margin-top: -0.3em;
+}
+
+/* .arrow-down {
 	width: 0; 
 	height: 0; 
 	border-left: 0.4em solid transparent;
@@ -22,7 +26,7 @@
 	border-top: 0.4em solid $minor-header;
 	position: relative;
 	top: 0.75em;
-}
+} */
 
 .top-nav a:hover {
 	color: $main-header;

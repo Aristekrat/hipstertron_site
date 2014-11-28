@@ -127,7 +127,7 @@ footer {
 
 /* line 17, ../sass/_header.scss */
 .home-icon {
-  margin-top: -0.3em;
+  margin-top: -0.5em;
 }
 
 /* .arrow-down {
@@ -970,7 +970,7 @@ footer {
 
   /* line 15, ../sass/_phones.scss */
   .home-page header {
-    padding: 18% 0 5% 0;
+    padding: 15% 0 5% 0;
   }
 
   /* line 19, ../sass/_phones.scss */
