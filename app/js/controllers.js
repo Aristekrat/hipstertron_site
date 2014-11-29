@@ -7,18 +7,21 @@ angular.module('hipstertron.controllers', [])
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
 
+        $scope.errorHandler = function() {
+            $scope.emailError = true
+        }
+
+        $scope.successHandler = function() {
+            $scope.signedUp = true;
+        }
+
         $scope.signUserUp = function(userEmail) {
-            submitEmailService.sendEmail(userEmail, function(response) {
-                console.log(response)
-            })
-            /*            if (userEmail.email) {
+            if (userEmail.email) {
                 $scope.emailPlease = false;
-                submitEmailService.submitEmail(userEmail, function(response) {
-                    $scope.signedUp = true;
-                })
+                submitEmailService.submitEmail(userEmail, $scope.successHandler, $scope.errorHandler)
             } else {
                 $scope.emailPlease = true;
-            }*/
+            }
         }
 
     }

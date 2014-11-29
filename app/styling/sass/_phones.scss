@@ -22,9 +22,25 @@
 	margin: 0 1%;
 }
 
-.how-it-works h2 {
-	width: 50%;
-	margin: -0.6em 25% 0 25%;
+.how-it-works {
+	h2 {
+		width: 50%;
+		margin: -0.6em 25% 0 25%;
+	}
+	// Find concerts picture on home
+	#find-concerts-pic {
+		width: 70%;
+		left: 2em;
+	}
+	#reserve-tickets-pic {
+		width: 55%;
+		left: 3em;
+	}
+	#cheap-tickets-pic {
+		width: 40%;
+		left: 4em;
+		top: 0em;
+	}
 }
 
 .main-step {

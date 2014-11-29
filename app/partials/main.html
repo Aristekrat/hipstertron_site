@@ -11,17 +11,20 @@
           <li class="main-step">
             <h3>Personalized Match</h3>
             <p>Hipstertron scans your music collection to find out if any bands you like are coming to town.</p>
-            <p>Learn more about how <a href="info/find-tickets">Hipstertron keeps you in the know</a></p> 
+            <p>Learn more about how <a href="info/find-tickets">Hipstertron keeps you in the know</a></p>
+            <img id="find-concerts-pic" src="img/ht_find_concerts.png" />
           </li>
           <li class="main-step">
             <h3>Never Miss Out</h3>
             <p>Hipstertron allows you to reserve amazing tickets for bands you love, for free.</p>
             <p>Learn about how <a href="info/reserve-tickets">you can get primo tickets with Hipstertron</a></p>
+            <img id="reserve-tickets-pic" src="img/ht_reserve_tickets.png" />
           </li>
           <li class="main-step">
             <h3>Get Deals</h3>
             <p>Hipstertron notifies you about cheap tickets for concerts you care about.</p>
             <p>Learn more about how <a href="info/cheap-tickets">Hipstertron can get you cheap tickets</a></p>
+            <img id="cheap-tickets-pic" src="img/ht_cheap_tickets.png" />
           </li>
         </ul>
   </section>
@@ -29,7 +32,12 @@
   <section class="main-block signup-block">
     <form class="main-signup-form">
         <span ng-hide="signedUp">
-          <p>Hipster Tron is exclusively available for the Denver / Boulder area.</p>
+          <p ng-hide="emailError">Hipster Tron is exclusively available for the Denver / Boulder area.</p>
+          <span ng-hide="!emailError">
+            <h3>Oops!</h3>
+            <p>How embarassing, Hipstertron encountered an error. Maybe your email is alreadly taken, or maybe you can try just refreshing the page. If that doesn't work
+            just email: <a href="mailto:brian@hipstertron.com">brian@hipstertron.com</a> - Sorry again</p>
+          </span>
             <input type="email" class="main-email" ng-model="userEmail.email" placeholder="Sign Up for Launch" />
             <button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
             <p class="warning" ng-show="emailPlease">Please enter your email</p>
@@ -49,6 +57,7 @@
               <a class="social-button ht-twitter" href="https://twitter.com/intent/tweet?hashtags=HipsterTron&original_referer=http%3A%2F%2Flocalhost%3A9000%2F&text=He%27s%20heard%20of%20that%20show%20before%20you.&tw_p=tweetbutton&url=http%3A%2F%2Fwww.hipstertron.com" title="Twitter">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
               <a class="social-button ht-facebook" href="https://www.facebook.com/pages/HipsterTron/305572222963336" title="Facebook">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
         </span>
+
     </form>
     <div class="main-launch-block">
       <h3 ng-hide="signedUp">Sign Up For Launch</h3>

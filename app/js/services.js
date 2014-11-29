@@ -19,30 +19,16 @@ angular.module('hipstertron.services', [])
 .factory('submitEmailService', ['$http', 'environmentService',
     function($http, environmentService) {
         return {
-            sendEmail: function(email, callback) {
-                $http.post("/send-email", email)
-                    .then(function(response) {
+            submitEmail: function(email, callback, errorHandler) {
+                $http.post("/submit-email", email)
+                    .success(function(response) {
                         return callback(response)
+                    })
+                    .error(function(response) {
+                        return errorHandler(response)
                     });
             }
         }
-        /*        return {
-            submitEmail: function(email, callback) {
-                // Figure out a way to submit emails with protractor / jasmine. May require some python work. 
-                $http({
-                    method: 'POST',
-                    url: environmentService.getPrefix() + "/sendEmail",
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    // Test that the data is properly JSONIFIED
-                    data: JSON.stringify(email)
-                })
-                    .then(function(response) {
-                        return callback(response)
-                    });
-            }
-        }*/
     }
 ])
 

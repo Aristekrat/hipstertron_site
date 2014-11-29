@@ -53,8 +53,22 @@
 	p {
 		font-size: 1.1em;
 	}
-	span {
-		margin-left: 5%;
+	#find-concerts-pic {
+		display: inline-block;
+		position: relative;
+		left: 5em;
+		width: 45%;
+	}
+	#reserve-tickets-pic {
+		float: left;
+		position: relative;
+		left: 7em;
+	}
+	#cheap-tickets-pic {
+		width: 35%;
+		position: relative;
+		left: 10em;
+		top: 2em;
 	}
 }
 

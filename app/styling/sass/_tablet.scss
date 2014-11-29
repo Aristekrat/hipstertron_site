@@ -13,9 +13,25 @@
 	margin: 1%;
 }
 
-.how-it-works h2 {
+.how-it-works {
+	h2 {
 		width: 32%;
 		margin: -0.6em 36% 0 36%;
+	}
+	// Find concerts picture on home
+	#find-concerts-pic {
+		width: 55%;
+		left: 2em;
+	}
+	#reserve-tickets-pic {
+		width: 55%;
+		left: 3em;
+	}
+	#cheap-tickets-pic {
+		width: 40%;
+		left: 4em;
+		top: 1em;
+	}
 }
 
 .main-step:first-child {
@@ -124,9 +140,21 @@
 		padding-top: 5%;
 	}
 
-	.how-it-works h2 {
-		width: 30%;
-		margin: -0.6em 35% 0 35%;
+	.how-it-works {
+		h2 {
+			width: 30%;
+			margin: -0.6em 35% 0 35%;
+		}
+		// Find concerts picture on home
+		#find-concerts-pic {
+			display: none;
+		}
+		#reserve-tickets-pic {
+			display: none;
+		}
+		#cheap-tickets-pic {
+			display: none;
+		}
 	}
 
 	#main-explanation {
