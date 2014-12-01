@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     expand: true, // Enable dynamic expansion
                     cwd: 'app/img', // Src matches are relative to this path
                     src: ['/*.{png,jpg,gif}'], // Actual patterns to match
-                    dest: 'app/img' // Destination path prefix
+                    dest: 'app/dist/img' // Destination path prefix
                 }]
             }
         },
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['app/js/*.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['concat', 'uglify', 'cssmin'],
                 options: {
                     spawn: false,
                 },
@@ -93,7 +93,7 @@ module.exports = function(grunt) {
     // File size reduction
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    /*    grunt.loadNpmTasks('grunt-contrib-htmlmin');*/
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-compress');
