@@ -436,47 +436,48 @@ footer {
 .calendar-search {
   float: right;
   width: 25%;
-  margin: 2% 15% 0 0;
+  padding: 0.5% 0;
+  margin: 1% 15% 0 0;
 }
 
-/* line 32, ../sass/_calendar.scss */
+/* line 33, ../sass/_calendar.scss */
 .calendar {
   width: 70%;
   margin: 1% 15% 5% 15%;
   border: 1px solid #888;
 }
 
-/* line 38, ../sass/_calendar.scss */
+/* line 39, ../sass/_calendar.scss */
 .calendar-header {
   background: #fa6464;
 }
 
-/* line 42, ../sass/_calendar.scss */
+/* line 43, ../sass/_calendar.scss */
 .calendar-header tr th {
   padding: 1%;
   font-size: 1.2em;
   width: 33%;
 }
 
-/* line 48, ../sass/_calendar.scss */
+/* line 49, ../sass/_calendar.scss */
 .calendar-row {
   color: pink;
   border-bottom: 1px solid #2f2f2f;
 }
 
-/* line 53, ../sass/_calendar.scss */
+/* line 54, ../sass/_calendar.scss */
 .calendar-row:nth-child(odd) {
   background: #2f2f2f;
 }
 
-/* line 57, ../sass/_calendar.scss */
+/* line 58, ../sass/_calendar.scss */
 .calendar-row td {
   padding: 0;
   margin: 0;
   border-right: 1px solid #888;
 }
 
-/* line 63, ../sass/_calendar.scss */
+/* line 64, ../sass/_calendar.scss */
 .calendar-row td a {
   width: 95%;
   height: 100%;
@@ -484,7 +485,7 @@ footer {
   padding: 4%;
   color: pink;
 }
-/* line 69, ../sass/_calendar.scss */
+/* line 70, ../sass/_calendar.scss */
 .calendar-row td a:hover {
   color: pink;
 }

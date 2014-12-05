@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     expand: true, // Enable dynamic expansion
                     cwd: 'app/img', // Src matches are relative to this path
                     src: ['/*.{png,jpg,gif}'], // Actual patterns to match
-                    dest: 'app/dist/img' // Destination path prefix
+                    dest: 'app/img' // Destination path prefix
                 }]
             }
         },
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['app/js/*.js'],
+                files: ['app/js/*.js', 'app/styling/sass/*.scss'],
                 tasks: ['concat', 'uglify', 'cssmin'],
                 options: {
                     spawn: false,
