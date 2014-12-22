@@ -20,7 +20,7 @@ angular.module('hipstertron.services', [])
     function($http, environmentService) {
         return {
             submitEmail: function(email, callback, errorHandler) {
-                $http.post("/submit-email", email)
+                $http.post(environmentService.getPrefix() + "/sendEmail", email)
                     .success(function(response) {
                         return callback(response)
                     })
