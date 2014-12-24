@@ -4,6 +4,11 @@ angular.module('hipstertron.controllers', [])
 
 .controller('MainCtrl', ['$scope', 'submitEmailService',
     function($scope, submitEmailService) {
+        /*        $scope.$parent.seo = {
+            title: "Sign Up for Hipstertron",
+            description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
+        }*/
+
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
 
@@ -23,10 +28,9 @@ angular.module('hipstertron.controllers', [])
                 $scope.emailPlease = true;
             }
         }
-
     }
 ])
-//
+
 .controller('CalendarCtrl', ['$scope', 'getConcertsService',
     function($scope, getConcertsService) {
         $scope.concertListings = {}
@@ -35,12 +39,10 @@ angular.module('hipstertron.controllers', [])
         var runCount = [];
         runCount.push(resultCount);
 
-        // Testing : check whether this is returning a proper object and whether each object has the required properties.
         getConcertsService.getConcerts(resultCount, offset, function(response) {
             $scope.concertListings = response.data.concertListings;
         })
 
-        // Badly needs some comments
         $(window).scroll(function(event) {
             if ($(this).scrollTop() + 1000 > $(document).height() - $(window).height()) {
                 if (runCount.length === 1) {
@@ -61,24 +63,43 @@ angular.module('hipstertron.controllers', [])
 
         if ($routeParams.type === 'about-hipstertron') {
             $scope.aboutRequested = true;
-            activateNav('aboutActive')
+            activateNav('aboutActive');
+            $scope.$parent.seo = {
+                title: "About Hipstertron",
+                description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
+            }
         } else if ($routeParams.type === 'find-tickets') {
             $scope.findRequested = true;
-            activateNav('findActive')
+            activateNav('findActive');
+            $scope.$parent.seo = {
+                title: "Concert Finder in Denver",
+                description: "Hipstertron will let you know when your favorite bands are coming to Denver, 100% free."
+            }
         } else if ($routeParams.type === 'reserve-tickets') {
             $scope.reserveRequested = true;
-            activateNav('reserveActive')
+            activateNav('reserveActive');
+            $scope.$parent.seo = {
+                title: "Reserve Concert Tickets, Get Concert Tickets Denver",
+                description: "Reserve concert tickets in advance with Hipstertron, 100% free."
+            }
         } else if ($routeParams.type === 'cheap-tickets') {
             $scope.cheapRequested = true;
-            activateNav('cheapActive')
+            activateNav('cheapActive');
+            $scope.$parent.seo = {
+                title: "Find Cheap Concert Tickets Denver",
+                description: "Get notified whenever you can pick up cheap concert tickets for bands you like."
+            }
         } else {
             $scope.aboutRequested = true;
-            activateNav('aboutActive')
+            activateNav('aboutActive');
+            $scope.$parent.seo = {
+                title: "About Hipstertron",
+                description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
+            }
         }
 
         function activateNav(correctNav) {
             var navOptions = ["aboutActive", "findActive", "reserveActive", "cheapActive"];
-
             for (var i = 0; navOptions.length > i; i++) {
                 var t = navOptions[i]
                 if (navOptions[i] === correctNav) {

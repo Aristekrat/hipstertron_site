@@ -7,37 +7,53 @@ angular.module('hipstertron', [
     'hipstertron.controllers',
     'angulartics',
     'angulartics.google.analytics'
-]).
-config(['$routeProvider', '$locationProvider',
+])
+
+.config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
             templateUrl: 'partials/main.html',
-            controller: 'MainCtrl'
+            controller: 'MainCtrl',
+            title: 'Find Concerts in Denver, Concert Finder, Concerts in Denver',
+            description: 'Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.'
         });
         $routeProvider.when('/calendar', {
             templateUrl: 'partials/calendar.html',
-            controller: 'CalendarCtrl'
+            controller: 'CalendarCtrl',
+            title: 'List of Denver Concerts',
+            description: 'A full list of all concerts coming to Denver.'
         });
-        /*$routeProvider.when('/about', {
-            templateUrl: 'partials/about.html',
-            controller: 'AboutCtrl'
-        });*/
         $routeProvider.when('/info/:type', {
             templateUrl: 'partials/info.html',
             controller: 'InfoCtrl'
         });
         $routeProvider.when('/signup', {
             templateUrl: 'partials/signup.html',
-            controller: 'SignUpCtrl'
+            controller: 'SignUpCtrl',
+            title: 'Sign Up for Hipstertron',
+            description: 'Sign up for Hipstertron to find out when your favorite bands are coming to town and get help getting your hands on tickets'
         });
         $routeProvider.when('/privacy-policy', {
             templateUrl: 'partials/privacy-policy.html',
-            controller: 'PrivacyCtrl'
+            controller: 'PrivacyCtrl',
+            title: 'Privacy Policy',
+            description: 'This page sets out Hipstertron\'s Privacy Policy'
         });
         $routeProvider.otherwise({
             redirectTo: '/'
         });
         $locationProvider.html5Mode(true).hashPrefix('!');
+    }
+])
+
+.controller('AppCtrl', ['$scope', '$route', '$location',
+    function($scope, $route, $location) {
+        $scope.$on("$routeChangeSuccess", function($currentRoute, $previousRoute) {
+            $scope.seo = {
+                title: $route.current.title,
+                description: $route.current.description
+            }
+        });
     }
 ]);
 /* Controllers */
@@ -46,6 +62,11 @@ angular.module('hipstertron.controllers', [])
 
 .controller('MainCtrl', ['$scope', 'submitEmailService',
     function($scope, submitEmailService) {
+        /*        $scope.$parent.seo = {
+            title: "Sign Up for Hipstertron",
+            description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
+        }*/
+
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
 
@@ -65,10 +86,9 @@ angular.module('hipstertron.controllers', [])
                 $scope.emailPlease = true;
             }
         }
-
     }
 ])
-//
+
 .controller('CalendarCtrl', ['$scope', 'getConcertsService',
     function($scope, getConcertsService) {
         $scope.concertListings = {}
@@ -77,12 +97,10 @@ angular.module('hipstertron.controllers', [])
         var runCount = [];
         runCount.push(resultCount);
 
-        // Testing : check whether this is returning a proper object and whether each object has the required properties.
         getConcertsService.getConcerts(resultCount, offset, function(response) {
             $scope.concertListings = response.data.concertListings;
         })
 
-        // Badly needs some comments
         $(window).scroll(function(event) {
             if ($(this).scrollTop() + 1000 > $(document).height() - $(window).height()) {
                 if (runCount.length === 1) {
@@ -103,24 +121,43 @@ angular.module('hipstertron.controllers', [])
 
         if ($routeParams.type === 'about-hipstertron') {
             $scope.aboutRequested = true;
-            activateNav('aboutActive')
+            activateNav('aboutActive');
+            $scope.$parent.seo = {
+                title: "About Hipstertron",
+                description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
+            }
         } else if ($routeParams.type === 'find-tickets') {
             $scope.findRequested = true;
-            activateNav('findActive')
+            activateNav('findActive');
+            $scope.$parent.seo = {
+                title: "Concert Finder in Denver",
+                description: "Hipstertron will let you know when your favorite bands are coming to Denver, 100% free."
+            }
         } else if ($routeParams.type === 'reserve-tickets') {
             $scope.reserveRequested = true;
-            activateNav('reserveActive')
+            activateNav('reserveActive');
+            $scope.$parent.seo = {
+                title: "Reserve Concert Tickets, Get Concert Tickets Denver",
+                description: "Reserve concert tickets in advance with Hipstertron, 100% free."
+            }
         } else if ($routeParams.type === 'cheap-tickets') {
             $scope.cheapRequested = true;
-            activateNav('cheapActive')
+            activateNav('cheapActive');
+            $scope.$parent.seo = {
+                title: "Find Cheap Concert Tickets Denver",
+                description: "Get notified whenever you can pick up cheap concert tickets for bands you like."
+            }
         } else {
             $scope.aboutRequested = true;
-            activateNav('aboutActive')
+            activateNav('aboutActive');
+            $scope.$parent.seo = {
+                title: "About Hipstertron",
+                description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
+            }
         }
 
         function activateNav(correctNav) {
             var navOptions = ["aboutActive", "findActive", "reserveActive", "cheapActive"];
-
             for (var i = 0; navOptions.length > i; i++) {
                 var t = navOptions[i]
                 if (navOptions[i] === correctNav) {

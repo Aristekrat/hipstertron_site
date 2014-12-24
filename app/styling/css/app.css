@@ -123,9 +123,10 @@ footer {
   text-decoration: none;
   padding: 0 1%;
   margin-top: 3px;
+  outline: 0;
 }
 
-/* line 17, ../sass/_header.scss */
+/* line 18, ../sass/_header.scss */
 .home-icon {
   margin-top: -0.3em;
 }
@@ -139,16 +140,21 @@ footer {
 	position: relative;
 	top: 0.75em;
 } */
-/* line 31, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 .top-nav a:hover {
   color: #fa6464;
 }
-/* line 33, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .top-nav a:hover .arrow-down {
   border-top: 0.4em solid #fa6464;
 }
 
-/* line 38, ../sass/_header.scss */
+/* line 39, ../sass/_header.scss */
+.top-nav:hover, .top-nav:active {
+  outline: 0;
+}
+
+/* line 43, ../sass/_header.scss */
 .top-nav small {
   float: right;
   right: 8%;
@@ -156,14 +162,14 @@ footer {
   margin-top: 3px;
 }
 
-/* line 45, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 #twitter-widget-0 {
   float: right;
   position: relative;
   right: 5%;
   opacity: 0.75;
 }
-/* line 50, ../sass/_header.scss */
+/* line 55, ../sass/_header.scss */
 #twitter-widget-0:hover {
   opacity: 1.0;
 }
@@ -625,7 +631,7 @@ footer {
 /* line 1, ../sass/_privacy-policy.scss */
 .privacy-policy-page {
   display: block;
-  padding: 1% 0 0 3%;
+  padding: 5% 0 0 3%;
 }
 
 @media (min-width: 1041px) and (max-width: 1440px) {

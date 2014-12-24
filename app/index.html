@@ -2,12 +2,12 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="hipstertron" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="hipstertron" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="hipstertron" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="hipstertron" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="hipstertron" ng-controller="AppCtrl" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hipstertron | Find Concerts in Denver, Concert Finder, Concerts in Denver</title>
-  <meta name="description" content="Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.">
+  <title>Hipstertron | {{seo.title}}</title>
+  <meta name="description" content="{{seo.description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="fragment" content="!">
   <base href="/">
@@ -67,7 +67,7 @@
         <h4>Hipster Tron is Dedicated to...</h4>
         <p>The reclusive band Neutral Milk Hotel, who unexpectedly reunited, toured Denver, and the author of this application totally missed it! Never again.</p>
     </div>
-    <a href="#/privacy-policy" class="footer-privacy-policy">Privacy Policy</a>
+    <a href="privacy-policy" class="footer-privacy-policy">Privacy Policy</a>
     <span class="footer-contact"><span>Contact:</span> <a href="mailto:brian@hipstertron.com">brian@hipstertron.com</a></span>
 
   </footer>

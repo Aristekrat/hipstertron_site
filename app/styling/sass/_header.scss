@@ -12,6 +12,7 @@
 	text-decoration: none;
 	padding: 0 1%;
 	margin-top: 3px;
+	outline: 0;
 }
 
 .home-icon {
@@ -33,6 +34,10 @@
 	.arrow-down {
 		border-top: 0.4em solid $main-header;
 	}
+}
+
+.top-nav:hover, .top-nav:active {
+	outline: 0;
 }
 
 .top-nav small {
