@@ -4,11 +4,6 @@ angular.module('hipstertron.controllers', [])
 
 .controller('MainCtrl', ['$scope', 'submitEmailService',
     function($scope, submitEmailService) {
-        /*        $scope.$parent.seo = {
-            title: "Sign Up for Hipstertron",
-            description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
-        }*/
-
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
 
@@ -119,12 +114,18 @@ angular.module('hipstertron.controllers', [])
         $scope.userEmail = {}
         $scope.userEmail.frequency = "weekly"
 
+        $scope.errorHandler = function() {
+            $scope.emailError = true
+        }
+
+        $scope.successHandler = function() {
+            $scope.signedUp = true;
+        }
+
         $scope.signUserUp = function(userEmail) {
             if (userEmail.email) {
                 $scope.emailPlease = false;
-                submitEmailService.submitEmail(userEmail, function(response) {
-                    $scope.signedUp = true;
-                })
+                submitEmailService.submitEmail(userEmail, $scope.successHandler, $scope.errorHandler)
             } else {
                 $scope.emailPlease = true;
             }
