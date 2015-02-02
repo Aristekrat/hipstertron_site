@@ -6,35 +6,36 @@ angular.module('hipstertron', [
     'hipstertron.services',
     'hipstertron.controllers',
     'angulartics',
-    'angulartics.google.analytics'
+    'angulartics.google.analytics',
+    'afkl.lazyImage'
 ])
 
 .config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
-            templateUrl: 'partials/main.html',
+            templateUrl: 'dist/partials/main.html',
             controller: 'MainCtrl',
-            title: 'Find Concerts in Denver, Concert Finder, Concerts in Denver',
+            title: 'Find Concerts and Concert Tickets in Denver',
             description: 'Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.'
         });
         $routeProvider.when('/calendar', {
-            templateUrl: 'partials/calendar.html',
+            templateUrl: 'dist/partials/calendar.html',
             controller: 'CalendarCtrl',
             title: 'List of Denver Concerts',
             description: 'A full list of all concerts coming to Denver.'
         });
         $routeProvider.when('/info/:type', {
-            templateUrl: 'partials/info.html',
+            templateUrl: 'dist/partials/info.html',
             controller: 'InfoCtrl'
         });
         $routeProvider.when('/signup', {
-            templateUrl: 'partials/signup.html',
+            templateUrl: 'dist/partials/signup.html',
             controller: 'SignUpCtrl',
             title: 'Sign Up for Hipstertron',
             description: 'Sign up for Hipstertron to find out when your favorite bands are coming to town and get help getting your hands on tickets'
         });
         $routeProvider.when('/privacy-policy', {
-            templateUrl: 'partials/privacy-policy.html',
+            templateUrl: 'dist/partials/privacy-policy.html',
             controller: 'PrivacyCtrl',
             title: 'Privacy Policy',
             description: 'This page sets out Hipstertron\'s Privacy Policy'
@@ -96,8 +97,14 @@ angular.module('hipstertron.controllers', [])
             $scope.concertListings = response.data.concertListings;
         })
 
-        $(window).scroll(function(event) {
-            if ($(this).scrollTop() + 1000 > $(document).height() - $(window).height()) {
+        window.onscroll = function(event) {
+            // This initialization stuff cannot be moved outside of the function.
+            var body = document.body;
+            var html = document.documentElement;
+            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+            var target = height / 2;
+
+            if (window.scrollY > target) {
                 if (runCount.length === 1) {
                     resultCount = 500;
                     runCount.push(resultCount)
@@ -106,7 +113,7 @@ angular.module('hipstertron.controllers', [])
                     })
                 }
             }
-        });
+        };
 
     }
 ])

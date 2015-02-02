@@ -43,17 +43,17 @@
             <h3>Oops!</h3>
             <p>How embarassing, Hipstertron encountered an error. Maybe your email is alreadly taken, or maybe you can just refresh the page.</p>
           </span>
-            <input type="email" class="main-email" ng-model="userEmail.email" placeholder="Sign Up for Launch" />
+            <input type="email" class="main-email" ng-model="userEmail.email" placeholder="Sign Up for Launch">
             <button class="main-submit" type="submit" ng-click="signUserUp(userEmail)">Sign Up</button>
             <p class="warning" ng-show="emailPlease">Please enter your email</p>
             <div class="main-frequency-selector">
                 <label id="frequency-explain">How often do you want to receive emails?</label>
                 <label>Daily</label>
-                <input type="radio" name="frequency" ng-model="userEmail.frequency" value="daily" />
+                <input type="radio" name="frequency" ng-model="userEmail.frequency" value="daily">
                 <label>Bi-weekly</label>
-                <input type="radio" name="frequency" ng-model="userEmail.frequency" value="biweekly" />
+                <input type="radio" name="frequency" ng-model="userEmail.frequency" value="biweekly">
                 <label>Weekly</label>
-                <input type="radio" name="frequency" ng-model="userEmail.frequency" ng-checked="true" value="weekly" />
+                <input type="radio" name="frequency" ng-model="userEmail.frequency" ng-checked="true" value="weekly">
             </div>
         </span>
         <span ng-hide="!signedUp">

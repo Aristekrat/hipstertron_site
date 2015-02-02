@@ -46,6 +46,25 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        htmlmin: { // Task
+            index: { // Target
+                options: { // Target options
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: { // Dictionary of files
+                    'app/dist/index.html': 'app/index.html', // 'destination': 'source'
+                }
+            },
+            partials: { // Target
+                files: [{ // Dictionary of files
+                    expand: true,
+                    cwd: 'app/', // Project root
+                    src: 'partials/*.html', // Source
+                    dest: 'app/dist/' // Destination
+                }]
+            }
+        },
         // The browser isn't understanding gzip files and at the moment it's providing negligible space spavings, so not in use.
         compress: {
             main: {
@@ -80,8 +99,8 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['app/js/*.js', 'app/styling/sass/*.scss'],
-                tasks: ['concat', 'uglify', 'cssmin'],
+                files: ['app/js/*.js', 'Gruntfile.js', 'app/index.html', 'app/partials/*.html', 'app/styling/sass/*.scss'],
+                tasks: ['concat', 'uglify', 'cssmin', 'htmlmin'],
                 options: {
                     spawn: false,
                 },
@@ -93,7 +112,7 @@ module.exports = function(grunt) {
     // File size reduction
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    /*    grunt.loadNpmTasks('grunt-contrib-htmlmin');*/
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-compress');

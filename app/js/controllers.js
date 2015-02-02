@@ -38,8 +38,14 @@ angular.module('hipstertron.controllers', [])
             $scope.concertListings = response.data.concertListings;
         })
 
-        $(window).scroll(function(event) {
-            if ($(this).scrollTop() + 1000 > $(document).height() - $(window).height()) {
+        window.onscroll = function(event) {
+            // This initialization stuff cannot be moved outside of the function.
+            var body = document.body;
+            var html = document.documentElement;
+            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+            var target = height / 2;
+
+            if (window.scrollY > target) {
                 if (runCount.length === 1) {
                     resultCount = 500;
                     runCount.push(resultCount)
@@ -48,7 +54,7 @@ angular.module('hipstertron.controllers', [])
                     })
                 }
             }
-        });
+        };
 
     }
 ])

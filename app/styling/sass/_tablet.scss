@@ -21,17 +21,17 @@
 	// Find concerts picture on home
 	#find-concerts-pic {
 		width: 55%;
-		left: 2em;
+		left: 0em;
 	}
 	#reserve-tickets-pic {
 		width: 55%;
-		left: 3em;
+		left: 1em;
 	}
-	#cheap-tickets-pic {
+/* 	#cheap-tickets-pic {
 		width: 40%;
-		left: 4em;
+		left: 0em;
 		top: 1em;
-	}
+	} */
 }
 
 .main-step:first-child {
@@ -39,7 +39,7 @@
 }
 
 .main-image-container img {
-	width: 65%;
+	width: 70%;
 	margin-top: 10%;
 }
 
