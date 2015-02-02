@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         concat: {
-            all: {
+            hipstertron: {
                 src: ['app/js/*.js'],
                 dest: 'app/dist/hipstertron.js',
             }
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['app/js/*.js', 'Gruntfile.js', 'app/index.html', 'app/partials/*.html', 'app/styling/sass/*.scss'],
-                tasks: ['concat', 'uglify', 'cssmin', 'htmlmin'],
+                tasks: ['concat:hipstertron', 'uglify', 'cssmin', 'htmlmin'],
                 options: {
                     spawn: false,
                 },

@@ -1500,3 +1500,20 @@ Load paths:
 2015-01-31 16:04:43 overwrite css/app.css 
 2015-01-31 16:04:49 overwrite css/app.css 
 2015-01-31 16:05:05 overwrite css/app.css 
+2015-02-01 19:32:30     error sass/app.scss (Line 16: File to import not found or unreadable: reset.
+Load paths:
+  /home/brian/local/hipster_tron/site/app/styling/sass
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/compass-normalize-1.4.3/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/bootstrap-sass-2.3.2.1/vendor/assets/stylesheets
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/susy-1.0.9/sass
+  /home/brian/local/compass.app/lib/ruby/compass_extensions/zurb-foundation-4.3.1/scss
+  Compass::SpriteImporter
+  /home/brian/local/vendor/assets/stylesheets)
+2015-02-01 19:32:30 overwrite css/app.css 
+2015-02-01 19:34:33 overwrite css/app.css 
+2015-02-01 19:35:48 overwrite css/app.css 
+2015-02-02 12:50:30 overwrite css/app.css 
