@@ -43,7 +43,10 @@
 .calendar-header tr th {
 	padding: 1%;
 	font-size: 1.2em;
-	width: 33%;
+	width: 20%;
+}
+.calendar-header tr .band-header {
+	width: 40%
 }
 
 .calendar-row {

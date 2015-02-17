@@ -95,6 +95,7 @@ angular.module('hipstertron.controllers', [])
 
         getConcertsService.getConcerts(resultCount, offset, function(response) {
             $scope.concertListings = response.data.concertListings;
+            console.log(response.data.concertListings)
         })
 
         window.onscroll = function(event) {

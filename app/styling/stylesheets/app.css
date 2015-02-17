@@ -988,36 +988,41 @@ footer {
 }
 
 /* line 43, ../sass/_calendar.scss */
+* {
+  display: none !important;
+}
+
+/* line 47, ../sass/_calendar.scss */
 .calendar-header tr th {
   padding: 1%;
   font-size: 1.2em;
   width: 20%;
 }
 
-/* line 48, ../sass/_calendar.scss */
-.calendar-header tr .band-header {
+/* line 52, ../sass/_calendar.scss */
+.calendar-header tr th.band-block {
   width: 40%;
 }
 
-/* line 52, ../sass/_calendar.scss */
+/* line 56, ../sass/_calendar.scss */
 .calendar-row {
   color: pink;
   border-bottom: 1px solid #2f2f2f;
 }
 
-/* line 57, ../sass/_calendar.scss */
+/* line 61, ../sass/_calendar.scss */
 .calendar-row:nth-child(odd) {
   background: #2f2f2f;
 }
 
-/* line 61, ../sass/_calendar.scss */
+/* line 65, ../sass/_calendar.scss */
 .calendar-row td {
   padding: 0;
   margin: 0;
   border-right: 1px solid #888;
 }
 
-/* line 67, ../sass/_calendar.scss */
+/* line 71, ../sass/_calendar.scss */
 .calendar-row td a {
   width: 95%;
   height: 100%;
@@ -1026,7 +1031,7 @@ footer {
   color: pink;
   outline: 0;
 }
-/* line 74, ../sass/_calendar.scss */
+/* line 78, ../sass/_calendar.scss */
 .calendar-row td a:hover {
   color: pink;
 }
@@ -1329,8 +1334,8 @@ footer {
   /*****Calendar*****/
   /* line 104, ../sass/_tablet.scss */
   .calendar {
-    width: 98%;
-    margin: 1%;
+    width: 90%;
+    margin: 1% 5%;
   }
 
   /* line 109, ../sass/_tablet.scss */
@@ -1809,31 +1814,26 @@ footer {
   }
 
   /* line 227, ../sass/_phones.scss */
-  .calendar-row td {
-    padding: 1%;
-  }
-
-  /* line 231, ../sass/_phones.scss */
   .venue-header, .venue-block {
     display: none;
   }
 
   /*****Sign Up*****/
-  /* line 237, ../sass/_phones.scss */
+  /* line 233, ../sass/_phones.scss */
   .signup-page h1 {
     padding-top: 12%;
     margin-bottom: 0;
   }
 
   /*****Privacy Policy*****/
-  /* line 243, ../sass/_phones.scss */
+  /* line 239, ../sass/_phones.scss */
   .privacy-policy-page {
     width: 96%;
     padding: 1% 2%;
     margin: 0;
   }
 
-  /* line 249, ../sass/_phones.scss */
+  /* line 245, ../sass/_phones.scss */
   .signup-page {
     padding: 10% 0;
     min-height: 25em;
