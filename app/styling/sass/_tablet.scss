@@ -18,29 +18,36 @@
 		width: 32%;
 		margin: -0.6em 36% 0 36%;
 	}
-	// Find concerts picture on home
 	#find-concerts-pic {
-		width: 55%;
-		left: 0em;
+		left: 0.5em;
 	}
 	#reserve-tickets-pic {
-		width: 55%;
-		left: 1em;
+		left: 1.5em;
 	}
-/* 	#cheap-tickets-pic {
-		width: 40%;
-		left: 0em;
-		top: 1em;
-	} */
+	#cheap-tickets-pic {
+		margin-left: 0em;
+	}
 }
 
 .main-step:first-child {
 	margin-left: 0;
 }
 
-.main-image-container img {
-	width: 70%;
-	margin-top: 10%;
+.main-image-container {
+	width: 11em;
+	background-size: 420%;
+	#ht-free {
+		margin: 1em 0 -1em 0;
+	}
+	#ht-best-tickets {
+		margin-left: 1em;
+	}
+	#ht-never-miss {
+		margin-left: 1em;
+	}
+	#ht-time {
+		margin-left: -1.2em;
+	}
 }
 
 .main-signup-form, .main-launch-block {
@@ -56,21 +63,24 @@
 .benefits-list {
 	padding: 3% 1%;
 	width: 98%;
+	li {
+		width: 22.5%;
+		margin: 0 0 0 2.5%;
+	}
+	h3 {
+		margin: 0;
+		width: 100%;
+	}
 }
 
-.benefits-list li {
-	width: 22.5%;
-	margin: 0 0 0 2.5%;
-}
-
-#ht-never-miss {
+/* #ht-never-miss {
 	width: 70%;
 }
 
 #ht-free {
 	width: 75%;
 	margin-top: 5%;
-}
+} */
 
 .footer-inspiration {
 	width: 65%;
@@ -145,7 +155,6 @@
 			width: 30%;
 			margin: -0.6em 35% 0 35%;
 		}
-		// Find concerts picture on home
 		#find-concerts-pic {
 			display: none;
 		}

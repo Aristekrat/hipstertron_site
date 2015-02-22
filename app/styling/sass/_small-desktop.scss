@@ -1,18 +1,4 @@
 @media (min-width: 1041px) and (max-width: 1440px) {
-
-	#ht-never-miss {
-		width: 80%;
-	}
-
-	.main-image-container img {
-		width: 60%;
-		margin: 3% 0 0 2%;
-	}
-
-	#ht-free {
-		width: 65%;
-	}
-
 	.main-signup-form, .main-launch-block {
 		width: 60%;
 		margin: 0 20%;
@@ -23,15 +9,15 @@
 	}
 
 	.how-it-works {
-		// Find concerts picture on home
 		#find-concerts-pic {
-			width: 45%;
+			//width: 45%;
 		}
 		#reserve-tickets-pic {
-			width: 45%;
-			left: 6em;
+			left: 5em;
+		}
+		#cheap-tickets-pic {
+
 		}
 	}
-
 
 }

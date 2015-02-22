@@ -36,7 +36,6 @@
 .how-it-works {
 	position: relative;
 	padding-bottom: 2%;
-	
 	ul {
 		list-style-type: none; 
 	}
@@ -52,19 +51,27 @@
 	p {
 		font-size: 1.1em;
 	}
+	figure {
+		width: 14.5em;
+		height: 16em;
+		background-repeat: no-repeat;
+	}
 	#find-concerts-pic {
 		display: inline-block;
 		position: relative;
 		left: 5em;
-		width: 45%;
+		width: 16em;
 	}
 	#reserve-tickets-pic {
 		float: left;
 		position: relative;
 		left: 7em;
+		background-position: 52% 50%;
+
 	}
 	#cheap-tickets-pic {
 		margin: 2% 0 0 15%;
+		background-position: 102% 100%;
 	}
 }
 
@@ -108,7 +115,7 @@
 }
 
 .social-button {
-	padding: 1.4em 0.8em;
+	padding: 1.2em 0.5em;
 	margin: 1% 5% 0% 0;
 	border-radius: 5px;
 	display: inline-block;
@@ -120,11 +127,11 @@
 }
 
 .ht-twitter {
-	background-image: url("../../img/twitter.png");	
+	background-position: 100.1% 102%;	
 }
 
 .ht-facebook {
-	background-image: url("../../img/facebook.png");	
+	background-position: 100.1% -1%;
 }
 
 .main-launch-block {
@@ -159,7 +166,8 @@
 		margin: 1% 0;		
 	}
 	h3 {
-		margin-left: 5%;
+		width: 85%;
+		margin-left: 15%;
 		font-size: 1.25em;
 	}
 }
@@ -168,26 +176,29 @@
 	width: 100%;
 	display: block;
 	float: left;
-	height: 12em;
+	height: 12.8em;
 	padding: 3% 0;
-}
-
-.main-image-container img {
-	display: inline-block;
-	float: left;
-	width: 55%;
+	width: 14em;
+	background-repeat: no-repeat;
 }
 
 #ht-free {
-	width: 47%;
+	margin-left: 0.5em;	
+}
+
+#ht-best-tickets {
+	background-position: 31% 50%;
+	margin-left: 2em;
 }
 
 #ht-never-miss {
-	width: 55%;
+	background-position: 62% 50%;
+	margin-left: 3em;
 }
 
-.right-side-image {
-	padding-left: 6%;
+#ht-time {
+	background-position: 91% 50%;
+	margin-left: -0.2em;
 }
 
 #first-benefits-paragraph {
