@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="fragment" content="!">
   <base href="/">
-  <link rel="stylesheet" href="styling/css/app.min.css"/>
+  <link href="../styling/css/initial.min.css?__inline=true" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
   <!--[if lt IE 10]>
@@ -72,8 +72,6 @@
   <script src="vendor/afkl-lazy-image/release/lazy-image.min.js"></script>
   <!-- Note: loading app.js and deferring the remaining js will work -->
   <script src="dist/hipstertron-min.js"></script>
-  <script defer src="vendor/angulartics/dist/angulartics.min.js"></script>
-  <script defer src="vendor/angulartics/dist/angulartics-ga.min.js"></script>
   <script defer>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -82,5 +80,6 @@
 
       ga('create', 'UA-55718027-1', 'auto');
   </script>
+  <link rel="stylesheet" href="styling/css/app.min.css"/>
 </body>
 </html>

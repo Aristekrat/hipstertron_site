@@ -5,8 +5,6 @@ angular.module('hipstertron', [
     'ngRoute',
     'hipstertron.services',
     'hipstertron.controllers',
-    'angulartics',
-    'angulartics.google.analytics',
     'afkl.lazyImage'
 ])
 

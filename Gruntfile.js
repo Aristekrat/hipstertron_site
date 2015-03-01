@@ -31,7 +31,7 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 expand: true,
-                src: ['app/styling/css/app.css'],
+                src: ['app/styling/css/app.css', 'app/styling/css/initial.css'],
                 dest: '',
                 ext: '.min.css'
             }
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: { // Dictionary of files
-                    'app/dist/index.html': 'app/index.html', // 'destination': 'source'
+                    'app/dist/index-min.html': 'app/index.html', // 'destination': 'source'
                 }
             },
             partials: { // Target
@@ -79,6 +79,11 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        inline: {
+            dist: {
+                src: 'app/dist/index-min.html'
+            }
+        },
         // Requires Ruby
         plato: {
             analyze: {
@@ -100,7 +105,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['app/js/*.js', 'Gruntfile.js', 'app/index.html', 'app/partials/*.html', 'app/styling/sass/*.scss'],
-                tasks: ['concat:hipstertron', 'uglify', 'cssmin', 'htmlmin'],
+                tasks: ['concat:hipstertron', 'uglify', 'cssmin', 'htmlmin', 'inlinecss'],
                 options: {
                     spawn: false,
                 },
@@ -109,13 +114,14 @@ module.exports = function(grunt) {
     });
     //  Build Plugins
     grunt.loadNpmTasks('grunt-contrib-watch');
-    // File size reduction
+    // File size reduction & speed
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-inline');
     // Testing
     grunt.loadNpmTasks('grunt-karma');
     // Complexity analysis and documentation
@@ -124,9 +130,10 @@ module.exports = function(grunt) {
     // Quality checking
     grunt.loadNpmTasks('grunt-csscss');
     //  Tasks
+    // Note - you cannot use the same name as the task, ie 'compress' & 'compress'. Causes a silly but fatal error
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('minify', ['concat', 'uglify', 'cssmin', 'imagemin']);
-    // Note - you cannot use the same name as the task, ie 'compress' & 'compress'. Causes a silly but fatal error
+    grunt.registerTask('inlinecss', ['inline']);
     grunt.registerTask('shrink', ['compress']);
     grunt.registerTask('analyze', ['plato']);
     grunt.registerTask('check-static', ['csscss']);

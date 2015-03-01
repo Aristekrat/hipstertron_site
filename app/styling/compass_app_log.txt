@@ -1599,3 +1599,9 @@ Load paths:
 2015-02-21 17:21:06 overwrite css/app.css 
 2015-02-21 17:21:11 overwrite css/app.css 
 2015-02-21 17:21:17 overwrite css/app.css 
+2015-03-01 00:02:14    create css/initial.css 
+2015-03-01 00:02:41     error sass/app.scss (Line 3 of sass/_calendar.scss: Undefined variable: "$background".)
+2015-03-01 00:02:41 overwrite css/app.css 
+2015-03-01 00:02:59 overwrite css/app.css 
+2015-03-01 00:03:04 overwrite css/initial.css 
+2015-03-01 00:03:40 identical css/initial.css 

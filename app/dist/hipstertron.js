@@ -5,8 +5,6 @@ angular.module('hipstertron', [
     'ngRoute',
     'hipstertron.services',
     'hipstertron.controllers',
-    'angulartics',
-    'angulartics.google.analytics',
     'afkl.lazyImage'
 ])
 
@@ -103,14 +101,11 @@ angular.module('hipstertron.controllers', [])
             var html = document.documentElement;
             var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
             var target = height / 2;
-            console.log(window.scrollY > target)
             if (window.scrollY > target) {
                 if (runCount.length === 1) {
-                    console.log("Here?")
                     resultCount = 500;
                     runCount.push(resultCount)
                     getConcertsService.getConcerts(resultCount, runCount[0], function(response) {
-                        console.log(response)
                         $scope.concertListings = $scope.concertListings.concat(response.data.concertListings)
                     })
                 }
