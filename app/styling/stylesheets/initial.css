@@ -1,0 +1,965 @@
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/* line 1, ../sass/initial.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/initial.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 1, ../sass/initial.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, ../sass/initial.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, ../sass/initial.scss */
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 1, ../sass/initial.scss */
+button, html, input, select, textarea {
+  font-family: sans-serif;
+}
+
+/* line 1, ../sass/initial.scss */
+body {
+  margin: 0;
+}
+
+/* line 1, ../sass/initial.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 1, ../sass/initial.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, ../sass/initial.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+h6 {
+  font-size: .67em;
+  margin: 2.33em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, ../sass/initial.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 1, ../sass/initial.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 1, ../sass/initial.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, ../sass/initial.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 1, ../sass/initial.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, ../sass/initial.scss */
+p, pre {
+  margin: 1em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em;
+}
+
+/* line 1, ../sass/initial.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 1, ../sass/initial.scss */
+q {
+  quotes: none;
+}
+
+/* line 1, ../sass/initial.scss */
+q:after, q:before {
+  content: '';
+  content: none;
+}
+
+/* line 1, ../sass/initial.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, ../sass/initial.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, ../sass/initial.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 1, ../sass/initial.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 1, ../sass/initial.scss */
+dl, menu, ol, ul {
+  margin: 1em 0;
+}
+
+/* line 1, ../sass/initial.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 1, ../sass/initial.scss */
+menu, ol, ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 1, ../sass/initial.scss */
+nav ol, nav ul {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 1, ../sass/initial.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 1, ../sass/initial.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, ../sass/initial.scss */
+figure, form {
+  margin: 0;
+}
+
+/* line 1, ../sass/initial.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 1, ../sass/initial.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 1, ../sass/initial.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 1, ../sass/initial.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 1, ../sass/initial.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 1, ../sass/initial.scss */
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 1, ../sass/initial.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 1, ../sass/initial.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 1, ../sass/initial.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 1, ../sass/initial.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 1, ../sass/initial.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/initial.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 1, ../sass/initial.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* line 2, ../sass/initial.scss */
+button, html, input, select, textarea {
+  color: #222;
+}
+
+/* line 2, ../sass/initial.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 2, ../sass/initial.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 2, ../sass/initial.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 2, ../sass/initial.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 2, ../sass/initial.scss */
+audio, canvas, img, video {
+  vertical-align: middle;
+}
+
+/* line 2, ../sass/initial.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2, ../sass/initial.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 2, ../sass/initial.scss */
+.browsehappy {
+  margin: .2em 0;
+  background: #ccc;
+  color: #000;
+  padding: .2em 0;
+}
+
+/* line 2, ../sass/initial.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+/* line 2, ../sass/initial.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 2, ../sass/initial.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 2, ../sass/initial.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 2, ../sass/initial.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 2, ../sass/initial.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 2, ../sass/initial.scss */
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table;
+}
+
+/* line 2, ../sass/initial.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 2, ../sass/initial.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+@media print {
+  /* line 2, ../sass/initial.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 2, ../sass/initial.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 2, ../sass/initial.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 2, ../sass/initial.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 2, ../sass/initial.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 2, ../sass/initial.scss */
+  blockquote, pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 2, ../sass/initial.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 2, ../sass/initial.scss */
+  img, tr {
+    page-break-inside: avoid;
+  }
+
+  /* line 2, ../sass/initial.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: .5cm;
+}
+
+  /* line 2, ../sass/initial.scss */
+  h2, h3, p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 2, ../sass/initial.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/*! AFKL-lazy-image */
+/* line 3, ../sass/initial.scss */
+.js .afkl-lazy-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-lazy-wrapper .afkl-lazy-image {
+  width: 100%;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-lazy-image-loading {
+  background-color: #eee;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-img-ratio-2-1, .afkl-img-ratio-4-2 {
+  padding-bottom: 50%;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-img-ratio-16-9 {
+  padding-bottom: 56.25%;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-img-ratio-3-2 {
+  padding-bottom: 66.67%;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-img-ratio-1-1 {
+  padding-bottom: 100%;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-img-ratio-4-3 {
+  padding-bottom: 75%;
+}
+
+/* line 3, ../sass/initial.scss */
+.afkl-img-ratio-3-4 {
+  padding-bottom: 133%;
+}
+
+/* line 6, ../sass/_shared.scss */
+body {
+  font-family: "Helvetica", sans-serif;
+  background: #3c3c3c;
+  color: white;
+}
+
+/* line 12, ../sass/_shared.scss */
+.main-header {
+  color: #fa6464;
+}
+
+/* line 16, ../sass/_shared.scss */
+.top-nav, footer {
+  background: #3c3c3c;
+}
+
+/* line 20, ../sass/_shared.scss */
+button {
+  background: #fa6464;
+  color: #fff;
+  border: 0;
+}
+
+/* line 26, ../sass/_shared.scss */
+a {
+  color: #ff8da1;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/_shared.scss */
+a:hover {
+  color: #f94b4b;
+}
+
+/* line 35, ../sass/_shared.scss */
+.main-block:not(:last-child) {
+  border-bottom: 1px solid #3c3c3c;
+}
+
+/* line 39, ../sass/_shared.scss */
+h1, h2 {
+  color: #fa6464;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+/* line 44, ../sass/_shared.scss */
+h3, h4 {
+  font-family: 'Hammersmith One', sans-serif;
+  color: pink;
+}
+
+/* line 49, ../sass/_shared.scss */
+.about-page, .signup-page, .info-page {
+  min-height: 50em;
+  width: 100%;
+  float: left;
+  background: #494949;
+}
+
+/* line 56, ../sass/_shared.scss */
+.warning {
+  color: #fa6464;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  padding-top: 0.5%;
+  bottom: 0;
+  width: 100%;
+  float: left;
+}
+
+/* line 8, ../sass/_footer.scss */
+.footer-inspiration {
+  width: 40%;
+  padding: 1% 4%;
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.5;
+  float: left;
+  display: inline-block;
+}
+
+/* line 18, ../sass/_footer.scss */
+.footer-inspiration h4, .footer-inspiration p {
+  margin: 0;
+  display: inline-block;
+}
+
+/* line 23, ../sass/_footer.scss */
+.footer-privacy-policy {
+  float: right;
+  position: relative;
+  right: 4.5%;
+  margin-top: 2.5%;
+  display: inline-block;
+}
+
+/* line 31, ../sass/_footer.scss */
+.footer-contact {
+  float: right;
+  margin: 1% 0 0 5%;
+}
+/* line 34, ../sass/_footer.scss */
+.footer-contact span {
+  opacity: 0.8;
+}
+
+/* line 1, ../sass/_header.scss */
+.top-nav {
+  padding: 1% 1% 0.8% 1%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: #3c3c3c;
+  border-bottom: 1px solid #494949;
+}
+
+/* line 11, ../sass/_header.scss */
+.top-nav a {
+  text-decoration: none;
+  padding: 0 1%;
+  margin-top: 3px;
+  outline: 0;
+}
+
+/* line 18, ../sass/_header.scss */
+.home-icon {
+  margin-top: -0.3em;
+}
+
+/* .arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 0.4em solid transparent;
+	border-right: 0.4em solid transparent;	
+	border-top: 0.4em solid $minor-header;
+	position: relative;
+	top: 0.75em;
+} */
+/* line 32, ../sass/_header.scss */
+.top-nav a:hover {
+  color: #fa6464;
+}
+/* line 34, ../sass/_header.scss */
+.top-nav a:hover .arrow-down {
+  border-top: 0.4em solid #fa6464;
+}
+
+/* line 39, ../sass/_header.scss */
+.top-nav:hover, .top-nav:active {
+  outline: 0;
+}
+
+/* line 43, ../sass/_header.scss */
+.top-nav small {
+  float: right;
+  right: 8%;
+  position: relative;
+  margin-top: 3px;
+}
+
+/* line 50, ../sass/_header.scss */
+#twitter-widget-0 {
+  float: right;
+  position: relative;
+  right: 5%;
+  opacity: 0.75;
+}
+/* line 55, ../sass/_header.scss */
+#twitter-widget-0:hover {
+  opacity: 1.0;
+}
+
+/* line 1, ../sass/_main-page.scss */
+#home-page:after {
+  content: "";
+  display: block;
+}
+
+/* line 6, ../sass/_main-page.scss */
+.main-block {
+  background: #494949;
+  float: left;
+  width: 100%;
+}
+
+/* line 12, ../sass/_main-page.scss */
+#home-icon {
+  float: left;
+}
+/* line 14, ../sass/_main-page.scss */
+#home-icon figure {
+  height: 1em;
+}
+
+/* line 19, ../sass/_main-page.scss */
+* {
+  display: none !important;
+}
+
+/* line 23, ../sass/_main-page.scss */
+.home-header {
+  width: 100%;
+  text-align: center;
+  padding: 5% 0 1% 0;
+}
+/* line 27, ../sass/_main-page.scss */
+.home-header h1 {
+  color: pink;
+  margin: 1% 0 0 0;
+  font-size: 2.0em;
+}
+/* line 32, ../sass/_main-page.scss */
+.home-header p {
+  margin: 0 0 2% 0;
+}
+
+/* line 37, ../sass/_main-page.scss */
+#main-tagline {
+  color: pink;
+  font-weight: bold;
+}
+
+/* line 42, ../sass/_main-page.scss */
+#main-explanation {
+  font-size: 1.25em;
+  margin-bottom: 3%;
+}
+
+/* line 47, ../sass/_main-page.scss */
+.how-it-works {
+  position: relative;
+  padding-bottom: 2%;
+}
+/* line 50, ../sass/_main-page.scss */
+.how-it-works ul {
+  list-style-type: none;
+}
+/* line 53, ../sass/_main-page.scss */
+.how-it-works h2 {
+  text-align: center;
+  width: 16%;
+  margin: -0.6em 42% 0 42%;
+  background-color: #494949;
+}
+/* line 59, ../sass/_main-page.scss */
+.how-it-works h3 {
+  font-size: 1.25em;
+}
+/* line 62, ../sass/_main-page.scss */
+.how-it-works p {
+  font-size: 1.1em;
+}
+/* line 65, ../sass/_main-page.scss */
+.how-it-works figure {
+  width: 14.5em;
+  height: 16em;
+  background-repeat: no-repeat;
+}
+/* line 70, ../sass/_main-page.scss */
+.how-it-works #find-concerts-pic {
+  display: inline-block;
+  position: relative;
+  left: 5em;
+  width: 16em;
+}
+/* line 76, ../sass/_main-page.scss */
+.how-it-works #reserve-tickets-pic {
+  float: left;
+  position: relative;
+  left: 7em;
+  background-position: 52% 50%;
+}
+/* line 83, ../sass/_main-page.scss */
+.how-it-works #cheap-tickets-pic {
+  margin: 2% 0 0 15%;
+  background-position: 102% 100%;
+}
+
+/* line 89, ../sass/_main-page.scss */
+.main-step {
+  float: left;
+  width: 29%;
+  margin-left: 3.2%;
+}
+
+/* line 95, ../sass/_main-page.scss */
+.main-signup-form {
+  display: inline-block;
+  width: 50%;
+  margin: 0 25%;
+  padding: 1% 0 0 0;
+}
+
+/* line 102, ../sass/_main-page.scss */
+.main-email {
+  width: 70%;
+  padding: 1%;
+}
+
+/* line 107, ../sass/_main-page.scss */
+.main-submit {
+  width: 18%;
+  padding: 1.2%;
+  margin-left: 2%;
+}
+
+/* line 113, ../sass/_main-page.scss */
+.signup-block {
+  padding: 0 0 1.2% 0;
+  position: relative;
+}
+
+/* line 118, ../sass/_main-page.scss */
+.main-frequency-selector label:first-child {
+  margin-right: 3%;
+}
+
+/* line 122, ../sass/_main-page.scss */
+.main-frequency-selector input {
+  margin: 2% 4% 0 0.5%;
+  top: 2px;
+  position: relative;
+}
+
+/* line 128, ../sass/_main-page.scss */
+.social-button {
+  padding: 1.2em 0.5em;
+  margin: 1% 5% 0% 0;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ff8da1;
+  background-position: 50%;
+}
+/* line 135, ../sass/_main-page.scss */
+.social-button:hover {
+  background-color: #fa6464;
+}
+
+/* line 140, ../sass/_main-page.scss */
+.ht-twitter {
+  background-position: 100.1% 102%;
+}
+
+/* line 144, ../sass/_main-page.scss */
+.ht-facebook {
+  background-position: 100.1% -1%;
+}
+
+/* line 148, ../sass/_main-page.scss */
+.main-launch-block {
+  width: 50%;
+  margin: 0 25%;
+}
+/* line 152, ../sass/_main-page.scss */
+.main-launch-block h3 {
+  color: #fa6464;
+}
+
+/* line 157, ../sass/_main-page.scss */
+.benefits-list {
+  width: 90%;
+  padding: 3% 3% 3% 7%;
+  display: block;
+  float: left;
+}
+/* line 163, ../sass/_main-page.scss */
+.benefits-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 168, ../sass/_main-page.scss */
+.benefits-list li {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  margin: 0 2.5%;
+}
+/* line 174, ../sass/_main-page.scss */
+.benefits-list h3, .benefits-list p {
+  display: inline-block;
+  width: 100%;
+  margin: 1% 0;
+}
+/* line 179, ../sass/_main-page.scss */
+.benefits-list h3 {
+  width: 85%;
+  margin-left: 15%;
+  font-size: 1.25em;
+}
+
+/* line 186, ../sass/_main-page.scss */
+.main-image-container {
+  width: 100%;
+  display: block;
+  float: left;
+  height: 12.8em;
+  padding: 3% 0;
+  width: 14em;
+  background-repeat: no-repeat;
+}
+
+/* line 196, ../sass/_main-page.scss */
+#ht-free {
+  margin-left: 0.5em;
+}
+
+/* line 200, ../sass/_main-page.scss */
+#ht-best-tickets {
+  background-position: 31% 50%;
+  margin-left: 2em;
+}
+
+/* line 205, ../sass/_main-page.scss */
+#ht-never-miss {
+  background-position: 62% 50%;
+  margin-left: 3em;
+}
+
+/* line 210, ../sass/_main-page.scss */
+#ht-time {
+  background-position: 91% 50%;
+  margin-left: -0.2em;
+}
+
+/* line 215, ../sass/_main-page.scss */
+#first-benefits-paragraph {
+  text-shadow: 1px 1px 1px #494949;
+}

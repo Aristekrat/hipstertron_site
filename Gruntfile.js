@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             hipstertron: {
-                src: ['app/js/*.js'],
+                src: ['app/vendor/afkl-lazy-image/release/lazy-image.min.js', 'app/js/*.js'],
                 dest: 'app/dist/hipstertron.js',
             }
         },
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
             minify: {
                 expand: true,
                 src: ['app/styling/css/app.css', 'app/styling/css/initial.css'],
-                dest: '',
+                dest: 'app/dist/',
                 ext: '.min.css'
             }
         },

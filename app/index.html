@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="fragment" content="!">
   <base href="/">
-  <link href="../styling/css/initial.min.css?__inline=true" rel="stylesheet" />
+  <link href="app/styling/css/app.min.css?__inline=true" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
   <!--[if lt IE 10]>
@@ -20,33 +20,8 @@
 </head>
 
 <body>
-  <!--Not entirely sure this script should be kept in index. May need to move it to a dedicated page in the future. Commented this out to supress facebook's annoying console logs
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '780665898637998',
-          xfbml      : false,
-          version    : 'v2.2'
-        });
-        //FB.login(function(){}, {scope: 'publish_actions'}); Got blocked by pop-up blocker and then rejected for not matching the app domain
-      };
-
-      /*
-      Triggering Code when the SDK loads
-      The function assigned to window.fbAsyncInit is run as soon as the SDK has completed loading. Any code that you want to run after the SDK is loaded should be placed within this function and after the call to FB.init. Any kind of JavaScript can be used here, but any SDK functions must be called after FB.init.
-       */
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk/debug.js";
-         //js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-  </script> -->
   <nav class="top-nav">
-      <a href="/"><img class="home-icon" src="img/home.png" alt="Hipstertron Home | Many thanks to Lokas Software for this excellent icon: http://www.awicons.com/" /></a>
+      <a href="/" id="home-icon"><figure></figure><!-- <img class="home-icon" src="img/home.png" alt="Hipstertron Home | Many thanks to Lokas Software for this excellent icon: http://www.awicons.com/" /> --></a>
       <a href="/calendar">Calendar</a>
       <a href="/info/about-hipstertron">Info </a>
       <a href="/signup">Sign Up</a>
@@ -68,11 +43,9 @@
   </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
-  <script src="vendor/angular-route/angular-route.min.js"></script>
-  <script src="vendor/afkl-lazy-image/release/lazy-image.min.js"></script>
-  <!-- Note: loading app.js and deferring the remaining js will work -->
-  <script src="dist/hipstertron-min.js"></script>
-  <script defer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js"></script>
+  <script src="./hipstertron-min.js"></script>
+  <script async>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -80,6 +53,6 @@
 
       ga('create', 'UA-55718027-1', 'auto');
   </script>
-  <link rel="stylesheet" href="styling/css/app.min.css"/>
+  <!-- <link rel="stylesheet" href="app/styling/css/app.min.css"/> -->
 </body>
 </html>

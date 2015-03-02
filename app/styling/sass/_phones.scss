@@ -247,3 +247,37 @@
 
 }
 
+@media (max-width: 400px) {
+
+.how-it-works {
+	#find-concerts-pic {
+		left: 0em;
+	}
+	#reserve-tickets-pic {
+		left: 1em;
+	}
+	#cheap-tickets-pic {
+		left: -0.5em;
+		top: -1em;
+		margin: 0;
+		position: relative;
+	}
+}
+
+#ht-free {
+	margin-left: 3em;
+}
+
+#ht-best-tickets {
+	margin-left: 3em;
+}
+
+#ht-never-miss {
+	margin-left: 3.5em;
+}
+
+#ht-time {
+	margin-left: 3.5em;
+}
+
+}

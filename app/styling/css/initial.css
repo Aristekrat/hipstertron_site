@@ -720,92 +720,104 @@ footer {
 }
 
 /* line 12, ../sass/_main-page.scss */
+#home-icon {
+  float: left;
+  margin-top: -0.5em;
+}
+/* line 15, ../sass/_main-page.scss */
+#home-icon figure {
+  height: 2em;
+  width: 2em;
+  background: url("../../../img/sprite-4.png") no-repeat 100% 0%;
+}
+
+/* line 22, ../sass/_main-page.scss */
 .home-header {
   width: 100%;
   text-align: center;
   padding: 5% 0 1% 0;
 }
-/* line 16, ../sass/_main-page.scss */
+/* line 26, ../sass/_main-page.scss */
 .home-header h1 {
   color: pink;
   margin: 1% 0 0 0;
   font-size: 2.0em;
 }
-/* line 21, ../sass/_main-page.scss */
+/* line 31, ../sass/_main-page.scss */
 .home-header p {
   margin: 0 0 2% 0;
 }
 
-/* line 26, ../sass/_main-page.scss */
+/* line 36, ../sass/_main-page.scss */
 #main-tagline {
   color: pink;
   font-weight: bold;
 }
 
-/* line 31, ../sass/_main-page.scss */
+/* line 41, ../sass/_main-page.scss */
 #main-explanation {
   font-size: 1.25em;
   margin-bottom: 3%;
 }
 
-/* line 36, ../sass/_main-page.scss */
+/* line 46, ../sass/_main-page.scss */
 .how-it-works {
   position: relative;
   padding-bottom: 2%;
 }
-/* line 39, ../sass/_main-page.scss */
+/* line 49, ../sass/_main-page.scss */
 .how-it-works ul {
   list-style-type: none;
 }
-/* line 42, ../sass/_main-page.scss */
+/* line 52, ../sass/_main-page.scss */
 .how-it-works h2 {
   text-align: center;
   width: 16%;
   margin: -0.6em 42% 0 42%;
   background-color: #494949;
 }
-/* line 48, ../sass/_main-page.scss */
+/* line 58, ../sass/_main-page.scss */
 .how-it-works h3 {
   font-size: 1.25em;
 }
-/* line 51, ../sass/_main-page.scss */
+/* line 61, ../sass/_main-page.scss */
 .how-it-works p {
   font-size: 1.1em;
 }
-/* line 54, ../sass/_main-page.scss */
+/* line 64, ../sass/_main-page.scss */
 .how-it-works figure {
   width: 14.5em;
   height: 16em;
-  background-repeat: no-repeat;
+  background: url("../../../img/sprite-4.png") no-repeat;
 }
-/* line 59, ../sass/_main-page.scss */
+/* line 69, ../sass/_main-page.scss */
 .how-it-works #find-concerts-pic {
   display: inline-block;
   position: relative;
   left: 5em;
-  width: 16em;
+  width: 15em;
 }
-/* line 65, ../sass/_main-page.scss */
+/* line 75, ../sass/_main-page.scss */
 .how-it-works #reserve-tickets-pic {
   float: left;
   position: relative;
   left: 7em;
   background-position: 52% 50%;
 }
-/* line 72, ../sass/_main-page.scss */
+/* line 82, ../sass/_main-page.scss */
 .how-it-works #cheap-tickets-pic {
   margin: 2% 0 0 15%;
-  background-position: 102% 100%;
+  background-position: 93% 100%;
 }
 
-/* line 78, ../sass/_main-page.scss */
+/* line 88, ../sass/_main-page.scss */
 .main-step {
   float: left;
   width: 29%;
   margin-left: 3.2%;
 }
 
-/* line 84, ../sass/_main-page.scss */
+/* line 94, ../sass/_main-page.scss */
 .main-signup-form {
   display: inline-block;
   width: 50%;
@@ -813,38 +825,38 @@ footer {
   padding: 1% 0 0 0;
 }
 
-/* line 91, ../sass/_main-page.scss */
+/* line 101, ../sass/_main-page.scss */
 .main-email {
   width: 70%;
   padding: 1%;
 }
 
-/* line 96, ../sass/_main-page.scss */
+/* line 106, ../sass/_main-page.scss */
 .main-submit {
   width: 18%;
   padding: 1.2%;
   margin-left: 2%;
 }
 
-/* line 102, ../sass/_main-page.scss */
+/* line 112, ../sass/_main-page.scss */
 .signup-block {
   padding: 0 0 1.2% 0;
   position: relative;
 }
 
-/* line 107, ../sass/_main-page.scss */
+/* line 117, ../sass/_main-page.scss */
 .main-frequency-selector label:first-child {
   margin-right: 3%;
 }
 
-/* line 111, ../sass/_main-page.scss */
+/* line 121, ../sass/_main-page.scss */
 .main-frequency-selector input {
   margin: 2% 4% 0 0.5%;
   top: 2px;
   position: relative;
 }
 
-/* line 117, ../sass/_main-page.scss */
+/* line 127, ../sass/_main-page.scss */
 .social-button {
   padding: 1.2em 0.5em;
   margin: 1% 5% 0% 0;
@@ -853,65 +865,65 @@ footer {
   background-color: #ff8da1;
   background-position: 50%;
 }
-/* line 124, ../sass/_main-page.scss */
+/* line 134, ../sass/_main-page.scss */
 .social-button:hover {
   background-color: #fa6464;
 }
 
-/* line 129, ../sass/_main-page.scss */
+/* line 139, ../sass/_main-page.scss */
 .ht-twitter {
   background-position: 100.1% 102%;
 }
 
-/* line 133, ../sass/_main-page.scss */
+/* line 143, ../sass/_main-page.scss */
 .ht-facebook {
   background-position: 100.1% -1%;
 }
 
-/* line 137, ../sass/_main-page.scss */
+/* line 147, ../sass/_main-page.scss */
 .main-launch-block {
   width: 50%;
   margin: 0 25%;
 }
-/* line 141, ../sass/_main-page.scss */
+/* line 150, ../sass/_main-page.scss */
 .main-launch-block h3 {
   color: #fa6464;
 }
 
-/* line 146, ../sass/_main-page.scss */
+/* line 155, ../sass/_main-page.scss */
 .benefits-list {
   width: 90%;
   padding: 3% 3% 3% 7%;
   display: block;
   float: left;
 }
-/* line 152, ../sass/_main-page.scss */
+/* line 161, ../sass/_main-page.scss */
 .benefits-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 157, ../sass/_main-page.scss */
+/* line 166, ../sass/_main-page.scss */
 .benefits-list li {
   float: left;
   display: inline-block;
   width: 20%;
   margin: 0 2.5%;
 }
-/* line 163, ../sass/_main-page.scss */
+/* line 172, ../sass/_main-page.scss */
 .benefits-list h3, .benefits-list p {
   display: inline-block;
   width: 100%;
   margin: 1% 0;
 }
-/* line 168, ../sass/_main-page.scss */
+/* line 177, ../sass/_main-page.scss */
 .benefits-list h3 {
   width: 85%;
   margin-left: 15%;
   font-size: 1.25em;
 }
 
-/* line 175, ../sass/_main-page.scss */
+/* line 184, ../sass/_main-page.scss */
 .main-image-container {
   width: 100%;
   display: block;
@@ -922,30 +934,30 @@ footer {
   background-repeat: no-repeat;
 }
 
-/* line 185, ../sass/_main-page.scss */
+/* line 194, ../sass/_main-page.scss */
 #ht-free {
   margin-left: 0.5em;
 }
 
-/* line 189, ../sass/_main-page.scss */
+/* line 198, ../sass/_main-page.scss */
 #ht-best-tickets {
   background-position: 31% 50%;
   margin-left: 2em;
 }
 
-/* line 194, ../sass/_main-page.scss */
+/* line 203, ../sass/_main-page.scss */
 #ht-never-miss {
   background-position: 62% 50%;
   margin-left: 3em;
 }
 
-/* line 199, ../sass/_main-page.scss */
+/* line 208, ../sass/_main-page.scss */
 #ht-time {
   background-position: 91% 50%;
   margin-left: -0.2em;
 }
 
-/* line 204, ../sass/_main-page.scss */
+/* line 213, ../sass/_main-page.scss */
 #first-benefits-paragraph {
   text-shadow: 1px 1px 1px #494949;
 }

@@ -73,14 +73,6 @@
 	}
 }
 
-/* #ht-never-miss {
-	width: 70%;
-}
-
-#ht-free {
-	width: 75%;
-	margin-top: 5%;
-} */
 
 .footer-inspiration {
 	width: 65%;
@@ -193,6 +185,23 @@
 	.main-signup-form, .main-launch-block {
 		width: 86%;
 		margin: 1% 7%;
+	}
+
+	.main-image-container {
+		width: 9em;
+		background-size: 420%;
+		#ht-free {
+			margin: 1em 0 -1em 0;
+		}
+		#ht-best-tickets {
+			margin-left: 1em;
+		}
+		#ht-never-miss {
+			margin-left: 1em;
+		}
+		#ht-time {
+			margin-left: -1.2em;
+		}
 	}
 
 	#frequency-explain {

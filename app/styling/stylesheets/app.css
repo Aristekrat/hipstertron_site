@@ -595,349 +595,10 @@ h3, h4 {
   color: #fa6464;
 }
 
-/* line 1, ../sass/_footer.scss */
-footer {
-  padding-top: 0.5%;
-  bottom: 0;
-  width: 100%;
-  float: left;
-}
+/*@import "footer";
+@import "header";
 
-/* line 8, ../sass/_footer.scss */
-.footer-inspiration {
-  width: 40%;
-  padding: 1% 4%;
-  margin: 0;
-  font-size: 0.9em;
-  opacity: 0.5;
-  float: left;
-  display: inline-block;
-}
-
-/* line 18, ../sass/_footer.scss */
-.footer-inspiration h4, .footer-inspiration p {
-  margin: 0;
-  display: inline-block;
-}
-
-/* line 23, ../sass/_footer.scss */
-.footer-privacy-policy {
-  float: right;
-  position: relative;
-  right: 4.5%;
-  margin-top: 2.5%;
-  display: inline-block;
-}
-
-/* line 31, ../sass/_footer.scss */
-.footer-contact {
-  float: right;
-  margin: 1% 0 0 5%;
-}
-/* line 34, ../sass/_footer.scss */
-.footer-contact span {
-  opacity: 0.8;
-}
-
-/* line 1, ../sass/_header.scss */
-.top-nav {
-  padding: 1% 1% 0.8% 1%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  background: #3c3c3c;
-  border-bottom: 1px solid #494949;
-}
-
-/* line 11, ../sass/_header.scss */
-.top-nav a {
-  text-decoration: none;
-  padding: 0 1%;
-  margin-top: 3px;
-  outline: 0;
-}
-
-/* line 18, ../sass/_header.scss */
-.home-icon {
-  margin-top: -0.3em;
-}
-
-/* .arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 0.4em solid transparent;
-	border-right: 0.4em solid transparent;	
-	border-top: 0.4em solid $minor-header;
-	position: relative;
-	top: 0.75em;
-} */
-/* line 32, ../sass/_header.scss */
-.top-nav a:hover {
-  color: #fa6464;
-}
-/* line 34, ../sass/_header.scss */
-.top-nav a:hover .arrow-down {
-  border-top: 0.4em solid #fa6464;
-}
-
-/* line 39, ../sass/_header.scss */
-.top-nav:hover, .top-nav:active {
-  outline: 0;
-}
-
-/* line 43, ../sass/_header.scss */
-.top-nav small {
-  float: right;
-  right: 8%;
-  position: relative;
-  margin-top: 3px;
-}
-
-/* line 50, ../sass/_header.scss */
-#twitter-widget-0 {
-  float: right;
-  position: relative;
-  right: 5%;
-  opacity: 0.75;
-}
-/* line 55, ../sass/_header.scss */
-#twitter-widget-0:hover {
-  opacity: 1.0;
-}
-
-/* line 1, ../sass/_main-page.scss */
-#home-page:after {
-  content: "";
-  display: block;
-}
-
-/* line 6, ../sass/_main-page.scss */
-.main-block {
-  background: #494949;
-  float: left;
-  width: 100%;
-}
-
-/* line 12, ../sass/_main-page.scss */
-.home-header {
-  width: 100%;
-  text-align: center;
-  padding: 5% 0 1% 0;
-}
-/* line 16, ../sass/_main-page.scss */
-.home-header h1 {
-  color: pink;
-  margin: 1% 0 0 0;
-  font-size: 2.0em;
-}
-/* line 21, ../sass/_main-page.scss */
-.home-header p {
-  margin: 0 0 2% 0;
-}
-
-/* line 26, ../sass/_main-page.scss */
-#main-tagline {
-  color: pink;
-  font-weight: bold;
-}
-
-/* line 31, ../sass/_main-page.scss */
-#main-explanation {
-  font-size: 1.25em;
-  margin-bottom: 3%;
-}
-
-/* line 36, ../sass/_main-page.scss */
-.how-it-works {
-  position: relative;
-  padding-bottom: 2%;
-}
-/* line 40, ../sass/_main-page.scss */
-.how-it-works ul {
-  list-style-type: none;
-}
-/* line 43, ../sass/_main-page.scss */
-.how-it-works h2 {
-  text-align: center;
-  width: 16%;
-  margin: -0.6em 42% 0 42%;
-  background-color: #494949;
-}
-/* line 49, ../sass/_main-page.scss */
-.how-it-works h3 {
-  font-size: 1.25em;
-}
-/* line 52, ../sass/_main-page.scss */
-.how-it-works p {
-  font-size: 1.1em;
-}
-/* line 55, ../sass/_main-page.scss */
-.how-it-works #find-concerts-pic {
-  display: inline-block;
-  position: relative;
-  left: 5em;
-  width: 45%;
-}
-/* line 61, ../sass/_main-page.scss */
-.how-it-works #reserve-tickets-pic {
-  float: left;
-  position: relative;
-  left: 7em;
-}
-/* line 66, ../sass/_main-page.scss */
-.how-it-works #cheap-tickets-pic {
-  margin: 2% 0 0 15%;
-}
-
-/* line 71, ../sass/_main-page.scss */
-.main-step {
-  float: left;
-  width: 29%;
-  margin-left: 3.2%;
-}
-
-/* line 77, ../sass/_main-page.scss */
-.main-signup-form {
-  display: inline-block;
-  width: 50%;
-  margin: 0 25%;
-  padding: 1% 0 0 0;
-}
-
-/* line 84, ../sass/_main-page.scss */
-.main-email {
-  width: 70%;
-  padding: 1%;
-}
-
-/* line 89, ../sass/_main-page.scss */
-.main-submit {
-  width: 18%;
-  padding: 1.2%;
-  margin-left: 2%;
-}
-
-/* line 95, ../sass/_main-page.scss */
-.signup-block {
-  padding: 0 0 1.2% 0;
-  position: relative;
-}
-
-/* line 100, ../sass/_main-page.scss */
-.main-frequency-selector label:first-child {
-  margin-right: 3%;
-}
-
-/* line 104, ../sass/_main-page.scss */
-.main-frequency-selector input {
-  margin: 2% 4% 0 0.5%;
-  top: 2px;
-  position: relative;
-}
-
-/* line 110, ../sass/_main-page.scss */
-.social-button {
-  padding: 1.4em 0.8em;
-  margin: 1% 5% 0% 0;
-  border-radius: 5px;
-  display: inline-block;
-  background-color: #ff8da1;
-  background-position: 50%;
-}
-/* line 117, ../sass/_main-page.scss */
-.social-button:hover {
-  background-color: #fa6464;
-}
-
-/* line 122, ../sass/_main-page.scss */
-.ht-twitter {
-  background-image: url("../../img/twitter.png");
-}
-
-/* line 126, ../sass/_main-page.scss */
-.ht-facebook {
-  background-image: url("../../img/facebook.png");
-}
-
-/* line 130, ../sass/_main-page.scss */
-.main-launch-block {
-  width: 50%;
-  margin: 0 25%;
-}
-/* line 134, ../sass/_main-page.scss */
-.main-launch-block h3 {
-  color: #fa6464;
-}
-
-/* line 139, ../sass/_main-page.scss */
-.benefits-list {
-  width: 90%;
-  padding: 3% 3% 3% 7%;
-  display: block;
-  float: left;
-}
-/* line 145, ../sass/_main-page.scss */
-.benefits-list ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 150, ../sass/_main-page.scss */
-.benefits-list li {
-  float: left;
-  display: inline-block;
-  width: 20%;
-  margin: 0 2.5%;
-}
-/* line 156, ../sass/_main-page.scss */
-.benefits-list h3, .benefits-list p {
-  display: inline-block;
-  width: 100%;
-  margin: 1% 0;
-}
-/* line 161, ../sass/_main-page.scss */
-.benefits-list h3 {
-  margin-left: 5%;
-  font-size: 1.25em;
-}
-
-/* line 167, ../sass/_main-page.scss */
-.main-image-container {
-  width: 100%;
-  display: block;
-  float: left;
-  height: 12em;
-  padding: 3% 0;
-}
-
-/* line 175, ../sass/_main-page.scss */
-.main-image-container img {
-  display: inline-block;
-  float: left;
-  width: 55%;
-}
-
-/* line 181, ../sass/_main-page.scss */
-#ht-free {
-  width: 47%;
-}
-
-/* line 185, ../sass/_main-page.scss */
-#ht-never-miss {
-  width: 55%;
-}
-
-/* line 189, ../sass/_main-page.scss */
-.right-side-image {
-  padding-left: 6%;
-}
-
-/* line 193, ../sass/_main-page.scss */
-#first-benefits-paragraph {
-  text-shadow: 1px 1px 1px #494949;
-}
-
+@import "main-page"; */
 /* line 1, ../sass/_calendar.scss */
 .calendar-page {
   float: left;
@@ -988,41 +649,36 @@ footer {
 }
 
 /* line 43, ../sass/_calendar.scss */
-* {
-  display: none !important;
-}
-
-/* line 47, ../sass/_calendar.scss */
 .calendar-header tr th {
   padding: 1%;
   font-size: 1.2em;
   width: 20%;
 }
 
-/* line 52, ../sass/_calendar.scss */
-.calendar-header tr th.band-block {
+/* line 48, ../sass/_calendar.scss */
+.calendar-header tr .band-header {
   width: 40%;
 }
 
-/* line 56, ../sass/_calendar.scss */
+/* line 52, ../sass/_calendar.scss */
 .calendar-row {
   color: pink;
   border-bottom: 1px solid #2f2f2f;
 }
 
-/* line 61, ../sass/_calendar.scss */
+/* line 57, ../sass/_calendar.scss */
 .calendar-row:nth-child(odd) {
   background: #2f2f2f;
 }
 
-/* line 65, ../sass/_calendar.scss */
+/* line 61, ../sass/_calendar.scss */
 .calendar-row td {
   padding: 0;
   margin: 0;
   border-right: 1px solid #888;
 }
 
-/* line 71, ../sass/_calendar.scss */
+/* line 67, ../sass/_calendar.scss */
 .calendar-row td a {
   width: 95%;
   height: 100%;
@@ -1031,7 +687,7 @@ footer {
   color: pink;
   outline: 0;
 }
-/* line 78, ../sass/_calendar.scss */
+/* line 74, ../sass/_calendar.scss */
 .calendar-row td a:hover {
   color: pink;
 }
@@ -1175,41 +831,20 @@ footer {
 }
 
 @media (min-width: 1041px) and (max-width: 1440px) {
-  /* line 3, ../sass/_small-desktop.scss */
-  #ht-never-miss {
-    width: 80%;
-  }
-
-  /* line 7, ../sass/_small-desktop.scss */
-  .main-image-container img {
-    width: 60%;
-    margin: 3% 0 0 2%;
-  }
-
-  /* line 12, ../sass/_small-desktop.scss */
-  #ht-free {
-    width: 65%;
-  }
-
-  /* line 16, ../sass/_small-desktop.scss */
+  /* line 2, ../sass/_small-desktop.scss */
   .main-signup-form, .main-launch-block {
     width: 60%;
     margin: 0 20%;
   }
 
-  /* line 21, ../sass/_small-desktop.scss */
+  /* line 7, ../sass/_small-desktop.scss */
   .benefits-list p {
     margin: 3% 0 0 0;
   }
 
-  /* line 27, ../sass/_small-desktop.scss */
-  .how-it-works #find-concerts-pic {
-    width: 45%;
-  }
-  /* line 30, ../sass/_small-desktop.scss */
+  /* line 15, ../sass/_small-desktop.scss */
   .how-it-works #reserve-tickets-pic {
-    width: 45%;
-    left: 6em;
+    left: 5em;
   }
 }
 @media (min-width: 600px) and (max-width: 1040px) {
@@ -1228,103 +863,114 @@ footer {
     margin: 1%;
   }
 
-  /* line 16, ../sass/_tablet.scss */
-  .how-it-works {
-    /* 	#cheap-tickets-pic {
-    		width: 40%;
-    		left: 0em;
-    		top: 1em;
-    	} */
-  }
   /* line 17, ../sass/_tablet.scss */
   .how-it-works h2 {
     width: 32%;
     margin: -0.6em 36% 0 36%;
   }
-  /* line 22, ../sass/_tablet.scss */
+  /* line 21, ../sass/_tablet.scss */
   .how-it-works #find-concerts-pic {
-    width: 55%;
-    left: 0em;
+    left: 0.5em;
   }
-  /* line 26, ../sass/_tablet.scss */
+  /* line 24, ../sass/_tablet.scss */
   .how-it-works #reserve-tickets-pic {
-    width: 55%;
-    left: 1em;
+    left: 1.5em;
+  }
+  /* line 27, ../sass/_tablet.scss */
+  .how-it-works #cheap-tickets-pic {
+    margin-left: 0em;
   }
 
-  /* line 37, ../sass/_tablet.scss */
+  /* line 32, ../sass/_tablet.scss */
   .main-step:first-child {
     margin-left: 0;
   }
 
-  /* line 41, ../sass/_tablet.scss */
-  .main-image-container img {
-    width: 70%;
-    margin-top: 10%;
+  /* line 36, ../sass/_tablet.scss */
+  .main-image-container {
+    width: 11em;
+    background-size: 420%;
+  }
+  /* line 39, ../sass/_tablet.scss */
+  .main-image-container #ht-free {
+    margin: 1em 0 -1em 0;
+  }
+  /* line 42, ../sass/_tablet.scss */
+  .main-image-container #ht-best-tickets {
+    margin-left: 1em;
+  }
+  /* line 45, ../sass/_tablet.scss */
+  .main-image-container #ht-never-miss {
+    margin-left: 1em;
+  }
+  /* line 48, ../sass/_tablet.scss */
+  .main-image-container #ht-time {
+    margin-left: -1.2em;
   }
 
-  /* line 46, ../sass/_tablet.scss */
+  /* line 53, ../sass/_tablet.scss */
   .main-signup-form, .main-launch-block {
     width: 80%;
     margin: 1% 10%;
   }
 
-  /* line 51, ../sass/_tablet.scss */
+  /* line 58, ../sass/_tablet.scss */
   .main-submit {
     padding: 1.8%;
     width: 20%;
   }
 
-  /* line 56, ../sass/_tablet.scss */
+  /* line 63, ../sass/_tablet.scss */
   .benefits-list {
     padding: 3% 1%;
     width: 98%;
   }
-
-  /* line 61, ../sass/_tablet.scss */
+  /* line 66, ../sass/_tablet.scss */
   .benefits-list li {
     width: 22.5%;
     margin: 0 0 0 2.5%;
   }
-
-  /* line 66, ../sass/_tablet.scss */
-  #ht-never-miss {
-    width: 70%;
-  }
-
   /* line 70, ../sass/_tablet.scss */
-  #ht-free {
-    width: 75%;
-    margin-top: 5%;
+  .benefits-list h3 {
+    margin: 0;
+    width: 100%;
   }
 
-  /* line 75, ../sass/_tablet.scss */
+  /* #ht-never-miss {
+  	width: 70%;
+  }
+  
+  #ht-free {
+  	width: 75%;
+  	margin-top: 5%;
+  } */
+  /* line 85, ../sass/_tablet.scss */
   .footer-inspiration {
     width: 65%;
   }
 
   /*****Info Page*****/
-  /* line 81, ../sass/_tablet.scss */
+  /* line 91, ../sass/_tablet.scss */
   .info-internal-links {
     left: -2em;
   }
 
-  /* line 85, ../sass/_tablet.scss */
+  /* line 95, ../sass/_tablet.scss */
   .about-right-block {
     margin-top: 1em;
   }
 
-  /* line 89, ../sass/_tablet.scss */
+  /* line 99, ../sass/_tablet.scss */
   .info-block {
     width: 80%;
   }
 
-  /* line 93, ../sass/_tablet.scss */
+  /* line 103, ../sass/_tablet.scss */
   .about-founder-figure img {
     width: 100%;
   }
 
-  /* line 97, ../sass/_tablet.scss */
+  /* line 107, ../sass/_tablet.scss */
   .info-button {
     width: 30%;
     padding: 2%;
@@ -1332,18 +978,18 @@ footer {
   }
 
   /*****Calendar*****/
-  /* line 104, ../sass/_tablet.scss */
+  /* line 114, ../sass/_tablet.scss */
   .calendar {
-    width: 90%;
-    margin: 1% 5%;
+    width: 98%;
+    margin: 1%;
   }
 
-  /* line 109, ../sass/_tablet.scss */
+  /* line 119, ../sass/_tablet.scss */
   .calendar-main-block p, .calendar-header h1 {
     margin-left: 5%;
   }
 
-  /* line 113, ../sass/_tablet.scss */
+  /* line 123, ../sass/_tablet.scss */
   .calendar-search {
     margin: 1% 5% 1% 0;
     width: 30%;
@@ -1351,96 +997,96 @@ footer {
   }
 
   /*****Privacy Policy*****/
-  /* line 120, ../sass/_tablet.scss */
+  /* line 130, ../sass/_tablet.scss */
   .privacy-policy-page {
     width: 96%;
     padding: 1% 2%;
     margin: 0;
   }
 
-  /* line 126, ../sass/_tablet.scss */
+  /* line 136, ../sass/_tablet.scss */
   .about-page, .signup-page {
     min-height: 40em;
   }
 }
 @media (min-width: 600px) and (max-width: 820px) {
   /***Main Page***/
-  /* line 135, ../sass/_tablet.scss */
+  /* line 145, ../sass/_tablet.scss */
   .top-nav small {
     display: none;
   }
 
-  /* line 139, ../sass/_tablet.scss */
+  /* line 149, ../sass/_tablet.scss */
   .main-header h1 {
     padding-top: 5%;
   }
 
-  /* line 144, ../sass/_tablet.scss */
+  /* line 154, ../sass/_tablet.scss */
   .how-it-works h2 {
     width: 30%;
     margin: -0.6em 35% 0 35%;
   }
-  /* line 149, ../sass/_tablet.scss */
+  /* line 158, ../sass/_tablet.scss */
   .how-it-works #find-concerts-pic {
     display: none;
   }
-  /* line 152, ../sass/_tablet.scss */
+  /* line 161, ../sass/_tablet.scss */
   .how-it-works #reserve-tickets-pic {
     display: none;
   }
-  /* line 155, ../sass/_tablet.scss */
+  /* line 164, ../sass/_tablet.scss */
   .how-it-works #cheap-tickets-pic {
     display: none;
   }
 
-  /* line 160, ../sass/_tablet.scss */
+  /* line 169, ../sass/_tablet.scss */
   #main-explanation {
     width: 94%;
     margin: 0 2% 4% 2%;
   }
 
-  /* line 165, ../sass/_tablet.scss */
+  /* line 174, ../sass/_tablet.scss */
   .benefits-list {
     padding: 3% 0;
     width: 100%;
   }
 
-  /* line 170, ../sass/_tablet.scss */
+  /* line 179, ../sass/_tablet.scss */
   .benefits-list h3 {
     margin-left: 0%;
     font-size: 1.15em;
   }
 
-  /* line 175, ../sass/_tablet.scss */
+  /* line 184, ../sass/_tablet.scss */
   .main-step {
     width: 31%;
     margin-left: 3%;
   }
 
-  /* line 180, ../sass/_tablet.scss */
+  /* line 189, ../sass/_tablet.scss */
   .main-step:first-child {
     margin-left: -2%;
   }
 
-  /* line 184, ../sass/_tablet.scss */
+  /* line 193, ../sass/_tablet.scss */
   .main-signup-form, .main-launch-block {
     width: 86%;
     margin: 1% 7%;
   }
 
-  /* line 189, ../sass/_tablet.scss */
+  /* line 198, ../sass/_tablet.scss */
   #frequency-explain {
     display: block;
   }
 
   /***Calendar Page***/
-  /* line 194, ../sass/_tablet.scss */
+  /* line 203, ../sass/_tablet.scss */
   .calendar-search {
     width: 40%;
     margin: 1% 5% 2% 0;
   }
 
-  /* line 199, ../sass/_tablet.scss */
+  /* line 208, ../sass/_tablet.scss */
   .info-internal-links {
     left: 0;
     width: 100%;
@@ -1448,25 +1094,25 @@ footer {
     margin: 0;
   }
 
-  /* line 207, ../sass/_tablet.scss */
+  /* line 216, ../sass/_tablet.scss */
   .info-page {
     width: 100%;
     padding: 0;
   }
 
-  /* line 212, ../sass/_tablet.scss */
+  /* line 221, ../sass/_tablet.scss */
   .info-internal-links {
     width: 100%;
     left: 0;
     margin: 0;
     padding: 1% 0;
   }
-  /* line 217, ../sass/_tablet.scss */
+  /* line 226, ../sass/_tablet.scss */
   .info-internal-links h3 {
     padding: 2% 0 2% 5%;
     width: 100%;
   }
-  /* line 221, ../sass/_tablet.scss */
+  /* line 230, ../sass/_tablet.scss */
   .info-internal-links a {
     padding: 2% 0 2% 5%;
     width: 100%;
@@ -1474,83 +1120,83 @@ footer {
     border-top: 1px solid #494949;
   }
 
-  /* line 229, ../sass/_tablet.scss */
+  /* line 238, ../sass/_tablet.scss */
   .info-container {
     width: 100%;
     margin: 0;
   }
 
-  /* line 234, ../sass/_tablet.scss */
+  /* line 243, ../sass/_tablet.scss */
   .info-block, .info-block.info-about-section {
     width: 96%;
     padding: 0 3%;
   }
-  /* line 237, ../sass/_tablet.scss */
+  /* line 246, ../sass/_tablet.scss */
   .info-block h1, .info-block.info-about-section h1 {
     margin-top: 0.5em;
   }
 
-  /* line 242, ../sass/_tablet.scss */
+  /* line 251, ../sass/_tablet.scss */
   .about-founder-figure {
     width: 100%;
   }
-  /* line 244, ../sass/_tablet.scss */
+  /* line 253, ../sass/_tablet.scss */
   .about-founder-figure img {
     width: 100%;
   }
 
-  /* line 249, ../sass/_tablet.scss */
+  /* line 258, ../sass/_tablet.scss */
   .info-button {
     width: 60%;
     margin: 0.5% 0 8% 0;
     padding: 4% 0;
   }
 
-  /* line 255, ../sass/_tablet.scss */
+  /* line 264, ../sass/_tablet.scss */
   .about-right-block {
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  /* line 261, ../sass/_tablet.scss */
+  /* line 270, ../sass/_tablet.scss */
   .reserve-list {
     margin: 0;
     padding: 0;
   }
 
-  /* line 266, ../sass/_tablet.scss */
+  /* line 275, ../sass/_tablet.scss */
   .venue-header, .venue-block {
     display: none;
   }
 
-  /* line 270, ../sass/_tablet.scss */
+  /* line 279, ../sass/_tablet.scss */
   .calendar {
     width: 98%;
     margin: 1%;
   }
 
-  /* line 275, ../sass/_tablet.scss */
+  /* line 284, ../sass/_tablet.scss */
   #widget {
     display: none;
   }
 
-  /* line 279, ../sass/_tablet.scss */
+  /* line 288, ../sass/_tablet.scss */
   .top-nav {
     width: 96%;
     padding: 1.5% 2%;
   }
-  /* line 282, ../sass/_tablet.scss */
+  /* line 291, ../sass/_tablet.scss */
   .top-nav a {
     margin-left: 2%;
   }
 
-  /* line 287, ../sass/_tablet.scss */
+  /* line 296, ../sass/_tablet.scss */
   .calendar-header h1 {
     padding-top: 8%;
   }
 
-  /* line 291, ../sass/_tablet.scss */
+  /* line 300, ../sass/_tablet.scss */
   .home-header h1 {
     margin: 6% 0 0 0;
   }
@@ -1583,145 +1229,140 @@ footer {
     margin: 0 1%;
   }
 
-  /* line 25, ../sass/_phones.scss */
-  .how-it-works {
-    /* 	#cheap-tickets-pic {
-    		width: 40%;
-    		left: 0em;
-    		top: 0em;
-    	} */
-  }
   /* line 26, ../sass/_phones.scss */
   .how-it-works h2 {
     width: 50%;
     margin: -0.6em 25% 0 25%;
   }
-  /* line 31, ../sass/_phones.scss */
+  /* line 30, ../sass/_phones.scss */
   .how-it-works #find-concerts-pic {
-    width: 70%;
-    left: 0em;
+    left: 4em;
   }
-  /* line 35, ../sass/_phones.scss */
+  /* line 33, ../sass/_phones.scss */
   .how-it-works #reserve-tickets-pic {
-    width: 55%;
-    left: 1em;
+    left: 4em;
+  }
+  /* line 36, ../sass/_phones.scss */
+  .how-it-works #cheap-tickets-pic {
+    left: -1.5em;
+    top: -1em;
+    position: relative;
   }
 
-  /* line 46, ../sass/_phones.scss */
+  /* line 43, ../sass/_phones.scss */
   .main-step {
     width: 92%;
     margin: 2% 5% 2% 0;
   }
 
-  /* line 51, ../sass/_phones.scss */
+  /* line 48, ../sass/_phones.scss */
   .main-signup-form {
     width: 96%;
     margin: 1% 2%;
     font-weight: bold;
   }
 
-  /* line 57, ../sass/_phones.scss */
+  /* line 54, ../sass/_phones.scss */
   .main-submit {
     padding: 1.8%;
     width: 20%;
   }
 
-  /* line 62, ../sass/_phones.scss */
+  /* line 59, ../sass/_phones.scss */
   #frequency-explain {
     display: block;
     margin-top: 3%;
   }
 
-  /* line 67, ../sass/_phones.scss */
+  /* line 64, ../sass/_phones.scss */
   .main-launch-block {
     width: 90%;
     margin: 1% 5%;
   }
 
-  /* line 72, ../sass/_phones.scss */
+  /* line 69, ../sass/_phones.scss */
   .benefits-list {
     padding: 3% 1%;
     width: 98%;
   }
 
-  /* line 77, ../sass/_phones.scss */
+  /* line 74, ../sass/_phones.scss */
   .benefits-list li {
     width: 98%;
     margin: 1% 1%;
   }
 
-  /* line 83, ../sass/_phones.scss */
+  /* line 80, ../sass/_phones.scss */
   .benefits-list li:not(:last-child) {
     border-bottom: 1px solid #3c3c3c;
   }
 
-  /* line 87, ../sass/_phones.scss */
-  .benefits-list h4 {
-    width: 95%;
+  /* line 84, ../sass/_phones.scss */
+  .benefits-list h3 {
+    width: 100%;
     text-align: center;
-    font-size: 1.6em;
+    margin: 0;
   }
 
-  /* line 93, ../sass/_phones.scss */
+  /* line 90, ../sass/_phones.scss */
   .main-image-container {
     padding: 0;
+    height: 13.8em;
+    background-size: 420%;
+    width: 12em;
   }
 
-  /* #ht-never-miss {
-  	width: 90%;
-  	margin-left: 2em;
-  	margin-top: -7em;
-  } */
-  /* line 103, ../sass/_phones.scss */
+  /* line 97, ../sass/_phones.scss */
   #ht-free {
-    width: 55%;
-    margin-left: 22%;
+    margin-left: 6em;
   }
 
-  /* line 108, ../sass/_phones.scss */
-  .main-image-container img {
-    margin-left: 25%;
+  /* line 101, ../sass/_phones.scss */
+  #ht-best-tickets {
+    margin-left: 6em;
   }
 
-  /* .main-testimonial {
-  	padding: 1% 0;
+  /* line 105, ../sass/_phones.scss */
+  #ht-never-miss {
+    margin-left: 6.5em;
   }
-  
-  .main-testimonial li {
-  	width: 31.5%;
-  	margin-left: 1%;
-  } */
-  /* line 121, ../sass/_phones.scss */
+
+  /* line 109, ../sass/_phones.scss */
+  #ht-time {
+    margin-left: 7em;
+  }
+
+  /* line 115, ../sass/_phones.scss */
   .right-side-image {
     padding-left: 0%;
   }
 
-  /* line 125, ../sass/_phones.scss */
+  /* line 119, ../sass/_phones.scss */
   .footer-inspiration {
     width: 70%;
     padding: 1%;
   }
 
   /*****Info Page*****/
-  /* line 132, ../sass/_phones.scss */
+  /* line 126, ../sass/_phones.scss */
   .info-page {
     width: 100%;
     padding: 0;
   }
 
-  /* line 137, ../sass/_phones.scss */
+  /* line 131, ../sass/_phones.scss */
   .info-internal-links {
     width: 100%;
     left: 0;
     margin: 0;
     padding: 1% 0;
   }
-  /* line 142, ../sass/_phones.scss */
+  /* line 136, ../sass/_phones.scss */
   .info-internal-links h3 {
     padding: 2% 0 2% 5%;
     width: 100%;
   }
-  /* line 146, ../sass/_phones.scss */
+  /* line 140, ../sass/_phones.scss */
   .info-internal-links a {
     padding: 2% 0 2% 5%;
     width: 100%;
@@ -1729,46 +1370,46 @@ footer {
     border-top: 1px solid #494949;
   }
 
-  /* line 154, ../sass/_phones.scss */
+  /* line 148, ../sass/_phones.scss */
   .info-container {
     width: 100%;
     margin: 0;
   }
 
-  /* line 159, ../sass/_phones.scss */
+  /* line 153, ../sass/_phones.scss */
   .info-block, .info-block.info-about-section {
     width: 96%;
     padding: 0 3%;
   }
-  /* line 162, ../sass/_phones.scss */
+  /* line 156, ../sass/_phones.scss */
   .info-block h1, .info-block.info-about-section h1 {
     margin-top: 0.5em;
   }
 
-  /* line 167, ../sass/_phones.scss */
+  /* line 161, ../sass/_phones.scss */
   .about-founder-figure {
     width: 100%;
   }
-  /* line 169, ../sass/_phones.scss */
+  /* line 163, ../sass/_phones.scss */
   .about-founder-figure img {
     width: 100%;
   }
 
-  /* line 174, ../sass/_phones.scss */
+  /* line 168, ../sass/_phones.scss */
   .info-button {
     width: 90%;
     margin: 0.5% 0 8% 0;
     padding: 6% 0;
   }
 
-  /* line 180, ../sass/_phones.scss */
+  /* line 174, ../sass/_phones.scss */
   .about-right-block {
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  /* line 186, ../sass/_phones.scss */
+  /* line 180, ../sass/_phones.scss */
   .reserve-list {
     margin: 0;
     padding: 0;
@@ -1788,52 +1429,57 @@ footer {
   	width: 98%;
   } */
   /*****Calendar*****/
-  /* line 206, ../sass/_phones.scss */
+  /* line 200, ../sass/_phones.scss */
   .calendar {
     width: 100%;
     margin: 4% 0;
   }
 
-  /* line 211, ../sass/_phones.scss */
+  /* line 205, ../sass/_phones.scss */
   .calendar-header h1 {
     margin: 12% 0 0% 2%;
   }
 
-  /* line 215, ../sass/_phones.scss */
+  /* line 209, ../sass/_phones.scss */
   .calendar-main-block p {
     width: 95%;
     margin: 1%;
     padding: 0 0 0 1.5%;
   }
 
-  /* line 221, ../sass/_phones.scss */
+  /* line 215, ../sass/_phones.scss */
   .calendar-search {
     margin: 3% 10%;
     width: 80%;
     padding: 1%;
   }
 
-  /* line 227, ../sass/_phones.scss */
+  /* line 221, ../sass/_phones.scss */
+  .calendar-row td {
+    padding: 1%;
+  }
+
+  /* line 225, ../sass/_phones.scss */
   .venue-header, .venue-block {
     display: none;
   }
 
   /*****Sign Up*****/
-  /* line 233, ../sass/_phones.scss */
+  /* line 231, ../sass/_phones.scss */
   .signup-page h1 {
     padding-top: 12%;
     margin-bottom: 0;
   }
 
   /*****Privacy Policy*****/
-  /* line 239, ../sass/_phones.scss */
+  /* line 237, ../sass/_phones.scss */
   .privacy-policy-page {
     width: 96%;
     padding: 1% 2%;
     margin: 0;
   }
 
-  /* line 245, ../sass/_phones.scss */
+  /* line 243, ../sass/_phones.scss */
   .signup-page {
     padding: 10% 0;
     min-height: 25em;

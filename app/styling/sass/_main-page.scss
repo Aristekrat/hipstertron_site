@@ -9,6 +9,16 @@
 	width: 100%;
 }
 
+#home-icon {
+	float: left;
+	margin-top: -0.5em;
+	figure {
+		height: 2em;
+		width: 2em;
+		background: url("../../../img/sprite-4.png") no-repeat 100% 0%;
+	}
+}
+
 .home-header {
 	width: 100%;
 	text-align: center;
@@ -54,13 +64,13 @@
 	figure {
 		width: 14.5em;
 		height: 16em;
-		background-repeat: no-repeat;
+		background: url("../../../img/sprite-4.png") no-repeat;
 	}
 	#find-concerts-pic {
 		display: inline-block;
 		position: relative;
 		left: 5em;
-		width: 16em;
+		width: 15em;
 	}
 	#reserve-tickets-pic {
 		float: left;
@@ -71,7 +81,7 @@
 	}
 	#cheap-tickets-pic {
 		margin: 2% 0 0 15%;
-		background-position: 102% 100%;
+		background-position: 93% 100%;
 	}
 }
 
@@ -137,7 +147,6 @@
 .main-launch-block {
 	width: 50%;
 	margin: 0 25%;
-	
 	h3 {
 		color: $main-header;
 	}
