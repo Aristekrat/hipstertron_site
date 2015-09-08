@@ -1,11 +1,30 @@
 .top-nav {
-	padding: 1% 1% 0.8% 1%;
+	padding: 1%;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100;
 	background: darken($background, 5%);
 	border-bottom: 1px solid $background;
+		.twitter-link {
+		background: url("/img/twitter_circle_gray.png") no-repeat;
+	}
+	.facebook-link {
+		background: url("/img/facebook_circle_gray.png") no-repeat;
+	}
+	.social-link {
+		//padding: 1% 1.5%;
+		padding: 1.5em;
+		border-radius: 25px;
+		background-size: 95%;
+		background-position: 50%;
+		opacity: 0.8;
+		//float: right;
+		&:hover, &:active {
+			opacity: 1.0;
+		}
+	}
+
 }
 
 .top-nav a {
@@ -15,25 +34,12 @@
 	outline: 0;
 }
 
-.home-icon {
+#home-icon {
 	margin-top: -0.3em;
 }
 
-/* .arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 0.4em solid transparent;
-	border-right: 0.4em solid transparent;	
-	border-top: 0.4em solid $minor-header;
-	position: relative;
-	top: 0.75em;
-} */
-
 .top-nav a:hover {
 	color: $main-header;
-	.arrow-down {
-		border-top: 0.4em solid $main-header;
-	}
 }
 
 .top-nav:hover, .top-nav:active {
@@ -42,17 +48,7 @@
 
 .top-nav small {
 	float: right;
-	right: 8%;
+	right: 6%;
 	position: relative;
 	margin-top: 3px;
-}
-
-#twitter-widget-0 {
-	float: right;
-	position: relative;
-	right: 5%;
-	opacity: 0.75;
-	&:hover {
-		opacity: 1.0;
-	}
 }

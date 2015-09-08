@@ -556,7 +556,7 @@ button {
 
 /* line 26, ../sass/_shared.scss */
 a {
-  color: #ff8da1;
+  color: #ff5a77;
   text-decoration: none;
 }
 
@@ -579,7 +579,7 @@ h1, h2 {
 /* line 44, ../sass/_shared.scss */
 h3, h4 {
   font-family: 'Hammersmith One', sans-serif;
-  color: pink;
+  color: #ff8da1;
 }
 
 /* line 49, ../sass/_shared.scss */
@@ -641,7 +641,7 @@ footer {
 
 /* line 1, ../sass/_header.scss */
 .top-nav {
-  padding: 1% 1% 0.8% 1%;
+  padding: 1%;
   position: fixed;
   top: 0;
   width: 100%;
@@ -649,8 +649,28 @@ footer {
   background: #3c3c3c;
   border-bottom: 1px solid #494949;
 }
+/* line 9, ../sass/_header.scss */
+.top-nav .twitter-link {
+  background: url("/img/twitter_circle_gray.png") no-repeat;
+}
+/* line 12, ../sass/_header.scss */
+.top-nav .facebook-link {
+  background: url("/img/facebook_circle_gray.png") no-repeat;
+}
+/* line 15, ../sass/_header.scss */
+.top-nav .social-link {
+  padding: 1.5em;
+  border-radius: 25px;
+  background-size: 95%;
+  background-position: 50%;
+  opacity: 0.8;
+}
+/* line 23, ../sass/_header.scss */
+.top-nav .social-link:hover, .top-nav .social-link:active {
+  opacity: 1.0;
+}
 
-/* line 11, ../sass/_header.scss */
+/* line 30, ../sass/_header.scss */
 .top-nav a {
   text-decoration: none;
   padding: 0 1%;
@@ -658,52 +678,27 @@ footer {
   outline: 0;
 }
 
-/* line 18, ../sass/_header.scss */
-.home-icon {
+/* line 37, ../sass/_header.scss */
+#home-icon {
   margin-top: -0.3em;
 }
 
-/* .arrow-down {
-	width: 0; 
-	height: 0; 
-	border-left: 0.4em solid transparent;
-	border-right: 0.4em solid transparent;	
-	border-top: 0.4em solid $minor-header;
-	position: relative;
-	top: 0.75em;
-} */
-/* line 32, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 .top-nav a:hover {
   color: #fa6464;
 }
-/* line 34, ../sass/_header.scss */
-.top-nav a:hover .arrow-down {
-  border-top: 0.4em solid #fa6464;
-}
 
-/* line 39, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 .top-nav:hover, .top-nav:active {
   outline: 0;
 }
 
-/* line 43, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 .top-nav small {
   float: right;
-  right: 8%;
+  right: 6%;
   position: relative;
   margin-top: 3px;
-}
-
-/* line 50, ../sass/_header.scss */
-#twitter-widget-0 {
-  float: right;
-  position: relative;
-  right: 5%;
-  opacity: 0.75;
-}
-/* line 55, ../sass/_header.scss */
-#twitter-widget-0:hover {
-  opacity: 1.0;
 }
 
 /* line 1, ../sass/_main-page.scss */
@@ -739,7 +734,7 @@ footer {
 }
 /* line 26, ../sass/_main-page.scss */
 .home-header h1 {
-  color: pink;
+  color: #ff8da1;
   margin: 1% 0 0 0;
   font-size: 2.0em;
 }
@@ -862,7 +857,7 @@ footer {
   margin: 1% 5% 0% 0;
   border-radius: 5px;
   display: inline-block;
-  background-color: #ff8da1;
+  background-color: #ff5a77;
   background-position: 50%;
 }
 /* line 134, ../sass/_main-page.scss */
