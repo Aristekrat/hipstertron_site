@@ -644,26 +644,28 @@ footer {
   padding: 1%;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 98%;
   z-index: 100;
   background: #3c3c3c;
   border-bottom: 1px solid #494949;
 }
 /* line 9, ../sass/_header.scss */
 .top-nav .twitter-link {
-  background: url("/img/twitter_circle_gray.png") no-repeat;
+  background: url("/img/sprite-1.png") no-repeat;
+  background-position: 100% 50%;
 }
-/* line 12, ../sass/_header.scss */
+/* line 13, ../sass/_header.scss */
 .top-nav .facebook-link {
-  background: url("/img/facebook_circle_gray.png") no-repeat;
-}
-/* line 15, ../sass/_header.scss */
-.top-nav .social-link {
-  padding: 1.5em;
-  border-radius: 25px;
-  background-size: 95%;
+  background: url("/img/sprite-1.png") no-repeat;
   background-position: 50%;
+}
+/* line 17, ../sass/_header.scss */
+.top-nav .social-link {
+  padding: 1.15em;
+  margin-right: 1%;
+  border-radius: 25px;
   opacity: 0.8;
+  background-size: 325%;
 }
 /* line 23, ../sass/_header.scss */
 .top-nav .social-link:hover, .top-nav .social-link:active {
@@ -867,12 +869,12 @@ footer {
 
 /* line 139, ../sass/_main-page.scss */
 .ht-twitter {
-  background-position: 100.1% 102%;
+  background-position: 100% 50%;
 }
 
 /* line 143, ../sass/_main-page.scss */
 .ht-facebook {
-  background-position: 100.1% -1%;
+  background-position: 0% 50%;
 }
 
 /* line 147, ../sass/_main-page.scss */

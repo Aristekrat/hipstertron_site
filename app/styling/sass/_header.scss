@@ -2,24 +2,24 @@
 	padding: 1%;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 98%;
 	z-index: 100;
 	background: darken($background, 5%);
 	border-bottom: 1px solid $background;
-		.twitter-link {
-		background: url("/img/twitter_circle_gray.png") no-repeat;
+	.twitter-link {
+		background: url("/img/sprite-1.png") no-repeat;
+		background-position: 100% 50%;
 	}
 	.facebook-link {
-		background: url("/img/facebook_circle_gray.png") no-repeat;
+		background: url("/img/sprite-1.png") no-repeat;
+		background-position: 50%;
 	}
 	.social-link {
-		//padding: 1% 1.5%;
-		padding: 1.5em;
+		padding: 1.15em;
+		margin-right: 1%;
 		border-radius: 25px;
-		background-size: 95%;
-		background-position: 50%;
 		opacity: 0.8;
-		//float: right;
+		background-size: 325%;
 		&:hover, &:active {
 			opacity: 1.0;
 		}
