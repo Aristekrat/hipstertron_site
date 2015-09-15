@@ -12,26 +12,24 @@
 		figure {
 			height: 2em;
 			width: 2em;
-			background: url("/img/sprite-1.png") no-repeat 0% 0%;
+			background: url("/img/main-sprite.png") no-repeat 0% 0%;
 		}
 	}
 	.twitter-link {
-		background: url("/img/sprite-1.png") no-repeat 0 18%;
+		background: url("/img/main-sprite.png") no-repeat 0 18%;
 	}
 	.facebook-link {
-		background: url("/img/sprite-1.png") no-repeat 0 42%;
+		background: url("/img/main-sprite.png") no-repeat 0 42%;
 	}
 	.social-link {
 		padding: 1.15em;
 		margin-right: 1%;
 		border-radius: 25px;
 		opacity: 0.8;
-		//background-size: 325%;
 		&:hover, &:active {
 			opacity: 1.0;
 		}
 	}
-
 }
 
 .top-nav a {

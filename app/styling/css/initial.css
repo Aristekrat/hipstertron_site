@@ -658,15 +658,15 @@ footer {
 .top-nav #home-icon figure {
   height: 2em;
   width: 2em;
-  background: url("/img/sprite-1.png") no-repeat 0% 0%;
+  background: url("/img/main-sprite.png") no-repeat 0% 0%;
 }
 /* line 18, ../sass/_header.scss */
 .top-nav .twitter-link {
-  background: url("/img/sprite-1.png") no-repeat 0 18%;
+  background: url("/img/main-sprite.png") no-repeat 0 18%;
 }
 /* line 21, ../sass/_header.scss */
 .top-nav .facebook-link {
-  background: url("/img/sprite-1.png") no-repeat 0 42%;
+  background: url("/img/main-sprite.png") no-repeat 0 42%;
 }
 /* line 24, ../sass/_header.scss */
 .top-nav .social-link {
@@ -675,12 +675,12 @@ footer {
   border-radius: 25px;
   opacity: 0.8;
 }
-/* line 30, ../sass/_header.scss */
+/* line 29, ../sass/_header.scss */
 .top-nav .social-link:hover, .top-nav .social-link:active {
   opacity: 1.0;
 }
 
-/* line 37, ../sass/_header.scss */
+/* line 35, ../sass/_header.scss */
 .top-nav a {
   text-decoration: none;
   padding: 0 1%;
@@ -688,22 +688,22 @@ footer {
   outline: 0;
 }
 
-/* line 44, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 #home-icon {
   margin-top: -0.3em;
 }
 
-/* line 48, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 .top-nav a:hover {
   color: #fa6464;
 }
 
-/* line 52, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 .top-nav:hover, .top-nav:active {
   outline: 0;
 }
 
-/* line 56, ../sass/_header.scss */
+/* line 54, ../sass/_header.scss */
 .top-nav small {
   float: right;
   right: 6%;
@@ -790,7 +790,7 @@ footer {
 .how-it-works figure {
   width: 14.5em;
   height: 16em;
-  background: url("../../../img/sprite-1.png") no-repeat;
+  background: url("../../../img/main-sprite.png") no-repeat;
 }
 /* line 69, ../sass/_main-page.scss */
 .how-it-works #find-concerts-pic {
