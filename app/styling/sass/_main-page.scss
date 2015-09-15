@@ -9,7 +9,7 @@
 	width: 100%;
 }
 
-#home-icon {
+/* #home-icon {
 	float: left;
 	margin-top: -0.5em;
 	figure {
@@ -17,7 +17,7 @@
 		width: 2em;
 		background: url("../../../img/sprite-4.png") no-repeat 100% 0%;
 	}
-}
+} */
 
 .home-header {
 	width: 100%;
@@ -64,24 +64,25 @@
 	figure {
 		width: 14.5em;
 		height: 16em;
-		background: url("../../../img/sprite-4.png") no-repeat;
+		background: url("../../../img/sprite-1.png") no-repeat;
 	}
 	#find-concerts-pic {
 		display: inline-block;
 		position: relative;
 		left: 5em;
 		width: 15em;
+		background-position: 7% 50%;
 	}
 	#reserve-tickets-pic {
 		float: left;
 		position: relative;
 		left: 7em;
-		background-position: 52% 50%;
+		background-position: 56% 50%;
 
 	}
 	#cheap-tickets-pic {
 		margin: 2% 0 0 15%;
-		background-position: 93% 100%;
+		background-position: 102% 100%;
 	}
 }
 
