@@ -17,7 +17,7 @@ angular.module('hipstertron', [
             title: 'Find Concerts and Concert Tickets in Denver',
             description: 'Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.'
         });
-        $routeProvider.when('/calendar', {
+        $routeProvider.when('/calendar/', {
             templateUrl: 'partials/calendar.html',
             controller: 'CalendarCtrl',
             title: 'List of Denver Concerts',
@@ -241,8 +241,8 @@ angular.module('hipstertron.services', [])
     function($http, environmentService) {
         return {
             // Testing: test proper offset combined with resultCount
-            getConcerts: function(resultCount, offset, callback) {
-                $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, {
+            getConcerts: function(resultCount, offset, callback) { //
+                $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, { //
                     cache: true
                 })
                     .then(function(response) {

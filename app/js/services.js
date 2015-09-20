@@ -36,8 +36,8 @@ angular.module('hipstertron.services', [])
     function($http, environmentService) {
         return {
             // Testing: test proper offset combined with resultCount
-            getConcerts: function(resultCount, offset, callback) {
-                $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, {
+            getConcerts: function(resultCount, offset, callback) { //
+                $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, { //
                     cache: true
                 })
                     .then(function(response) {
