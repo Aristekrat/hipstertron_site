@@ -17,7 +17,7 @@ angular.module('hipstertron', [
             title: 'Find Concerts and Concert Tickets in Denver',
             description: 'Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.'
         });
-        $routeProvider.when('/calendar/', {
+        $routeProvider.when('/calendar', {
             templateUrl: 'partials/calendar.html',
             controller: 'CalendarCtrl',
             title: 'List of Denver Concerts',
@@ -202,6 +202,7 @@ angular.module('hipstertron.controllers', [])
 
     }
 ]);
+
 /* Services */
 
 angular.module('hipstertron.services', [])
