@@ -84,52 +84,19 @@ angular.module('hipstertron.controllers', [])
     }
 ])
 
-.controller('CalendarCtrl', ['$scope', '$location', 'getConcertsService',
-    function($scope, $location, getConcertsService) {
-        $scope.concertListings = {};
-        var sections = ['end', 'middle', 'beginning']
-
-        getConcertsService.getConcerts(sections.pop(), function(response) {
-            $scope.concertListings = response.data;
-            // TODO - refactor
-            setTimeout(function() {
-                if (sections.length > 0) {
-                    getConcertsService.getConcerts(sections.pop(), function(secondResponse) {
-                        $scope.concertListings = $scope.concertListings.concat(secondResponse.data);
-                        setTimeout(function() {
-                            if (sections.length !== 0) {
-                                getConcertsService.getConcerts(sections.pop(), function(thirdResponse) {
-                                    $scope.concertListings = $scope.concertListings.concat(thirdResponse.data);
-                                });
-                            }
-                        }, 0);
-                    });
-                }
-            }, 0);
-        });
-
-        /*        function foo(response, priorResponse) {
-            $scope.concertListings = response.data.concat(priorResponse);
-            setTimeout(function() {
-                console.log(sections.length);
-                if (sections.length !== 0) {
-                    getConcertsService.getConcerts(sections.pop(), function(response) {
-                        console.log(response);
-                        foo(response, $scope.concertListings);
-                    })
-                }
-            }, 0);
-        }
-
-        var noPrior = [];
-        */
-        /*
+.controller('CalendarCtrl', ['$scope', 'getConcertsService',
+    function($scope, getConcertsService) {
+        $scope.concertListings = {}
         var resultCount = 120;
         var offset = 0;
         var runCount = [];
         runCount.push(resultCount);
 
-         window.onscroll = function(event) {
+        getConcertsService.getConcerts(resultCount, offset, function(response) {
+            $scope.concertListings = response.data.concertListings;
+        })
+
+        window.onscroll = function(event) {
             // This initialization stuff cannot be moved outside of the function.
             var body = document.body;
             var html = document.documentElement;
@@ -144,7 +111,7 @@ angular.module('hipstertron.controllers', [])
                     })
                 }
             }
-        };*/
+        };
 
     }
 ])
@@ -247,7 +214,7 @@ angular.module('hipstertron.services', [])
                     prod: "http://hipstertron-data.herokuapp.com",
                     local: "http://localhost:8000"
                 }
-                return envPrefix['local'];
+                return envPrefix['prod'];
             },
         }
     }
@@ -273,23 +240,6 @@ angular.module('hipstertron.services', [])
     function($http, environmentService) {
         return {
             // Testing: test proper offset combined with resultCount
-            getConcerts: function(section, callback) {
-                $http.get("http://localhost:9000" + "/get-concerts/" + section, {
-                    cache: true
-                })
-                    .then(function(response) {
-                        return callback(response)
-                    });
-            }
-        }
-    }
-])
-
-/*
-.factory('getConcertsService', ['$http', 'environmentService',
-    function($http, environmentService) {
-        return {
-            // Testing: test proper offset combined with resultCount
             getConcerts: function(resultCount, offset, callback) {
                 $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, {
                     cache: true
@@ -301,4 +251,3 @@ angular.module('hipstertron.services', [])
         }
     }
 ])
- */
