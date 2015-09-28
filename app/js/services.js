@@ -7,11 +7,18 @@ angular.module('hipstertron.services', [])
         return {
             getPrefix: function() {
                 var envPrefix = {
-                    prod: "http://hipstertron-data.herokuapp.com",
-                    local: "http://localhost:8000"
+                    prod: "http://www.hipstertron.com",
+                    local: "http://localhost:9000",
                 }
-                return envPrefix['prod'];
+                return envPrefix['local'];
             },
+            getDataPrefix: function() {
+                var dataPrefix = {
+                    dataProd: "http://hipstertron-data.herokuapp.com",
+                    dataLocal: "http://localhost:8000"
+                }
+                return dataPrefix['dataLocal']
+            }
         }
     }
 ])
@@ -20,7 +27,7 @@ angular.module('hipstertron.services', [])
     function($http, environmentService) {
         return {
             submitEmail: function(email, callback, errorHandler) {
-                $http.post(environmentService.getPrefix() + "/sendEmail", email)
+                $http.post(environmentService.getDataPrefix() + "/sendEmail", email)
                     .success(function(response) {
                         return callback(response)
                     })
@@ -35,9 +42,8 @@ angular.module('hipstertron.services', [])
 .factory('getConcertsService', ['$http', 'environmentService',
     function($http, environmentService) {
         return {
-            // Testing: test proper offset combined with resultCount
-            getConcerts: function(resultCount, offset, callback) { //
-                $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, { //
+            getConcerts: function(section, callback) {
+                $http.get(environmentService.getPrefix() + "/get-concerts/" + section, {
                     cache: true
                 })
                     .then(function(response) {

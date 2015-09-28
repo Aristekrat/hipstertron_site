@@ -662,7 +662,7 @@ footer {
 }
 /* line 18, ../sass/_header.scss */
 .top-nav .twitter-link {
-  background: url("/img/main-sprite.png") no-repeat 0 18%;
+  background: url("/img/main-sprite.png") no-repeat 0 20%;
 }
 /* line 21, ../sass/_header.scss */
 .top-nav .facebook-link {
@@ -670,7 +670,7 @@ footer {
 }
 /* line 24, ../sass/_header.scss */
 .top-nav .social-link {
-  padding: 1.15em;
+  padding: 0.6em 1em;
   margin-right: 1%;
   border-radius: 25px;
   opacity: 0.8;

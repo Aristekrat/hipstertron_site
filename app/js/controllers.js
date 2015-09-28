@@ -26,35 +26,26 @@ angular.module('hipstertron.controllers', [])
     }
 ])
 
-.controller('CalendarCtrl', ['$scope', 'getConcertsService',
-    function($scope, getConcertsService) {
-        $scope.concertListings = {}
-        var resultCount = 120;
-        var offset = 0;
-        var runCount = [];
-        runCount.push(resultCount);
+.controller('CalendarCtrl', ['$scope', '$location', 'getConcertsService',
+    function($scope, $location, getConcertsService) {
+        $scope.concertListings = [];
+        var sections = ['end', 'middle', 'beginning'];
 
-        getConcertsService.getConcerts(resultCount, offset, function(response) {
-            $scope.concertListings = response.data.concertListings;
-        })
+        function requestConcerts() {
+            getConcertsService.getConcerts(sections.pop(), function(response) {
+                $scope.concertListings = $scope.concertListings.concat(response.data);
+            })
 
-        window.onscroll = function(event) {
-            // This initialization stuff cannot be moved outside of the function.
-            var body = document.body;
-            var html = document.documentElement;
-            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-            var target = height / 2;
-            if (window.scrollY > target) {
-                if (runCount.length === 1) {
-                    resultCount = 500;
-                    runCount.push(resultCount)
-                    getConcertsService.getConcerts(resultCount, runCount[0], function(response) {
-                        $scope.concertListings = $scope.concertListings.concat(response.data.concertListings)
-                    })
+            setTimeout(function() {
+                if (sections.length !== 0) {
+                    requestConcerts();
+                } else {
+                    console.log("All concerts requested")
                 }
-            }
-        };
+            });
+        }
 
+        requestConcerts();
     }
 ])
 

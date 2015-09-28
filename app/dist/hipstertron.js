@@ -17,7 +17,7 @@ angular.module('hipstertron', [
             title: 'Find Concerts and Concert Tickets in Denver',
             description: 'Hipster Tron tells you if an artist in your iTunes library is coming to town as soon as the announcement comes out, 100% Free.'
         });
-        $routeProvider.when('/calendar/', {
+        $routeProvider.when('/calendar', {
             templateUrl: 'partials/calendar.html',
             controller: 'CalendarCtrl',
             title: 'List of Denver Concerts',
@@ -84,35 +84,26 @@ angular.module('hipstertron.controllers', [])
     }
 ])
 
-.controller('CalendarCtrl', ['$scope', 'getConcertsService',
-    function($scope, getConcertsService) {
-        $scope.concertListings = {}
-        var resultCount = 120;
-        var offset = 0;
-        var runCount = [];
-        runCount.push(resultCount);
+.controller('CalendarCtrl', ['$scope', '$location', 'getConcertsService',
+    function($scope, $location, getConcertsService) {
+        $scope.concertListings = [];
+        var sections = ['end', 'middle', 'beginning'];
 
-        getConcertsService.getConcerts(resultCount, offset, function(response) {
-            $scope.concertListings = response.data.concertListings;
-        })
+        function requestConcerts() {
+            getConcertsService.getConcerts(sections.pop(), function(response) {
+                $scope.concertListings = $scope.concertListings.concat(response.data);
+            })
 
-        window.onscroll = function(event) {
-            // This initialization stuff cannot be moved outside of the function.
-            var body = document.body;
-            var html = document.documentElement;
-            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-            var target = height / 2;
-            if (window.scrollY > target) {
-                if (runCount.length === 1) {
-                    resultCount = 500;
-                    runCount.push(resultCount)
-                    getConcertsService.getConcerts(resultCount, runCount[0], function(response) {
-                        $scope.concertListings = $scope.concertListings.concat(response.data.concertListings)
-                    })
+            setTimeout(function() {
+                if (sections.length !== 0) {
+                    requestConcerts();
+                } else {
+                    console.log("All concerts requested")
                 }
-            }
-        };
+            });
+        }
 
+        requestConcerts();
     }
 ])
 
@@ -202,7 +193,6 @@ angular.module('hipstertron.controllers', [])
 
     }
 ]);
-
 /* Services */
 
 angular.module('hipstertron.services', [])
@@ -212,11 +202,18 @@ angular.module('hipstertron.services', [])
         return {
             getPrefix: function() {
                 var envPrefix = {
-                    prod: "http://hipstertron-data.herokuapp.com",
-                    local: "http://localhost:8000"
+                    prod: "http://www.hipstertron.com",
+                    local: "http://localhost:9000",
                 }
-                return envPrefix['prod'];
+                return envPrefix['local'];
             },
+            getDataPrefix: function() {
+                var dataPrefix = {
+                    dataProd: "http://hipstertron-data.herokuapp.com",
+                    dataLocal: "http://localhost:8000"
+                }
+                return dataPrefix['dataLocal']
+            }
         }
     }
 ])
@@ -225,7 +222,7 @@ angular.module('hipstertron.services', [])
     function($http, environmentService) {
         return {
             submitEmail: function(email, callback, errorHandler) {
-                $http.post(environmentService.getPrefix() + "/sendEmail", email)
+                $http.post(environmentService.getDataPrefix() + "/sendEmail", email)
                     .success(function(response) {
                         return callback(response)
                     })
@@ -240,9 +237,8 @@ angular.module('hipstertron.services', [])
 .factory('getConcertsService', ['$http', 'environmentService',
     function($http, environmentService) {
         return {
-            // Testing: test proper offset combined with resultCount
-            getConcerts: function(resultCount, offset, callback) { //
-                $http.get(environmentService.getPrefix() + "/getConcerts/" + resultCount + "/" + offset, { //
+            getConcerts: function(section, callback) {
+                $http.get(environmentService.getPrefix() + "/get-concerts/" + section, {
                     cache: true
                 })
                     .then(function(response) {
