@@ -47,8 +47,5 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "phantomjs": "^1.9.18",
     "readable-stream": "^2.0.2"
-  },
-  "engines": {
-    "node": ">=0.10.0"
   }
 }
