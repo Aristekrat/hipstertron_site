@@ -52,7 +52,7 @@ angular.module('hipstertron', [
             $scope.seo = {
                 title: $route.current.title,
                 description: $route.current.description
-            }
+            };
         });
     }
 ]);
@@ -62,25 +62,25 @@ angular.module('hipstertron.controllers', [])
 
 .controller('MainCtrl', ['$scope', 'submitEmailService',
     function($scope, submitEmailService) {
-        $scope.userEmail = {}
-        $scope.userEmail.frequency = "weekly"
+        $scope.userEmail = {};
+        $scope.userEmail.frequency = "weekly";
 
         $scope.errorHandler = function() {
-            $scope.emailError = true
-        }
+            $scope.emailError = true;
+        };
 
         $scope.successHandler = function() {
             $scope.signedUp = true;
-        }
+        };
 
         $scope.signUserUp = function(userEmail) {
             if (userEmail.email) {
                 $scope.emailPlease = false;
-                submitEmailService.submitEmail(userEmail, $scope.successHandler, $scope.errorHandler)
+                submitEmailService.submitEmail(userEmail, $scope.successHandler, $scope.errorHandler);
             } else {
                 $scope.emailPlease = true;
             }
-        }
+        };
     }
 ])
 
@@ -92,13 +92,13 @@ angular.module('hipstertron.controllers', [])
         function requestConcerts() {
             getConcertsService.getConcerts(sections.pop(), function(response) {
                 $scope.concertListings = $scope.concertListings.concat(response.data);
-            })
+            });
 
             setTimeout(function() {
                 if (sections.length !== 0) {
                     requestConcerts();
                 } else {
-                    console.log("All concerts requested")
+                    console.log("All concerts requested");
                 }
             });
         }
@@ -116,45 +116,45 @@ angular.module('hipstertron.controllers', [])
             $scope.$parent.seo = {
                 title: "About Hipstertron",
                 description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
-            }
+            };
         } else if ($routeParams.type === 'find-tickets') {
             $scope.findRequested = true;
             activateNav('findActive');
             $scope.$parent.seo = {
                 title: "Concert Finder in Denver",
                 description: "Hipstertron will let you know when your favorite bands are coming to Denver, 100% free."
-            }
+            };
         } else if ($routeParams.type === 'reserve-tickets') {
             $scope.reserveRequested = true;
             activateNav('reserveActive');
             $scope.$parent.seo = {
                 title: "Reserve Concert Tickets, Get Concert Tickets Denver",
                 description: "Reserve concert tickets in advance with Hipstertron, 100% free."
-            }
+            };
         } else if ($routeParams.type === 'cheap-tickets') {
             $scope.cheapRequested = true;
             activateNav('cheapActive');
             $scope.$parent.seo = {
                 title: "Find Cheap Concert Tickets Denver",
                 description: "Get notified whenever you can pick up cheap concert tickets for bands you like."
-            }
+            };
         } else {
             $scope.aboutRequested = true;
             activateNav('aboutActive');
             $scope.$parent.seo = {
                 title: "About Hipstertron",
                 description: "Sign Up for Hipstertron to get notified whenever your favorite bands are coming to Denver and help getting tickets."
-            }
+            };
         }
 
         function activateNav(correctNav) {
             var navOptions = ["aboutActive", "findActive", "reserveActive", "cheapActive"];
             for (var i = 0; navOptions.length > i; i++) {
-                var t = navOptions[i]
+                var t = navOptions[i];
                 if (navOptions[i] === correctNav) {
-                    $scope[t] = "info-link-active"
+                    $scope[t] = "info-link-active";
                 } else {
-                    $scope[t] = ""
+                    $scope[t] = "";
                 }
             }
         }
@@ -165,25 +165,25 @@ angular.module('hipstertron.controllers', [])
 .controller('SignUpCtrl', ['$scope', 'submitEmailService',
     // DRY it up
     function($scope, submitEmailService) {
-        $scope.userEmail = {}
-        $scope.userEmail.frequency = "weekly"
+        $scope.userEmail = {};
+        $scope.userEmail.frequency = "weekly";
 
         $scope.errorHandler = function() {
-            $scope.emailError = true
-        }
+            $scope.emailError = true;
+        };
 
         $scope.successHandler = function() {
             $scope.signedUp = true;
-        }
+        };
 
         $scope.signUserUp = function(userEmail) {
             if (userEmail.email) {
                 $scope.emailPlease = false;
-                submitEmailService.submitEmail(userEmail, $scope.successHandler, $scope.errorHandler)
+                submitEmailService.submitEmail(userEmail, $scope.successHandler, $scope.errorHandler);
             } else {
                 $scope.emailPlease = true;
             }
-        }
+        };
 
     }
 ])
@@ -198,53 +198,53 @@ angular.module('hipstertron.controllers', [])
 angular.module('hipstertron.services', [])
 
 .factory('environmentService', ['$http',
-    function ($http) {
+    function($http) {
         return {
-            getPrefix: function () {
+            getPrefix: function() {
                 var envPrefix = {
                     prod: "http://www.hipstertron.com",
                     local: "http://localhost:9000",
-                }
+                };
                 return envPrefix['prod'];
             },
-            getDataPrefix: function () {
+            getDataPrefix: function() {
                 var dataPrefix = {
                     dataProd: "http://hipstertron-data.herokuapp.com",
                     dataLocal: "http://localhost:8000"
-                }
-                return dataPrefix['dataProd']
+                };
+                return dataPrefix['dataProd'];
             }
-        }
+        };
     }
 ])
 
 .factory('submitEmailService', ['$http', 'environmentService',
-    function ($http, environmentService) {
+    function($http, environmentService) {
         return {
-            submitEmail: function (email, callback, errorHandler) {
+            submitEmail: function(email, callback, errorHandler) {
                 $http.post(environmentService.getDataPrefix() + "/sendEmail", email)
-                    .success(function (response) {
-                        return callback(response)
+                    .success(function(response) {
+                        return callback(response);
                     })
-                    .error(function (response) {
-                        return errorHandler(response)
+                    .error(function(response) {
+                        return errorHandler(response);
                     });
             }
-        }
+        };
     }
 ])
 
 .factory('getConcertsService', ['$http', 'environmentService',
-    function ($http, environmentService) {
+    function($http, environmentService) {
         return {
-            getConcerts: function (section, callback) {
+            getConcerts: function(section, callback) {
                 $http.get(environmentService.getPrefix() + "/get-concerts/" + section, {
-                        cache: true
-                    })
-                    .then(function (response) {
-                        return callback(response)
+                    cache: true
+                })
+                    .then(function(response) {
+                        return callback(response);
                     });
             }
-        }
+        };
     }
-])
+]);

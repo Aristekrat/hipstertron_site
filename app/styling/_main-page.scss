@@ -1,0 +1,230 @@
+#home-page:after {
+    content: "";
+    display: block;
+}
+
+.main-block {
+    background: $background;
+    float: left;
+    width: 100%;
+}
+
+/* #home-icon {
+	float: left;
+	margin-top: -0.5em;
+	figure {
+		height: 2em;
+		width: 2em;
+		background: url("../../../img/sprite-4.png") no-repeat 100% 0%;
+	}
+} */
+
+.home-header {
+    width: 100%;
+    text-align: center;
+    padding: 5% 0 1% 0;
+
+    h1 {
+        color: $minor-header;
+        margin: 1% 0 0 0;
+        font-size: 2.0em;
+    }
+
+    p {
+        margin: 0 0 2% 0;
+    }
+}
+
+#main-tagline {
+    color: pink;
+    font-weight: bold;
+}
+
+#main-explanation {
+    font-size: 1.25em;
+    margin-bottom: 3%;
+}
+
+.how-it-works {
+    position: relative;
+    padding-bottom: 2%;
+
+    ul {
+        list-style-type: none;
+    }
+
+    h2 {
+        text-align: center;
+        width: 16%;
+        margin: -0.6em 42% 0 42%;
+        background-color: $background;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    figure {
+        width: 14.5em;
+        height: 16em;
+        background: url("../img/main-sprite.png") no-repeat;
+    }
+
+    #find-concerts-pic {
+        display: inline-block;
+        position: relative;
+        left: 5em;
+        width: 15em;
+        background-position: 7% 50%;
+    }
+
+    #reserve-tickets-pic {
+        float: left;
+        position: relative;
+        left: 7em;
+        background-position: 56% 50%;
+    }
+
+    #cheap-tickets-pic {
+        margin: 2% 0 0 15%;
+        background-position: 102% 100%;
+    }
+}
+
+.main-step {
+    float: left;
+    width: 29%;
+    margin-left: 3.2%;
+}
+
+.main-signup-form {
+    display: inline-block;
+    width: 50%;
+    margin: 0 25%;
+    padding: 1% 0 0 0;
+}
+
+.main-email {
+    width: 70%;
+    padding: 1%;
+}
+
+.main-submit {
+    width: 18%;
+    padding: 1.2%;
+    margin-left: 2%;
+}
+
+.signup-block {
+    padding: 0 0 1.2% 0;
+    position: relative;
+}
+
+.main-frequency-selector label:first-child {
+    margin-right: 3%;
+}
+
+.main-frequency-selector input {
+    margin: 2% 4% 0 0.5%;
+    top: 2px;
+    position: relative;
+}
+
+.social-button {
+    padding: 1.2em 0.5em;
+    margin: 1% 5% 0% 0;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: darken($minor-header, 10%);
+    background-position: 50%;
+
+    &:hover {
+        background-color: $main-header;
+    }
+}
+
+.ht-twitter {
+    background-position: 100% 50%;
+}
+
+.ht-facebook {
+    background-position: 0% 50%;
+}
+
+.main-launch-block {
+    width: 50%;
+    margin: 0 25%;
+
+    h3 {
+        color: $main-header;
+    }
+}
+
+.benefits-list {
+    width: 90%;
+    padding: 3% 3% 3% 7%;
+    display: block;
+    float: left;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        float: left;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2.5%;
+    }
+
+    h3, p {
+        display: inline-block;
+        width: 100%;
+        margin: 1% 0;
+    }
+
+    h3 {
+        width: 85%;
+        margin-left: 15%;
+        font-size: 1.25em;
+    }
+}
+
+.main-image-container {
+    width: 100%;
+    display: block;
+    float: left;
+    height: 12.8em;
+    padding: 3% 0;
+    width: 14em;
+    background-repeat: no-repeat;
+}
+
+#ht-free {
+    margin-left: 0.5em;
+}
+
+#ht-best-tickets {
+    background-position: 31% 50%;
+    margin-left: 2em;
+}
+
+#ht-never-miss {
+    background-position: 62% 50%;
+    margin-left: 3em;
+}
+
+#ht-time {
+    background-position: 91% 50%;
+    margin-left: -0.2em;
+}
+
+#first-benefits-paragraph {
+    text-shadow: 1px 1px 1px $background;
+}
