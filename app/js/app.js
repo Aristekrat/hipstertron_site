@@ -51,7 +51,7 @@ angular.module('hipstertron', [
             $scope.seo = {
                 title: $route.current.title,
                 description: $route.current.description
-            }
+            };
         });
     }
 ]);
