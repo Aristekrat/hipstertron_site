@@ -107,7 +107,7 @@ module.exports = function(grunt) {
         plato: {
             analyze: {
                 files: {
-                    '<%= dir.build %>/plato': ['app/js/*.js']
+                    '<%= dir.build %>/plato': ['<%= dir.dev %>/<%= dir.scripts %>/**/*.js']
                 }
             }
         },
@@ -169,7 +169,8 @@ module.exports = function(grunt) {
             options: {
                 commit: true,
                 createTag: true,
-                push: true
+                push: true,
+                pushTo: '<%= pkg.repository.url %>'
             }
         },
 
