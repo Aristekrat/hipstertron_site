@@ -34,3 +34,5 @@ app/styling/.sass-cache
 .sass-cache
 bower_components
 storage
+plato
+app/dist/plato
