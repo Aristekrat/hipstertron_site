@@ -1,10 +1,11 @@
 'use strict';
 
 /*
-Installed, need to be implemented: 
-https://www.npmjs.org/package/grunt-html-validation
-https://www.npmjs.org/package/grunt-contrib-csslint
-https://github.com/gruntjs/grunt-contrib-yuidoc
+ * Build Script TODO
+ * Get rev + lazy load working
+ * Get compress working
+ * Make the sass compilation process a bit more efficent, atm requires a full html build + inlining
+ * Make local dev a little bit less prod-like
  */
 
 module.exports = function(grunt) {
@@ -54,7 +55,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'app',
                     src: ['./<%= dir.image %>/*.{png,jpg,gif}'],
-                    dest: '<%= dir.build %>/<%= dir.styling %>/<%= dir.image %>'
+                    dest: '<%= dir.build %>'
                 }],
                 options: {
                     progressive: true,
@@ -132,7 +133,7 @@ module.exports = function(grunt) {
 
         // Build Tasks
         clean: {
-            js: '<%= dir.build %>/<%= dir.scripts %>*.js',
+            js: '<%= dir.build %>/<%= dir.scripts %>/*.js',
             css: '<%= dir.build %>/<%= dir.styling %>/*.css',
             html: ['<%= dir.build %>/index-min.html', '<%= dir.build %>/partials/*.html'],
             img: '<%= dir.build %>/<%= dir.image %>/**/*.{png,jpg,gif}',
@@ -259,20 +260,23 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
 
     //  Tasks
-    // Note - you cannot use the same name as the task, ie 'compress' & 'compress'. Causes a silly but fatal error
     grunt.registerTask('default', ['concurrent:dev']);
     grunt.registerTask('minify', ['concat', 'uglify', 'cssmin', 'imagemin']);
     grunt.registerTask('shrink', ['compress']);
     grunt.registerTask('analyze', ['plato']);
     grunt.registerTask('cleanall', ['clean:js', 'clean:css', 'clean:html']);
     grunt.registerTask('buildjs', ['clean:js', 'concat:hipstertron', 'uglify']);
-    grunt.registerTask('buildcss', ['clean:css', 'sass', 'cssmin']);
-    grunt.registerTask('buildhtml', ['clean:html', 'htmlmin']);
-    grunt.registerTask('build', ['buildjs', 'buildhtml', 'buildcss']);
-    grunt.registerTask('check-static', ['csscss']);
+    grunt.registerTask('buildcss', ['clean:css', 'sass', 'cssmin', 'buildhtml']);
+    grunt.registerTask('buildhtml', ['clean:html', 'htmlmin', 'inline']);
+    grunt.registerTask('buildimg', ['clean:img', 'imagemin']);
+    grunt.registerTask('build', ['buildjs', 'buildhtml', 'buildcss', 'buildimg']);
+
+    // Not using this atm. Usemin has difficulty seeing the lazyloaded images in main.html. Will return and fix later. 
     grunt.registerTask('useminBuild', [
         'useminPrepare',
         'build',
+        'rev',
         'usemin'
     ]);
+
 };
