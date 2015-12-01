@@ -790,6 +790,11 @@ footer {
 	font-size: 1.05em;
 }
 */
+.signup-page .ht-twitter {
+  background-image: url("../img/twitter.png"); }
+.signup-page .ht-facebook {
+  background-image: url("../img/facebook.png"); }
+
 .signup-page h1 {
   padding-top: 4%;
   margin-left: 5%; }

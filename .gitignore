@@ -36,3 +36,5 @@ bower_components
 storage
 plato
 app/dist/plato
+reports
+app/test/reports
