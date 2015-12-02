@@ -207,7 +207,7 @@ module.exports = function(grunt) {
         watch: { // TODO add test client, test server
             client_scripts: {
                 files: ['app/js/*.js', 'Gruntfile.js'],
-                tasks: ['jshint:client', 'buildjs'],
+                tasks: ['jshint:client', 'buildjs', 'buildhtml'],
                 options: {
                     spawn: false,
                 },
